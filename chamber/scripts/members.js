@@ -1,7 +1,7 @@
 // Declare a const variable named "url" that
 //  contains the URL string of the JSON resource
 //  provided.
-const url = `https://raw.github.com/Kemoh/wdd231/blob/main/chamber/data/members.json`;
+const url = `https://raw.githubusercontent.com/Kemoh/wdd231/main/chamber/data/members.json`;
 
 // Declare a const variable name "grid" that selects the HTML div element from the document with an id
 //  value of "grid".
