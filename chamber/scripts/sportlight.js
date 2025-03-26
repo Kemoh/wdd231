@@ -1,7 +1,7 @@
 // Declare a const variable named "url" that
 //  contains the URL string of the JSON resource
 //  provided.
-const url = 'https://raw.githubusercontent.com/Kemoh/wdd231/gh-pages/chamber/data/members.json';
+const url = 'https://raw.github.com/Kemoh/wdd231/blob/main/chamber/data/members.json';
 
 
 
