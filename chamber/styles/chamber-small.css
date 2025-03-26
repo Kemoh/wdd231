@@ -1,0 +1,620 @@
+/* Psedu-selectors */
+:root{
+    --primary-color: #010c80;
+    --secondary-color: #333333;
+	--tertiary-color:  #36454f;
+    --accent-color-1: #DEFFF2;  
+	--accent-color-2: #EDF060;
+	--accent-color-3: #ffffff;
+	--accent-color-4: #eeeeee;
+	--accent-color-5: #000000;
+	--accent-color-6: #8884ff80;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+}
+
+header, footer {
+	width: 100%;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, h7, h8 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Start of Header Styling */
+
+header {
+	display: grid;
+	align-items: center;
+	border: 1px solid rgb(0 0 0 / 0.1);
+	box-shadow: 0 5px var(--accent-color-1);
+	background-color: var(--tertiary-color);
+}
+
+.logo-container img {
+    width: 18%;
+    height: auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 10px var(--accent-color-1);
+	border-radius: 10px 10px;
+	margin: .5rem 0 1rem .2rem;
+}
+
+h1 {
+	color: var(--accent-color-3);
+	position: absolute;
+	font-size: 1.6em;
+	right: 39%;
+	bottom: 88%;
+}
+
+h1 > p {
+	font-size: 40%;
+}
+
+
+/************ START STYLING MENU-1 ******************/
+#menu-1 {
+	font-size: 2rem;
+	background: none;
+	color: var(--accent-color-3);
+    border: none;
+	text-align: right;
+	padding: .25rem 2vw;
+	position: absolute;
+	top: .5rem;
+	right: .5rem;
+	font-weight: bolder;	
+}
+
+#menu-1::before {
+	content: "☰";
+}
+
+#menu-1.open::before {
+	content: "❌";
+}
+
+.navigation-1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	list-style: none;
+	background-color: var(--accent-color-6);
+	color: var(--accent-color-3);
+}
+
+.navigation-1 a {
+	/* display: none; */
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: var(--accent-color-3);
+	font-family: "Roboto", sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	padding: .75rem 4vw;
+}
+
+.navigation-1 a:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-weight: 700;
+}
+
+#animateme-1 {
+	display: grid;
+	grid-template-rows: 0fr;
+	transition: grid-template-rows 0.5s ease-out;
+}
+
+#animateme-1 .navigation-1 {
+	overflow: hidden;
+}
+
+#animateme-1.open {
+	grid-template-rows: 1fr;
+}
+
+.navigation-1 .active {
+	color: var(--accent-color-2);
+
+}
+
+
+
+/*************** END OF STYLING MENU-1 *************/
+
+/*************** START OF STYLING MENU-2 *************/
+
+#menu-2 {
+	font-size: 2rem;
+	background: none;
+	color: var(--accent-color-3);
+    border: none;
+	text-align: right;
+	padding: .25rem 4vw;
+	position: absolute;
+	top: .3rem;
+	right: 2.5rem;	
+}
+
+#menu-2::before {
+	content: "◉";
+}
+
+#menu-2.open::before {
+	content: "❌";
+}
+
+.navigation-2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	list-style: none;
+	background-color: var(--accent-color-6);
+	color: var(--accent-color-3);
+}
+
+.navigation-2 a {
+	/* display: none; */
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: var(--accent-color-3);
+	font-family: "Roboto", sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	padding: .75rem 4vw;
+}
+
+.navigation-2 a:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-weight: 700;
+}
+
+#animateme-2 {
+	display: grid;
+	grid-template-rows: 0fr;
+	transition: grid-template-rows 0.5s ease-out;
+}
+
+#animateme-2 .navigation-2 {
+	overflow: hidden;
+}
+
+#animateme-2.open {
+	grid-template-rows: 1fr;
+}
+
+
+/*******END OF STYLING MENU-2************************/
+
+/* End of Header Styling */ 
+
+
+
+/* Start of Main Styling */ 
+
+/* Start of  Directory Page */
+
+main {
+	margin: 0 auto;
+	padding: 0;
+	background-color:#eeeeee;
+}
+
+.filterButtons {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #bed;
+	text-align: center;
+	box-shadow: 0 0 10px var(--accent-color-1);
+	border-radius: 10px;
+}
+
+.filterButtons button {
+	padding: .5rem 1rem;
+	font-weight: bold;
+}
+
+.grid section {
+	background-color: var(--accent-color-6);
+	border: 1px solid rgba(55, 61, 63, 0.1);
+	box-shadow: 0 0 10px #bed;
+	text-align: center;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	padding: .5rem;
+}
+
+.grid img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+	margin: 1rem .5rem 2rem 0.5rem;
+} 
+
+.grid h3 {
+	font-size: 1.2em;
+	text-align: center;
+}
+
+.grid .portraitBusinessInfoContainer {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	text-align: left;
+	align-items: center;
+	line-height: 1.5;
+}
+
+.grid .businessNameAndTagContainer {
+	border-bottom: 1.5px solid black;
+}
+
+
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 0;
+	padding: 0.3rem;
+}
+
+.list section > * {
+	margin: 0 .2rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 1.2em;
+}
+
+.list section:nth-child(even) {
+	background-color: antiquewhite;
+}
+
+.list .portraitBusinessInfoContainer {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	line-height: 1.8;
+	text-align: left;
+}
+
+.portraitBusinessInfoContainer p {
+	font-size: .9em;	
+}
+
+.portraitBusinessInfoContainer .label {
+	font-weight: bold;
+	font-size: .9em;
+}
+
+.list .businessNameAndTagContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+/* End of  Directory Page */
+
+/* Start of  Home Page */
+
+.hero {
+	position: relative;
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.hero-text  {
+	position: absolute;	
+	font-family: Arial, Helvetica, sans-serif;
+	top: 33rem;
+	text-align: center;
+	width: 320px;
+	background-color: rgba(136, 0, 0, 0.5);;
+	color: var(--accent-color-3);
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+	transition: background-color 0.3s ease;
+	box-shadow: 0 0 10px var(--accent-color-1);
+	border: 1px solid rgba(136, 0, 0, 0.5);
+	padding: 1rem;
+}
+
+.hero-text p[title = tagline] {
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.hero-text p[title = call-to-action] {
+	font-size: 1.2em;
+	padding: 1rem;
+}
+
+.hero-text .cta-button-join {
+	position: absolute;
+	top: 120%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 3% 8%;
+	border-radius: 10px;
+	background-color: darkblue;
+	color: var(--accent-color-3);
+	transition: background-color 0.3s ease;
+	box-shadow: 0 0 10px var(--accent-color-1);
+	border: 1px solid rgba(136, 0, 0, 0.5);
+	font-size: 1.2em;
+	text-decoration: none;
+	font-family: "Roboto", sans-serif;
+}
+/* Start of  Home Page */
+
+h2 {
+	padding: 1rem .5rem;
+	margin-bottom: -1.3rem;
+}
+
+/* START OF EVENTS SECTION */
+.current-events {
+	padding: .5rem;
+}
+
+.event {
+	background-color: var(--accent-color-6);
+	border: 1px solid rgba(55, 61, 63, 0.1);
+	text-align: center;
+	font-family: "Oxygen", sans-serif;
+	padding: 0 .5rem 2rem ;
+}
+
+.events-list h3 {
+	font-size: 1.4em;
+	text-align: center;
+	background-color:  var(--tertiary-color);
+	color: var(--accent-color-3);
+	padding: .5rem;
+}
+.event h4 {
+	font-size: 1.1em;
+	text-align: center;
+	color: rgb(3, 3, 3);
+	padding: .5rem;
+}
+
+.event p {
+	line-height: 1.5;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	font-family: "Oxygen", sans-serif;
+}
+
+.event .event-link {
+	transform: translate(-50%, -50%);
+	padding: 3% 8%;
+	border-radius: 10px;
+	background-color: darkblue;
+	color: var(--accent-color-3);
+	transition: background-color 0.3s ease;
+	box-shadow: 0 0 10px var(--accent-color-1);
+	border: 1px solid rgba(136, 0, 0, 0.5);
+	font-size: 1.2em;
+	text-decoration: none;
+	font-family: "Roboto", sans-serif;
+}
+
+
+/* END OF EVENTS SECTION */
+
+/* START OF SPORTLIGHT ADVERTISMENT CARDS */
+.sportlightGrid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	padding: .5rem;
+}
+
+.sportlightGrid section {
+	background-color: var(--accent-color-6);
+	border: 1px solid rgba(55, 61, 63, 0.1);
+	text-align: center;
+	padding: 1rem;
+}
+
+.events-sportlights {
+	padding: .5rem;
+}
+.events-sportlights h3 {
+	font-size: 1.3em;
+	text-align: center;
+	background-color:  var(--tertiary-color);
+	color: var(--accent-color-3);
+	padding: .5rem;
+}
+
+.sportlightGrid h4 {
+	padding: .3rem;
+}
+
+.sportlightGrid p {
+	padding: .2rem;
+}
+
+.sportlightGrid .label {
+	font-weight: bold;
+}
+
+/* END OF SPORTLIGHT ADVERTISMENT CARDS */
+
+/* START OF WEATHER SECTION */
+.weather-section {
+	padding: .5rem;
+}
+
+
+.weatherCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+	gap: .2rem;
+    align-items: center;
+    justify-content: center;
+	background-color: var(--accent-color-6);
+	border: 1px solid rgba(55, 61, 63, 0.1);
+	padding: .2rem;
+}
+
+.weather-section h3 {
+	font-size: 1.3em;
+	text-align: center;
+	background-color:  var(--tertiary-color);
+	color: var(--accent-color-3);
+	padding: .5rem;
+}
+
+#weather-highlight h6 {
+	font-size: 1.2em;
+    color: rgb(3, 3, 3);
+    align-items: center;
+}
+
+#weather-details #description {
+    text-transform: capitalize;
+    color:darkblue;
+    font-size: 1.1em;
+}
+
+.weatherCard #temperature {
+    font-size: 1.5em;
+    color: white;
+	padding: .5rem;
+}
+
+#weather-details {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+#weather-details p {
+	line-height: 1.5;
+}
+
+#weather-highlight {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+#weather-details .label {
+	font-weight: bold;
+}
+
+.weatherCard #forecasts {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+	text-align: center;
+	padding: 1rem;
+
+}
+
+.three-day-forecast {
+	padding: .5rem;
+	
+}
+
+.three-day-forecast h3 {
+	font-size: 1.3em;
+	text-align: center;
+	background-color:  var(--tertiary-color);
+	color: var(--accent-color-3);
+	padding: .5rem;
+}
+
+.forecasts {
+	background-color: var(--accent-color-6);
+	border: 1px solid rgba(55, 61, 63, 0.1);
+}
+
+.forecasts p {
+	font-size: 1.2em;
+	padding: .5rem;
+}
+
+.forecasts .label {
+	font-weight: bold;
+}
+
+/* END OF WEATHER SECTION */
+
+
+/* End of  Home Page */
+
+
+/* End of Main Styling */ 
+
+
+/* Start of Footer Styling */
+footer {
+    background-color: var(--tertiary-color);
+	padding: 1rem;
+	font-family: "Oxygen", sans-serif;
+	font-size: 1em;
+}
+
+footer p {
+	line-height: 1.8;
+}
+
+p[title="Organization Name"] {
+	font-weight: bolder;
+	font-family: "Roboto", sans-serif;
+	font-size: 1.2em;
+}
+
+.chamberInfo, .copyright, .projectInfo, .socialMediaLinks, .lastModified {
+	margin-bottom: 1rem;
+	color: var(--accent-color-3);
+}
+
+.socialMediaLinks {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.socialMediaLinks img {
+    width: 2.5rem;
+    height: auto;
+	margin: 1rem;
+}
+
+/* End of Footer Styling */

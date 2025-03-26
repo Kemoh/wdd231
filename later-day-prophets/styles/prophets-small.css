@@ -1,0 +1,28 @@
+/* Psedu-selectors */
+:root{
+    --primary-color: #010c80;
+    --secondary-color: #333333;
+	--tertiary-color:  #36454f;
+    --accent-color-1: #DEFFF2;  
+	--accent-color-2: #EDF060;
+	--accent-color-3: #ffffff;
+	--accent-color-4: #eeeeee;
+	--accent-color-5: #000000;
+	--accent-color-6: #8884ff80;
+}
+
+ * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} 
+
+/* body */
+body {
+	margin: 0 auto;
+}
+
+header, main, footer {
+	width: 100%;
+	margin: 0 auto;
+}

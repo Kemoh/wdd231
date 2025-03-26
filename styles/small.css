@@ -1,0 +1,302 @@
+/* Psedu-selectors */
+:root{
+    --primary-color: #010c80;
+    --secondary-color: #333333;
+	--tertiary-color:  #36454f;
+    --accent-color-1: #DEFFF2;  
+	--accent-color-2: #EDF060;
+	--accent-color-3: #ffffff;
+	--accent-color-4: #eeeeee;
+	--accent-color-5: #000000;
+	--accent-color-6: #8884ff80;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+	margin: 0 auto;
+}
+
+header, main, footer {
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+/* Start of Header Styling */
+
+header {
+	background-color: var(--tertiary-color);
+	display: grid;
+	align-items: center;
+	border: 1px solid rgb(0 0 0 / 0.1);
+	box-shadow: 0 5px var(--accent-color-1);
+}
+
+.profile-picture img {
+    width: 10%;
+    height: auto;
+	margin: 2rem 1rem 1rem 2rem;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 10px var(--accent-color-1);
+	border-radius: 5px 5px;
+}
+
+header .profile-picture span {
+    color: var(--accent-color-3);
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    top: 5rem;
+}
+
+
+header #menu {
+	font-size: 2rem;
+	background: none;
+	color: var(--accent-color-3);
+    border: none;
+	width: 100%;
+	text-align: right;
+	padding: .25rem 2vw;
+	position: absolute;
+	top: 1rem;
+	right: .5rem;	
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	list-style: none;
+	background-color: var(--accent-color-6);
+	color: var(--accent-color-3);
+}
+
+
+.navigation a {
+	/* display: none; */
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: var(--accent-color-3);
+	font-family: "Oxygen", sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	padding: .75rem 2vw;
+}
+
+.navigation a:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+	color: #fff;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+/* 
+.open a {
+	/* display: block; 
+} */
+
+nav {
+	display: grid;
+	grid-template-rows: 0fr;
+	transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+	overflow: hidden;
+}
+
+nav.open {
+	grid-template-rows: 1fr;
+}
+/* .active::before { 
+	content: "📍";  /* just a wayfinding symbol for the user 
+} */
+
+.navigation .active {
+	color: var(--accent-color-2);
+}
+
+/* End of Header Styling */ 
+
+
+
+/* Start of Main Styling */ 
+h1, h2 {
+    font-family: "Roboto", sans-serif;
+	text-align: center;
+}
+
+h1 {
+	text-align: left;
+	font-size: 1.5em;
+	margin-left: 2rem;
+	margin-bottom: -2rem;
+	color: var(--tertiary-color);
+}
+
+h2 {	
+	font-size: 1.2em;
+	background-color: var(--tertiary-color);
+    color: var(--accent-color-3);
+	text-align: center;
+    padding: 1rem;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 10px var(--accent-color-1);
+	border-radius: 5px 5px 0 0;
+	}
+
+section {
+	margin: 2rem;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 20px var(--accent-color-6);
+	border-radius: 0 0 10px 10px;
+}
+
+.course-work {
+	margin-bottom: -1rem;
+}
+
+.contoon-tree {
+	margin-bottom: -1rem;
+}
+
+.courses {
+    color: var(--tertiary-color);
+	margin: 1rem 0 2rem 3rem;
+}
+
+.courses li {
+	padding: .5rem;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.contoon-tree-pic {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.contoon-tree-pic img {
+	width: 80%;
+	height: auto;
+}
+
+.contoon-tree h2 {
+	margin-bottom: 1rem;
+}
+
+.contoon-tree figcaption {
+	font-size: .8em;
+	padding: 1rem 0 2rem;
+	font-family: "Roboto", sans-serif;
+	color: var(--tertiary-color);
+	text-align: center;
+}
+
+.filterButtons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: .2rem;
+	padding: .5rem;
+	 box-shadow: 0 0 5px #4dd0e1;
+}
+
+.filterButtons button {
+	background-color: var(--accent-color-5); 
+	color: #fff;
+	padding: .2rem 1rem;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px #4dd0e1;
+    border-radius: 5px 5px;
+	font-family: "Roboto", sans-serif;
+} 
+
+.courseCards {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	text-align: center;
+	text-decoration: none;
+	padding: 1rem;
+	font-family: "Oxygen" sans-serif;
+	font-weight: bold;
+}
+
+
+.uncompletedCourse {
+  border: 1px solid #4dd0e1;
+  background-color:  var(--accent-color-2);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px #4dd0e1;
+  border-radius: 10px 10px;
+}
+
+.completedCourse {
+  background-color: var(--primary-color);
+  border: 1px solid #4dd0e1;
+  color: var(--accent-color-3);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px #4dd0e1;
+  border-radius: 10px 10px;
+}
+/* End of Main Styling */ 
+
+
+/* Start of Footer Styling */
+footer {
+	display: flex;
+	flex-direction: column;
+    justify-content: space-around;
+	align-items: center;
+    background-color: var(--tertiary-color);
+	padding: 3rem;
+}
+
+.copyYear {
+	color: var(--accent-color-3);
+	font-size: 1em;
+	font-family: "Oxygen", sans-serif;
+	color: var(--accent-color-3);
+	line-height: 2;
+	
+}
+
+.lastModified {
+    color: var(--accent-color-2);
+	font-family: "Oxygen", sans-serif;
+	font-size: .8em;
+}
+
+footer p {
+	text-align: center;
+	line-height: 2;
+}
+
+.countryFlag img {
+	width: 15%;
+	height: auto;
+}
+
+/* End of Footer Styling */
