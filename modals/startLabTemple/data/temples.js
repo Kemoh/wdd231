@@ -1,4 +1,4 @@
-export const url = "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries";
+export const url = "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/";
 
 export const temples = [
     {
@@ -210,6 +210,14 @@ export const temples = [
         "dedicated": "October, 1984",
         "person": "Gordon B. Hinckley",
         "path": "dallas-texas/400x250/dallas-temple-lds-1048888-wallpaper.jpg"
+    },
+    {
+        "number": "31",
+        "name": "Ghana Accra Temple",
+        "dedicated": "January 11, 2004",
+        "person": "Gordon B. Hinckley",
+        "path": "accra-ghana/400x250/accra-ghana-temple-detail-249022-2400x1200.jpg"
     }
+
 ]
 

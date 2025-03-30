@@ -1,5 +1,6 @@
-const courses = [
+export const courses = [
     {
+        order : 1,
         subject: 'CSE',
         number: 110,
         title: 'Introduction to Programming',
@@ -12,6 +13,7 @@ const courses = [
         completed: true
     },
     {
+        order: 2,
         subject: 'WDD',
         number: 130,
         title: 'Web Fundamentals',
@@ -25,6 +27,7 @@ const courses = [
         completed: true
     },
     {
+        order: 3,
         subject: 'CSE',
         number: 111,
         title: 'Programming with Functions',
@@ -37,6 +40,7 @@ const courses = [
         completed: true
     },
     {
+        order: 3,
         subject: 'CSE',
         number: 210,
         title: 'Programming with Classes',
@@ -49,6 +53,7 @@ const courses = [
         completed: false
     },
     {
+        order: 4,
         subject: 'WDD',
         number: 131,
         title: 'Dynamic Web Fundamentals',
@@ -63,6 +68,7 @@ const courses = [
         completed: true
     },
     {
+        order: 5,
         subject: 'WDD',
         number: 231,
         title: 'Frontend Web Development I',

@@ -199,15 +199,15 @@ h1 > p {
 }
 
 
-/*******END OF STYLING MENU-2************************/
+/*******END OF STYLING MENU-2 *********************/
 
-/* End of Header Styling */ 
+/* End OF HEADER STYLING*/ 
 
 
 
-/* Start of Main Styling */ 
+/* StTART OF MAIN STYLING*/ 
 
-/* Start of  Directory Page */
+/* START OF DIRECTORY PAGE */
 
 main {
 	margin: 0 auto;
@@ -321,9 +321,11 @@ main {
 	flex-direction: column;
 	justify-content: center;
 }
-/* End of  Directory Page */
+/* END OF DIRECTORY PAGE */
 
-/* Start of  Home Page */
+/* START OF HOME PAGE */
+
+/* START OF HEADER OF HOME PAGE */
 
 .hero {
 	position: relative;
@@ -376,12 +378,13 @@ main {
 	text-decoration: none;
 	font-family: "Roboto", sans-serif;
 }
-/* Start of  Home Page */
 
 h2 {
 	padding: 1rem .5rem;
 	margin-bottom: -1.3rem;
 }
+
+/* END OF HEADER OF HOME PAGE */
 
 /* START OF EVENTS SECTION */
 .current-events {
@@ -431,7 +434,6 @@ h2 {
 	font-family: "Roboto", sans-serif;
 }
 
-
 /* END OF EVENTS SECTION */
 
 /* START OF SPORTLIGHT ADVERTISMENT CARDS */
@@ -480,7 +482,6 @@ h2 {
 .weather-section {
 	padding: .5rem;
 }
-
 
 .weatherCard {
     display: grid;
@@ -575,13 +576,124 @@ h2 {
 /* END OF WEATHER SECTION */
 
 
-/* End of  Home Page */
+/* START OF JOIN PAGE STYLING*/
+
+/*START OF FORM STYLING*/
+#memberFormh3 {
+	text-align: center;
+	margin-top: 1rem;
+	color: #9c2c13;
+}
+
+form {
+	margin: 0 1rem;
+	font-family: "Oxygen", sans-serif;
+}
+
+.membershipForm fieldset {
+	 margin: 2rem 0;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    padding: .5rem 2%;
+}
+
+.membershipForm legend {
+    color: #445ba9;
+    padding: 0 .5rem;
+}
+
+.membershipForm label {
+	display: block;
+      font-size: .8rem;
+      color: purple;
+      padding-top: .2rem;
+}
+
+    input[type=text],
+    input[type=tel],
+    input[type=date],
+    input[type=email]
+  {
+      display: block;
+      margin: .1rem 0 1rem 0 ;
+      padding: .3rem;
+      border: 1px solid #999;
+      border-radius: 4px;
+      border-left-width: 5px;
+      border-left-color:#555;
+      font-size: 1rem;
+      color: #3D405B;
+      width: 250px;
+	}
+
+	.membershipForm  textarea {
+      display: block;
+      margin: .1rem 0 1rem 0 ;
+      padding: .3rem;
+      border: 1px solid #999;
+      border-radius: 4px;
+      border-left-width: 5px;
+      border-left-color:#555;
+      font-size: 1rem;
+      color: #3D405B;
+      width: 250px;
+	  height: 100px;
+	}
+
+	input:required {border-left-color: #d70000;}
+    input:focus {border-left-color: black; outline:none;}
+    input:required:valid{border-left-color: green;}
+
+	.membershipForm input[type="radio"]{
+		 	margin: .3rem;		
+}
+
+	.membershipForm input[type=submit] {
+        border: none;
+		background-image: linear-gradient(#9c2c13, #6f200e);
+		color: #fff;
+		border-radius: 6px;
+		padding: .8rem;
+		width: 96%;
+		max-width: 400px;
+		margin: -1rem 2% 2rem 2%;
+		box-shadow: 1px 1px 4px #999;
+    }
+
+	.membershipForm .organizationalTitleHint {
+		font-size: 1em;
+	}
+
+	  input:-webkit-autofill{
+    -webkit-text-fill-color: #3D405B;
+  }
+
+/* START OF THANK YOU PAGE STYLING*/
+#thankyouh2 {
+	text-align: center;
+	color: #9c2c13;
+}
+
+#thankyouParagraph {
+	font-family: "Oxygen", sans-serif;
+	text-align: left;
+	padding: 1rem;
+	line-height: 1.5;
+}
+/* END OF THANK YOU PAGE STYLING*/
+
+  /*END OF FORM STYLING*/
 
 
-/* End of Main Styling */ 
+
+/* END OF JOIN PAGE STYLING*/
+
+/* END OD MAIN STYLING */ 
 
 
-/* Start of Footer Styling */
+
+
+/* START OF FOOTER STYLING */
 footer {
     background-color: var(--tertiary-color);
 	padding: 1rem;
@@ -617,4 +729,4 @@ p[title="Organization Name"] {
 	margin: 1rem;
 }
 
-/* End of Footer Styling */
+/* END OF FOOTER STYLING */

@@ -40,8 +40,7 @@
 
     <!-- JavaScripts -->
     <script src="scripts/navigation.js" defer></script>
-    <!-- <script src="scripts/images.js" defer></script> -->
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/form.js"></script>
     <script src="scripts/dates.js" defer></script>
 </head>
 <body>
@@ -49,7 +48,8 @@
         <h1>Freetown<p>Chamber of Commerce</p></h1>
         <picture class="logo-container">
         <img
-            src="images/freetown-chamber-logo-60.webp" alt="Freetown Chamber of Commerce Logo" width="58" height="58" loading="lazy">  
+            src="images/freetown-chamber-logo-60.webp" alt="Freetown Chamber of Commerce Logo" width="58" height="58" loading="lazy">
+         
         </picture>
 
         <!-- START OF MENU-1 -->
@@ -78,18 +78,13 @@
 
         <!-- END OF MENU-2 -->
     </header>
-   <main>
-        <!-- Buttons to filter businesses -->
-        <div class="filterButtons">
-            <button id="grid">⏹️Grid</button>
-            <button id="list">📄List</button>
-        </div>
-        
-            <!-- div to display members -->
-        <article class = "grid">
 
-        </article>
-</main>
+    <main>
+         <h2 id="thankyouh2">Thank you for joining us!</h2>
+         <p id="thankyouParagraph">Welcome to our community! We appreciate your interest in our membership program.  We will get back to you within a week with a response. Below is the information you provided:</p>
+         <div id="results"></div>
+    </main>
+
     <footer>
         <div class="chamberInfo">
             <p title="Organization Name">Freetown Chamber of Commerce</p>
