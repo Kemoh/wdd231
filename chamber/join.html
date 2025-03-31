@@ -40,7 +40,7 @@
 
     <!-- JavaScripts -->
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/form.js"></script>
+    <script src="scripts/form.js" type="module" defer></script>
     <script src="scripts/dates.js" defer></script>
 </head>
 <body>
@@ -98,12 +98,12 @@
 
                 <label>Business/Organization Name<input type="text" name="Business Name"  autocomplete="organization" title="Your Organization's Name'" ></label>
 
-                <label> Business/Organization Description<textarea name="Description" title="Your Organization's Description"></textarea></label>
+                <label> Business/Organization Description<textarea name="Business Description" title="Your Organization's Description"></textarea></label>
             </fieldset>
 
             <fieldset>
                 <legend>Membership Levels</legend>
-                 <label>Non Profit (No Fee)<input type="radio" name="Membership Level" value="NP" required></label>
+                 <label>Non Profit (No Fee)<input type="radio" name="Membership Level" value="Non Profit" required></label>
                 <label>Bronze<input type="radio" name="Membership Level" value="Bronze"></label>
                 <label>Silver<input type="radio" name="Membership Level" value="Silver"></label>
                 <label>Gold<input type="radio" name="Membership Level" value="Gold"></label>
@@ -117,8 +117,24 @@
 </form>
   <!-- End Membership Application form -->
 
-  
-        
+  <!-- Start of Membership Level Cards -->
+         </div>
+            <div id="membershipCards">
+
+            </div>
+
+            <!-- One single dialog for all temples -->
+            
+            <dialog id="course-details">
+            <div>
+                <h2>Sample Title</h2>
+                <button>X</button>
+            </div>
+            <p></p>
+            </dialog>
+
+  <!-- End of Membership Level Cards -->
+
     </main>
 
     <footer>
