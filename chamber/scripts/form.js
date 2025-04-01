@@ -1,16 +1,17 @@
-// Get the DOM element for the date timestamp
-document.addEventListener('DOMContentLoaded', function () {
-    // Add timestamp on page load
-    document.getElementById('#timestamp').value = new Date().toISOString();
-    console.log(timestamp);
-})
+document.addEventListener('DOMContentLoaded', function() {
+    const timestampInput = document.getElementById('#timestampInput');
+    if (timestampInput) {
+        timestampInput.value = Date.now();
+    }
+});
+
 
 // Get the DOM div element for showing the results of the form inputs
-const getString = window.location.search;
-console.log(getString);
+// const getString = window.location.search;
+// console.log(getString);
 
 const myInfo = new URLSearchParams(window.location.search);
-//console.log(myInfo);
+// console.log(myInfo);
 
 // console.log(myInfo.get('firstName'));
 // console.log(myInfo.get('lastName'));
@@ -20,6 +21,7 @@ const myInfo = new URLSearchParams(window.location.search);
 // console.log(myInfo.get('Business Name'));
 // console.log(myInfo.get('Business Description'));
 // console.log(myInfo.get('Membership Level'));
+// console.log(myInfo.get('timestamp'));
 
 
 document.querySelector("#result").innerHTML = `
@@ -33,5 +35,3 @@ document.querySelector("#result").innerHTML = `
 <p>Your membership level selected is: ${myInfo.get('Membership Level')}</P>
 <p>The date and time that the form was uploaded is: ${myInfo.get('timestamp')}</P>
 `
-
-

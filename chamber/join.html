@@ -40,8 +40,10 @@
 
     <!-- JavaScripts -->
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/form.js" type="module" defer></script>
+    <script src="scripts/membership.js" type="module" defer></script>
     <script src="scripts/dates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/join.js" type="module" defer></script>
 </head>
 <body>
     <header>
@@ -80,10 +82,11 @@
     </header>
 
     <main>
+        <div class="mainDiv">
         <h2>Join</h2>
         <!-- Start Membership application form -->
           <form method="GET" action="thankyou.html" class="membershipForm">
-            <h3 id="memberFormh3">Membership Application Form</h3>
+            <h3>Membership Application Form</h3>
             <fieldset>
                 <legend>Applicant Information</legend>
                  <label>First Name<input type="text" name="firstName" required autocomplete="given-name" title="Your First Name"></label>
@@ -110,28 +113,31 @@
             </fieldset>
       
         <!-- Hidden timestamp field -->
-        <input type="hidden" id="timestamp" name="timestamp">
+        <input type="hidden" id="timestampInput" name="timestamp">
 
         <!-- Submit Button -->
         <input type="submit" value="Create My Profile">
 </form>
   <!-- End Membership Application form -->
-
+   
   <!-- Start of Membership Level Cards -->
-         </div>
-            <div id="membershipCards">
+         <div class="memberLevel">
+            <h4>Membership Levels</h4>
+            <div id="show-levels">
 
             </div>
 
             <!-- One single dialog for all temples -->
             
-            <dialog id="course-details">
+            <dialog id="level-details">
             <div>
                 <h2>Sample Title</h2>
                 <button>X</button>
             </div>
             <p></p>
             </dialog>
+         </div>
+        </div>
 
   <!-- End of Membership Level Cards -->
 
