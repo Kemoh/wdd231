@@ -1,0 +1,52 @@
+/* Psedu-selectors */
+.root{
+    --primary-color: #005C66;
+    --secondar-color: purple;
+    --tertiary-color: darkblue;
+    --accent-color:orange;
+    --accent-color-2: lightgray;
+}
+
+/* select all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* reset the body element */
+body {
+	margin: 0 auto;
+}
+
+
+header, footer {
+	width: 100%;
+	margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, h7, h8 {
+	font-family: "Roboto", Arial;
+}
+
+h1 {
+    text-align: center;
+}
+
+section, footer {
+    margin: 1rem;
+}
+
+section ul li {
+    margin: 1rem;
+    font-size: 1.1em;
+    font-family: "Oxygen", sans-serif;
+    line-height: 1.5;
+}
+
+ section p, footer {
+    padding: .5rem;
+    font-family: "Oxygen", sans-serif;
+    line-height: 1.5;
+    font-size: 1.2em;
+}
