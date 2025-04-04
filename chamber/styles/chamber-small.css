@@ -579,7 +579,7 @@ h2 {
 /* START OF JOIN PAGE STYLING*/
 
 /*START OF FORM STYLING*/
-#memberFormh3 {
+h3 {
 	text-align: center;
 	margin-top: 1rem;
 	color: #9c2c13;
@@ -588,6 +588,7 @@ h2 {
 form {
 	margin: 0 1rem;
 	font-family: "Oxygen", sans-serif;
+
 }
 
 .membershipForm fieldset {
@@ -702,6 +703,92 @@ form {
 
   /*END OF FORM STYLING*/
 
+  /* START OF MEMBERSHIP LEVEL STYLING*/
+
+/* Start of Dialog Styling*/
+#level-details {
+	border: 3px solid rgba(0, 0, 0, 0.5);
+	margin: auto;
+}
+
+#level-details div {
+	display: grid;
+    grid-template-columns: auto 44px;
+    background-color: #ddd;
+    padding: .5rem;
+    border-bottom: #aaa 1px solid;	
+}
+
+#level-details h2 {
+	margin: 0;
+    color: #275690;
+	
+}
+
+#level-details button {
+	position: absolute;
+	top: 23px;
+	right: 23px;
+	padding: .5rem 1rem;
+	border: 1px solid rgb( 0, 0, 0 / 0.1);
+}
+
+#level-details p {
+	padding: 10px;
+    color: #375170;
+	font-family: "Oxygen", sans-serif;
+}
+
+::backdrop {
+	background-color: rgba(255, 255, 255, 0.75);
+}
+
+.levelSectionStyle {
+	padding: 2rem;
+	margin-bottom: 1rem;
+	box-shadow: 0 0 5px #4dd0e1;
+	border-radius: 0 20px 0 20px;
+	text-align: center;
+	background-color: var(--accent-color-6);
+	border: 1px solid rgba(55, 61, 63, 0.1);
+	box-shadow: 0 0 10px #bed;
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+}
+
+#show-levels {
+	margin: 1rem ;
+	padding-bottom: 1rem;
+}
+
+.memberLevel h4 {
+	text-align: center;
+	margin-top: 1rem;
+	color: #9c2c13;
+	font-size: 1.3em;
+}
+
+.levelTypeStyle {
+	font-size: .9em;
+	padding-bottom: .6rem;
+}
+
+.levelLinkStyle a {
+	text-decoration: none;
+	padding: .2rem;
+	background-color: darkcyan;
+	border: 1px solid rgba(55, 61, 63, 0.1);
+	box-shadow: 0 0 10px #bed;
+	text-align: center;
+	color: white;
+	
+}
+
+
+/* End of Dialog Styling*/
+
+
+  /* END OF MEMBERSHIP LEVEL STYLING*/
 
 
 /* END OF JOIN PAGE STYLING*/
