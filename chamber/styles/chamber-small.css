@@ -784,14 +784,67 @@ form {
 	
 }
 
-
 /* End of Dialog Styling*/
 
-
-  /* END OF MEMBERSHIP LEVEL STYLING*/
-
+/* END OF MEMBERSHIP LEVEL STYLING*/
 
 /* END OF JOIN PAGE STYLING*/
+
+/* #showPlaces {
+	text-align: center;
+	background-color: var(--accent-color-3);
+} */
+
+
+#showPlaces div {
+	background-color: var(--accent-color-1);
+	margin: 1rem 8px;
+	border: 1px solid #999;
+	border-radius: 8px;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+
+	/* Use of grid-template-areas */
+	display: grid;
+	grid-template-areas: 
+	"name"
+	"photograph"
+	"description"
+	"location";
+}
+
+#showPlaces div h2 {
+	padding: 1rem 0 2rem 1rem;
+	grid-area: name;
+}
+
+
+#showPlaces div img { 
+	width: 100%; 
+	grid-area: photograph;
+	}
+
+#showPlaces div  p {
+	padding: 1rem 10px;
+	grid-area: description;
+	font-family: "Oxygen", sans-serif;
+}
+
+#showPlaces div address {
+margin: 1rem 10px;
+grid-area: location;
+}
+
+
+
+
+
+
+
+/* STYLING OF DISCOVERY PAGE */
+
+
+/* END OF DISCOVERY PAGE */
 
 /* END OD MAIN STYLING */ 
 
