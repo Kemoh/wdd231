@@ -2,19 +2,23 @@
 
     #showPlaces div {
 
-	grid-template-areas: 
-	"photograph name"
-    "photograph description"
-    "photograph location";
+        grid-template-areas: 
+        "photograph name"
+        "photograph location"
+        "photograph description"
+        "photograph button";
 }
 
-#showPlaces div img { 
-	width: 300px;
+    #showPlaces div figure { 
+	    width: 300px;
 	}
 
-#showPlaces {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+#showPlaces div h2 {
+	margin-bottom: -1rem; 
 }
 
+#showPlaces div figcaption {
+    margin-top: -.5rem;
+    }
+    
 }

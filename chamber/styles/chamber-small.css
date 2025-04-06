@@ -342,7 +342,6 @@ main {
 	font-family: Arial, Helvetica, sans-serif;
 	top: 33rem;
 	text-align: center;
-	width: 320px;
 	background-color: rgba(136, 0, 0, 0.5);;
 	color: var(--accent-color-3);
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -790,11 +789,6 @@ form {
 
 /* END OF JOIN PAGE STYLING*/
 
-/* #showPlaces {
-	text-align: center;
-	background-color: var(--accent-color-3);
-} */
-
 
 #showPlaces div {
 	background-color: var(--accent-color-1);
@@ -803,6 +797,8 @@ form {
 	border-radius: 8px;
 	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 	overflow: hidden;
+	padding-bottom: 1rem;
+	font-family: "Oxygen", sans-serif;
 
 	/* Use of grid-template-areas */
 	display: grid;
@@ -810,35 +806,41 @@ form {
 	"name"
 	"photograph"
 	"description"
-	"location";
+	"button";
 }
 
 #showPlaces div h2 {
-	padding: 1rem 0 2rem 1rem;
+	margin: 1px 10px;  
 	grid-area: name;
 }
 
-
-#showPlaces div img { 
+#showPlaces div figure { 
 	width: 100%; 
 	grid-area: photograph;
 	}
 
 #showPlaces div  p {
-	padding: 1rem 10px;
+	padding: 1.2rem;
 	grid-area: description;
-	font-family: "Oxygen", sans-serif;
+	line-height: 1.5;
+	font-size: 18px;
 }
 
-#showPlaces div address {
-margin: 1rem 10px;
+#showPlaces div figcaption {
+padding: 1rem;
+font-size: 1.1em;
 grid-area: location;
 }
 
-
-
-
-
+#showPlaces div button {
+	width: 1px 1px;
+	padding:  10px;
+	margin: 0 auto;
+	font-size: 1.2em;
+	border-radius: 10px;
+	border: 1px solid #999;
+	grid-area: button;
+}
 
 
 /* STYLING OF DISCOVERY PAGE */
@@ -886,5 +888,12 @@ p[title="Organization Name"] {
     height: auto;
 	margin: 1rem;
 }
+
+	/* Visitor Message Styling */
+	#visitor-message {
+	color: var(--accent-color-3);
+	text-align: center;
+}
+
 
 /* END OF FOOTER STYLING */
