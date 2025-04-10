@@ -43,31 +43,38 @@ header {
     height: auto;
 	box-shadow: 0 0 10px #DEFFF2;
 	border-radius: 10px 10px;
-	margin: 1rem 2rem;
+	margin: 1rem;
 }
 
 h1 {
 	color: #005C66;
 	position: absolute;
 	font-size: 1.5em;
-	right: 45%;
-	bottom: 87%;
+	right: 39%;
+	bottom: 90%;
 }
 
-header p {
-	font-size: 75%;
+h2 {
+	text-align: center;
+	color: #005C66;
+}
+
+
+
+ {
+	bottom: 90%;
 }
 
 
 #menu {
-	font-size: 2rem;
+	font-size: 2.5em;
 	background: none;
 	color: #005C66;
     border: none;
 	text-align: right;
 	padding: .25rem 2vw;
 	position: absolute;
-	top: .5rem;
+	top: .7rem;
 	right: .5rem;
 	font-weight: bolder;	
 }
@@ -86,6 +93,7 @@ header p {
 	flex-direction: column;
 	justify-content: space-around;
 	list-style: none;
+	margin-bottom: 1rem;
 	/* box-shadow: 0 0 10px #DEFFF2; */
 	/* background-color: #005C66; */
 }
@@ -97,8 +105,9 @@ header p {
 	text-decoration: none;
 	color: #005C66;
 	font-family: "Roboto", sans-serif;
-	font-size: 1em;
+	font-size: 1.2em;
 	padding: .75rem 4vw;
+
 }
 
 .navigation a:hover {
