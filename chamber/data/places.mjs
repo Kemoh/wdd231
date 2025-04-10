@@ -25,13 +25,13 @@ export const places = [
   },
   {
     "name": "Aberdeen Beach",
-    "description": "Located north of Lumley Beach, offering a slightly quieter atmosphere with upscale hotels and restaurants.",
+    "description": "Located north of Lumley Beach, offering a slightly quieter atmosphere with upscale hotels and restaurants. ",
     "address": "Aberdeen, Freetown, Sierra Leone",
     "photo_link": "aberdeen-beach.webp"
   },
   {
     "name": "Tacugama Chimpanzee Sanctuary",
-    "description": "A sanctuary dedicated to rescuing, rehabilitating, and releasing orphaned and rescued chimpanzees. Take a guided tour to learn about their conservation efforts and observe these incredible animals in a semi-wild environment.",
+    "description": "A sanctuary dedicated to rescuing, rehabilitating, and releasing orphaned and rescued chimpanzees. ",
     "address": "Hill Cot Road, Freetown, Sierra Leone (approximately 40 minutes drive from the city center)",
     "photo_link": "Tacugama-Chimps-Santuary.webp"
   },

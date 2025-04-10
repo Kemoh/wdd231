@@ -142,10 +142,19 @@ main {
 }
 
 
+/* Discovery Page Styling */
+#showPlaces {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} 
 
+#showPlaces div figure, #showPlaces div figure img  { 
+	width: 200px;
+}
 
-
-
+#showPlaces div figcaption {
+	font-size: 16px;
+    }
 
 /* End of Join Page Styling */
 
@@ -170,7 +179,8 @@ footer {
 .copyright {
 	padding-right: 2rem;
 }
- 
+
+
 }
 
 /* End of Footer Styling */
