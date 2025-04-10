@@ -1,6 +1,25 @@
 // Export this as a function to use in other files
 export function displayFooterInfo() {
-    // ************* Start of Footer ****************** //
+    // ******************Start of Navigation****************//
+    // Select the hamburger button by using it's id and it's related ul for output.
+        const hamButton1 = document.querySelector('#menu');
+        const navigation1 = document.querySelector('#animateme');
+        
+        //Add a click eventlistner to the hamburger button and a callback function that toggles the list element's list of classes.
+        hamButton1.addEventListener('click', () => {
+            navigation1.classList.toggle('open');
+            hamButton1.classList.toggle('open');
+        });
+    //******************* End of Navigation****************//
+
+
+
+
+
+
+
+
+    // ************* Start of Footer *********************** //
 // Select the DOM elements for output
 const currentYear = document.querySelector(".copyYear");
 const lastModified = document.querySelector(".lastModified");
@@ -31,7 +50,6 @@ currentYear.innerHTML = `<span class="copyYear">©${today.getFullYear()} Freetow
 // Populate the "lastModified" span with the formatted date
 lastModified.innerHTML = `<span class="modifiedDate">Last Modification: ${formattedDate} ${formattedTime}</span>`;
 
-   
 }
 
 

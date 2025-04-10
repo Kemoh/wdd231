@@ -7,7 +7,7 @@
     <meta name="author" content="Express Catering Services">
     <meta name="description"
         content="Express Catering Services offers detailed menus, customizable event packages, and an easy booking system for clients. The website will feature secure payment processing and an inquiry section to streamline the catering ordering process. The website will make it easier for clients to browse catering options, request quotes, and book services. It will also act as a marketing tool, showcasing the service’s offerings and building trust, ultimately driving growth and improving customer engagement.">
- <title>EXPRESS Catering Services - Website Plan</title>
+ <title>Home: EXPRESS Catering Services </title>
 
     <!-- Open Graphs for Facebook -->
     <meta property="og:title" content="Express Catreing Services">
@@ -36,79 +36,75 @@
     <!-- STYLE SHEETS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/express-small.css">
+    <link rel="stylesheet" href="styles/express-medium.css">
     <link rel="stylesheet" href="styles/express-large.css">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon-express-catering-services.ico">
 
     <!-- JavaScripts -->
+    <script src="scripts/express.js" type="module" defer></script>
    
 </head>
 <body>
-    <header>
-        <h1>EXPRESS Catering Services </h1>
-    </header>
-
-    <main>
-        <section>
-            <h2>Project Description</h2>
-            <p>This project will create a website for EXPRESS Catering Services, offering detailed menus, customizable event packages, and an easy booking system for clients. The site will feature secure payment processing and an inquiry section to streamline the catering ordering process.</p>
-        </section>
-    
-        <section>
-            <h2>Project Reason</h2>
-            <p>The website will enhance the business visibility and provide a convenient way for clients to explore options and book services online, expanding the business reach and attracting more customers.</p>
-        </section>
-    
-        <section>
-            <h2>Project Purpose</h2>
-            <p>The website will make it easier for clients to browse catering options, request quotes, and book services. It will also act as a marketing tool, showcasing the service offerings and building trust, ultimately driving growth and improving customer engagement.</p>
-        </section>
-    
-        <section>
-            <h2>Website Structure</h2>
-            <p>The website will have a total of three pages:</p>
-            <ul>
-                <li><strong>Home Page:</strong> Overview of the catering service, highlights of featured offerings, and a call-to-action for booking.</li>
-                <li><strong>Menu & Packages Page:</strong> Detailed listing of menu items and customizable event packages.</li>
-                <li><strong>Contact & Booking Page:</strong> Inquiry form, booking options, and secure payment processing details.</li>
+      <header>
+        <!-- Business name  and Logo-->
+        <picture class="logo-container">
+        <img
+            src="images/express-catering-service-logo.webp" alt="Express Catering Services Logo" width="60" height="60" loading="lazy">
+        </picture>
+        <!-- Start of Menu -->
+        <button type="button" id="menu"></button>
+        <nav id="animateme">
+            <ul class="navigation">
+                <div class="chef">
+                <li><a href="index.html" title="Home" class="active">Home</a></li>
+                <li><a href="menu.html" title="Discover">Menu</a></li>
+                <li><a href="contact.html" title="Business Directory">Contact Us</a></li>
+                </div>
             </ul>
-        </section>
+        </nav>
+        <div>
 
-        <section>
-        <h2>Color Schema</h2>
-        <p>The website will use the following colors:</p>
-        <ul>
-            <li><strong>#d35400 (Orange):</strong> Used for headings and accent elements to add warmth and energy.</li>
-            <li><strong>#2c3e50 (Dark Blue):</strong> Used for the header and navigation bar to provide contrast and elegance.</li>
-            <li><strong>#f8f8f8 (Light Gray):</strong> Used for the background to ensure readability and a clean look.</li>
-        </ul>
-    </section>
-    
-    <section>
-        <h2>Typography</h2>
-        <p>The website will use the following fonts:</p>
-        <ul>
-            <li><strong>Oxygen, sans-serif:</strong> Used for body text to ensure readability and simplicity.</li>
-            <li><strong>Roboto, serif:</strong> Used for headings to create a formal and elegant feel.</li>
-        </ul>
-    </section>
-    
-    <section>
-        <h2>Wireframe</h2>
-        <p>The wireframe will consist of two layouts:</p>
-        <ul>
-            <li><strong>Mobile View:</strong> A simplified, stacked layout with easy navigation.</li>
-            <li><strong>Desktop View:</strong> A wider, structured layout with sections for featured offerings, testimonials, and an easy-to-find booking button.</li>
-        </ul>
-        <p>(Wireframe sketches will be provided separately.)</p>
-    </section>
+        </div>
+        <!-- End of Menu -->
+    </header>
+    <main>
 
-
-    
+        
+        
     </main>
+    
 
-    <footer>
-        <p><strong> EXPRESS Catering Services Website Plan</strong></p>
-        <p><strong> Social Media Handles</strong></p>
-    </footer>  
+
+     <footer>
+        <div class="chamberInfo">
+            <p title="Organization Name">EXPRESS Catering Services</p>
+            <p title="Adresss">No. 25 Siaka Steven Street, Freetown, Sierra Leone.</p>
+            <a href="https://sites.google.com/"></a>
+            <p title="Website">www.expresscateringservices.com</p>
+            <p title="Phone Number">(232) 78-411-575</p>
+        </div>
+        
+        <div class="socialMediaLinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="facebook-image" width="72" height="75" loading="lazy">
+            </a>
+            <a href="https://x.com">
+                <img src="images/x.svg" alt="x-image" width="72" height="75" loading="lazy">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="instagram-image" width="72" height="75" loading="lazy">
+            </a>
+        </div>
+    
+        <div class="copyright">
+            <p title="CourseTitle">WDD231 Class Project</p>
+            <p title="studentName">Umaru Bayoh</p>
+         
+            <p title="copyRightYear"><span class="copyYear"></span>
+            </p>
+            <p class="lastModifiedDate"><span class="lastModified"></span>
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
