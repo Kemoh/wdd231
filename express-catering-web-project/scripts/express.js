@@ -5,3 +5,5 @@ import { displayFooterInfo } from './bundle.js';
 displayFooterInfo();
 
 
+import { dishes } from "../data/dishes.mjs";
+console.log(dishes);

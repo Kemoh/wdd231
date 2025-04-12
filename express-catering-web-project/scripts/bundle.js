@@ -13,12 +13,6 @@ export function displayFooterInfo() {
     //******************* End of Navigation****************//
 
 
-
-
-
-
-
-
     // ************* Start of Footer *********************** //
 // Select the DOM elements for output
 const currentYear = document.querySelector(".copyYear");
