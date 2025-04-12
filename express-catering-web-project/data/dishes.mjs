@@ -3,52 +3,52 @@
     {
       "name": "Cassava Leaves",
       "description": "A popular dish made by simmering cassava leaves in palm oil with meat, fish, and spices. Often served with rice.",
-      "image_url": "https://i.imgur.com/SzgjqMt.jpg"
+      "picuture-link": "express-casavaleaf-dish.webp"
     },
     {
       "name": "Jollof Rice",
       "description": "A flavorful one-pot dish of rice cooked in a rich tomato and pepper sauce, often with chicken, beef, or fish.",
-      "image_url": "https://i.imgur.com/YoHYITv.jpg"
+      "picuture-link": "express-jollof-rice.webp"
     },
     {
-      "name": "Groundnut Stew (Peanut Soup)",
+      "name": "Groundnut Soup",
       "description": "A thick, savory stew made from groundnuts (peanuts), vegetables, and meat, usually served over rice.",
-      "image_url": "https://i.imgur.com/oST1bbJ.jpg"
+      "picuture-link": "express-groundnut-soup.webp"
     },
     {
       "name": "Fufu and Sawa Soup",
       "description": "Fufu is a starchy side made from cassava or plantain, paired with a slimy, spicy sawa-sawa-based soup.",
-      "image_url": "https://i.imgur.com/Dgh5Ycg.jpg"
+      "picuture-link": "express-fofooandsawa-dish.webp"
     },
     {
-      "name": "Plasas",
+      "name": "Krain Krain",
       "description": "A green vegetable sauce made from potato leaves or spinach, cooked with palm oil, spices, and assorted meats.",
-      "image_url": "https://i.imgur.com/0y82UMu.jpg"
+      "picuture-link": "express-krain-krain.webp"
     }, 
     {
       "name": "Paella",
       "description": "A traditional Spanish rice dish made with saffron, seafood, chicken, and vegetables.",
-      "image_url": "https://i.imgur.com/Cv6eMYK.jpg"
+      "picuture-link": "express-eurodish-paella.webp"
     },
     {
       "name": "Spaghetti Carbonara",
       "description": "A creamy pasta dish made with eggs, cheese (Pecorino Romano), pancetta, and black pepper.",
-      "image_url": "https://i.imgur.com/n2urUlT.jpg"
+      "picuture-link": "express-eurodish-spaghetti carbonara.webp"
     },
     {
       "name": "Coq au Vin",
       "description": "Chicken braised in red wine with mushrooms, onions, and bacon—a French countryside classic.",
-      "image_url": "https://i.imgur.com/JZr8Ve7.jpg"
+      "picuture-link": "express-eurodish-coq au vin.webp"
     },
     {
       "name": "Bratwurst with Sauerkraut",
       "description": "Grilled German sausages served with tangy fermented cabbage and mustard.",
-      "image_url": "https://i.imgur.com/JepjB7H.jpg"
+      "picuture-link": "express-eurodish-bratwurst with sauerkraut.webp"
     },
     {
       "name": "Fish and Chips",
       "description": "Crispy battered fish served with thick-cut fries and often mushy peas or tartar sauce.",
-      "image_url": "https://i.imgur.com/JXDQKR0.jpg"
+      "picuture-link": "express-eurodish-fish and chips.webp"
     }
   ]
 
