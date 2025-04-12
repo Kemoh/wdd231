@@ -1,5 +1,5 @@
 // Export this as a function to use in other files
-export function displayFooterInfo() {
+function displayFooterInfo() {
     // ************* Start of Footer ****************** //
 // Select the DOM elements for output
 const currentYear = document.querySelector(".copyYear");
@@ -34,4 +34,5 @@ lastModified.innerHTML = `<span class="modifiedDate">Last Modification: ${format
    
 }
 
-
+// Call the function to display the footer information
+displayFooterInfo();

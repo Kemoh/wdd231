@@ -201,8 +201,49 @@ h2 {
 	text-decoration: none;
 }
 
+/* Start of Spotlight Section */
+.sportlightDishes {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	padding: .5rem;
+}
+
+.sportlightDishes section {
+	background-color: #DEFFF2;
+	border: 1px solid rgba(55, 61, 63, 0.1);
+	text-align: center;
+	padding: 1rem;
+}
+
+.dishesGrid {
+	padding: 1rem;
+}
+
+.dishesGrid h3 {
+	font-size: 1.3em;
+	text-align: center;
+	background-color:  var(--tertiary-color);
+	color: var(--accent-color-3);
+	padding: .5rem;
+}
+
+.sportlightDishes h4 {
+	padding: .3rem;
+}
+
+.sportlightDishes p {
+	padding: .2rem;
+}
+
+.sportlightDishes .label {
+	font-weight: bold;
+}
 
 
+/* End of Spotlight Section */
 
 /********************* End of Main *************************/
 
