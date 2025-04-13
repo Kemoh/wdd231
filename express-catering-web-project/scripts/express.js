@@ -8,6 +8,5 @@ displayFooterInfo();
 // console.log(dishes);
 
 import { displayDishes } from './bundle.js';
-
 displayDishes();
-console.log(displayDishes);
+// console.log(displayDishes);

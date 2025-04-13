@@ -65,7 +65,7 @@ async function getDishes() {
         // Call displaySpotlightDishes after the data is fetched
         displaySpotlightDishes(data.dishes);
     } catch (error) {
-        console.error('Error fetching member data:', error);
+        console.error('Error fetching dish data:', error);
     }
 }
 
@@ -74,56 +74,37 @@ const displaySpotlightDishes = (dishes) => {
 // Select the html element
 const sportlightDishes = document.querySelector(".spotlightDishes");
 
-// Filter the dishes to only include 'gold' or 'silver' membership levels
-const eligibleMembers = dishes.filter(member => member.membershiplevel === "Gold"  ||  member.membershiplevel === "Silver");
+// Filter the dishes to  include 'local' or 'european' dishes
+const menuDishes = dishes.filter(dish => dish.menu-type === "local"  ||  dish.menu-type === "european");
 
-// Randomly display 2 or 3 dishes from the eligible dishes
-const randomSpotlightMembers = getRandomMembers(eligibleMembers);
+// Randomly display 2 or 3 dishes from the menu
+//const randomSpotlightdishes = getRandomdishes(menuDishes);
 
 // Loop through the selected dishes and create cards
-randomSpotlightMembers.forEach(member => {
+randomSpotlightdishes.forEach(dish => {
     // Create the section element (card)
     let card = document.createElement("section");
 
-    // Create and populate the logo image
+    // Create and populate picture for the dish
     let img = document.createElement("img");
-    img.setAttribute("src", member.imageurl);
-    img.setAttribute("alt", member.name);
-    img.setAttribute("width", "84");
-    img.setAttribute("height", "84");
+    img.setAttribute("src", dish.picture-link);
+    img.setAttribute("alt", dish.name);
+    img.setAttribute("width", "300");
+    img.setAttribute("height", "200");
     img.setAttribute("loading", "lazy");
 
-    // Create and populate the company name heading
+    // Create and populate the  name of the dish
     let name = document.createElement("h4");
-    name.textContent = member.name;
+    name.textContent = dish.name;
 
-    // Create and populate the address paragraph
-    let address = document.createElement("p");
-    address.textContent = member.address;
-
-    // Create and populate the phone number 
-    // paragraph
-    let phone = document.createElement("p");
-    phone.textContent = `📞 ${member.phonenumber}`;
-
-    // Create and populate the website link anchor 
-    // tag
-    let website = document.createElement("a");
-    website.setAttribute("href", member.websiteurl);
-    website.textContent = "Visit Website";
-
-    // Create and populate the membership level 
-    // span
-    let membershiplevel = document.createElement("p");
-    membershiplevel.innerHTML = `<span class = "label">${member.membershiplevel} Member</span>`;
+    // Create and populate the description of the dish
+    let description = document.createElement("p");
+    description.textContent = dish.description;
 
     // Append all elements to the card
     card.appendChild(img);
     card.appendChild(name);
-    card.appendChild(address);
-    card.appendChild(phone);
-    card.appendChild(membershiplevel);
-    card.appendChild(website);
+    card.appendChild(description);
 
     // Append the card to the spotlight grid
     sportlightDishes.appendChild(card);
@@ -134,12 +115,12 @@ randomSpotlightMembers.forEach(member => {
 
 
 // Function tto randomly pick 2 or 3 dishes
-const getRandomMembers = (dishes) => {
+const getRandomdishes = (dishes) => {
     // Shuffle the dishes array
-    const ShuffledMembers = dishes.sort(() => 0.5 - Math.random());
+    const Shuffleddishs = dishes.sort(() => 0.5 - Math.random());
 
     // Return 2 or 3 dishes
-    return ShuffledMembers.slice(0, Math.floor(Math.random() * 2) + 2);
+    return Shuffleddishs.slice(0, Math.floor(Math.random() * 2) + 2);
 };
 
 // Run displaySpotlightDishes once the DOM content is 

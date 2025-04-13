@@ -3,8 +3,6 @@
 //  provided.
 const url = 'https://raw.githubusercontent.com/Kemoh/wdd231/main/chamber/data/members.json';
 
-
-
 // Use the async/await method to fetch the data
 async function getMembersData() {
     try {
