@@ -11,5 +11,3 @@ displayFooterInfo();
 import { displayDishes } from './bundle.js';
 displayDishes();
 
-
-

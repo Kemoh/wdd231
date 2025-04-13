@@ -108,6 +108,7 @@ export function displayDishes() {
                 img.setAttribute("width", "300");
                 img.setAttribute("height", "200");
                 img.setAttribute("loading", "lazy");
+        
 
                 const name = document.createElement("h4");
                 name.textContent = dish.name;
