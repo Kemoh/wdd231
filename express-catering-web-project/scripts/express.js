@@ -7,6 +7,10 @@ displayFooterInfo();
 // import { dishes } from "../data/dishes.mjs";
 // console.log(dishes);
 
+// main.js
 import { displayDishes } from './bundle.js';
-displayDishes();
-// console.log(displayDishes);
+
+document.addEventListener("DOMContentLoaded", () => {
+    displayDishes();
+});
+
