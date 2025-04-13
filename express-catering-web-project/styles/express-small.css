@@ -201,58 +201,47 @@ h2 {
 	text-decoration: none;
 }
 
-/* Start of Spotlight Section */
-
-/* .dishGrid {
-	padding: 1rem;
-} */
-
-/* .spotlightDishes {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	align-items: center;
-	justify-content: center;
-	gap: 1rem; */
-	/* padding: .5rem; */
-	/* margin: 1rem; 
-} */
-
-/* .spotlightDishes section {
-	text-align: center;
-	background-color:aqua;
-} */
-
-/* .dishGrid {
-	padding: 1rem;
-} */
-
-/* .dishGrid h3 {
-	font-size: 1.5em;
-	padding: .5rem 0;
-} */
-
-/* .spotlightDishes h4 {
-	padding: .3rem;
-} */
-
-/* .spotlightDishes p {
-	padding: .2rem;
-} */
-
-/* .spotlightDishes .label {
-	font-weight: bold;
-} */
-
-/* .spotlightDishes section img {
-	width: 90%;
-	height: auto;
-	margin-top: 1rem;
-} */
-
+/* Start of Spotlight Dishes */
 .spotlightDishes {
-    display: flex;
-    gap: 1rem;
-    transition: transform 0.5s ease;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.spotlightDishes section {
+	text-align: center;
+	/* background-color:aqua; */
+	margin: .5rem;
+	 flex: 1 1 100%;
+	box-shadow: 0 0 5px #aaa;
+	border: 1px solid rgba(136, 0, 0, 0.5);
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+
+.dishGrid h3 {
+	font-size: 1.5em;
+	margin: 3rem .5rem 0 .5rem;
+	color: #005C66;
+}
+
+.spotlightDishes h4 {
+	padding: .3rem;
+}
+
+.spotlightDishes p {
+	padding: .2rem;
+}
+
+.spotlightDishes .label {
+	font-weight: bold;
+}
+
+.spotlightDishes section img {
+	width: 100%;
+	height: auto;
 }
 
 .spotlightDishes.slide-in {
@@ -285,9 +274,22 @@ h2 {
     }
 }
 
+/* End of Spotlight Dishes */
 
+/* Start of About Us */
+summary {
+	margin: 1rem;
+	list-style: none;
+	font-family: "Oxygen", sans-serif;
+	color: #005C66;
+}
 
-/* End of Spotlight Section */
+summary h5 {
+	font-size: 1.5em;
+
+}
+
+/* End of About Us */
 
 /********************* End of Main *************************/
 

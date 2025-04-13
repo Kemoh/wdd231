@@ -50,7 +50,6 @@ lastModified.innerHTML = `<span class="modifiedDate">Last Modification: ${format
 
 // Start of spotlight-dishes
 export function displayDishes() {
-
     const url = 'https://raw.githubusercontent.com/Kemoh/wdd231/main/express-catering-web-project/data/dishes.json';
 
     let spotlightDishesContainer;
@@ -75,29 +74,48 @@ export function displayDishes() {
         const menuDishes = dishes.filter(d => d.menuType === "local" || d.menuType === "european");
         const shuffled = shuffleArray(menuDishes);
 
-        // Chunk into groups of 2-3
-        for (let i = 0; i < shuffled.length; i += 3) {
-            dishSets.push(shuffled.slice(i, i + 3));
+        chunkAndDisplay(shuffled); // Call here on first load
+
+        // Listen for screen resize and re-chunk
+        window.addEventListener("resize", () => {
+            dishSets = []; // Clear previous chunks
+            chunkAndDisplay(shuffled);
+        });
+    };
+
+    // ⬇️⬇️ PLACE THIS HERE ⬇️⬇️
+    const chunkAndDisplay = (dishes) => {
+        const screenWidth = window.innerWidth;
+
+        let itemsPerSet = 3;
+        if (screenWidth < 768) {
+            itemsPerSet = 1;
+        } else if (screenWidth < 1024) {
+            itemsPerSet = 2;
         }
 
-        // Show first set immediately
+        dishSets = [];
+        for (let i = 0; i < dishes.length; i += itemsPerSet) {
+            dishSets.push(dishes.slice(i, i + itemsPerSet));
+        }
+
+        currentIndex = 0;
         showSet(currentIndex);
 
-        // Auto slide every 6 seconds
-        setInterval(() => {
+        clearInterval(window.dishSliderInterval);
+        window.dishSliderInterval = setInterval(() => {
             currentIndex = (currentIndex + 1) % dishSets.length;
             showSet(currentIndex);
         }, 6000);
     };
+    // ⬆️⬆️ END OF chunkAndDisplay ⬆️⬆️
 
     const showSet = (index) => {
         const set = dishSets[index];
-
-        // Start slide-out
         spotlightDishesContainer.classList.add("slide-out");
 
         setTimeout(() => {
-            spotlightDishesContainer.innerHTML = ""; // Clear previous
+            spotlightDishesContainer.innerHTML = "";
 
             set.forEach(dish => {
                 const card = document.createElement("section");
@@ -108,7 +126,6 @@ export function displayDishes() {
                 img.setAttribute("width", "300");
                 img.setAttribute("height", "200");
                 img.setAttribute("loading", "lazy");
-        
 
                 const name = document.createElement("h4");
                 name.textContent = dish.name;
@@ -123,14 +140,11 @@ export function displayDishes() {
                 spotlightDishesContainer.appendChild(card);
             });
 
-            // End slide-out, trigger slide-in
             spotlightDishesContainer.classList.remove("slide-out");
             spotlightDishesContainer.classList.add("slide-in");
 
-            // Remove class after animation completes
             setTimeout(() => spotlightDishesContainer.classList.remove("slide-in"), 1000);
-
-        }, 500); // Delay to match slide-out animation
+        }, 500);
     };
 
     const shuffleArray = (array) => {
@@ -141,6 +155,7 @@ export function displayDishes() {
         getDishes();
     });
 }
+
 
 
 
