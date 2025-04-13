@@ -54,7 +54,7 @@ export function displayDishes(){
 // Declare a const variable named "url" that
 //  contains the URL string of the JSON resource
 //  provided.
-const url = 'https://raw.githubusercontent.com/Kemoh/wdd231/main/express-catering-web-project/data/dishes.mjs';
+const url = 'https://raw.githubusercontent.com/Kemoh/wdd231/main/express-catering-web-project/data/dishes.json';
 
 // Use the async/await method to fetch the data
 async function getDishes() {
@@ -62,25 +62,25 @@ async function getDishes() {
         const response = await fetch(url);
         const data = await response.json();
         console.log(data);
-        // Call displaySpotlight after the data is fetched
-        displaySpotlight(data.dishes);
+        // Call displaySpotlightDishes after the data is fetched
+        displaySpotlightDishes(data.dishes);
     } catch (error) {
         console.error('Error fetching member data:', error);
     }
 }
 
 // Create the display method
-const displaySpotlight = (members) => {
+const displaySpotlightDishes = (dishes) => {
 // Select the html element
-const sportlightDishes = document.querySelector(".sportlightDishes");
+const sportlightDishes = document.querySelector(".spotlightDishes");
 
-// Filter the members to only include 'gold' or 'silver' membership levels
-const eligibleMembers = members.filter(member => member.membershiplevel === "Gold"  ||  member.membershiplevel === "Silver");
+// Filter the dishes to only include 'gold' or 'silver' membership levels
+const eligibleMembers = dishes.filter(member => member.membershiplevel === "Gold"  ||  member.membershiplevel === "Silver");
 
-// Randomly display 2 or 3 members from the eligible members
+// Randomly display 2 or 3 dishes from the eligible dishes
 const randomSpotlightMembers = getRandomMembers(eligibleMembers);
 
-// Loop through the selected members and create cards
+// Loop through the selected dishes and create cards
 randomSpotlightMembers.forEach(member => {
     // Create the section element (card)
     let card = document.createElement("section");
@@ -133,19 +133,19 @@ randomSpotlightMembers.forEach(member => {
 };
 
 
-// Function tto randomly pick 2 or 3 members
-const getRandomMembers = (members) => {
-    // Shuffle the members array
-    const ShuffledMembers = members.sort(() => 0.5 - Math.random());
+// Function tto randomly pick 2 or 3 dishes
+const getRandomMembers = (dishes) => {
+    // Shuffle the dishes array
+    const ShuffledMembers = dishes.sort(() => 0.5 - Math.random());
 
-    // Return 2 or 3 members
+    // Return 2 or 3 dishes
     return ShuffledMembers.slice(0, Math.floor(Math.random() * 2) + 2);
 };
 
-// Run displaySpotlight once the DOM content is 
+// Run displaySpotlightDishes once the DOM content is 
 // loaded
 document.addEventListener("DOMContentLoaded", () => {
-    // Fetch and display spotlight members once 
+    // Fetch and display spotlight dishes once 
     // the page is loaded
     getDishes();
 });
