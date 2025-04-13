@@ -49,89 +49,61 @@ lastModified.innerHTML = `<span class="modifiedDate">Last Modification: ${format
 // Enf of Footer //
 
 // Start of spotlight-dishes
+export function displayDishes() {
+    const url = 'https://raw.githubusercontent.com/Kemoh/wdd231/main/express-catering-web-project/data/dishes.json';
 
-export function displayDishes(){
-// Declare a const variable named "url" that
-//  contains the URL string of the JSON resource
-//  provided.
-const url = 'https://raw.githubusercontent.com/Kemoh/wdd231/main/express-catering-web-project/data/dishes.json';
-
-// Use the async/await method to fetch the data
-async function getDishes() {
-    try {
-        const response = await fetch(url);
-        const data = await response.json();
-        console.log(data);
-        // Call displaySpotlightDishes after the data is fetched
-        displaySpotlightDishes(data.dishes);
-    } catch (error) {
-        console.error('Error fetching dish data:', error);
+    async function getDishes() {
+        try {
+            const response = await fetch(url);
+            const data = await response.json();
+               console.log(data);
+            displaySpotlightDishes(data.dishes);
+        } catch (error) {
+            console.error('Error fetching dish data:', error);
+        }
     }
+
+    const displaySpotlightDishes = (dishes) => {
+        const spotlightDishes = document.querySelector(".spotlightDishes");
+        const menuDishes = dishes.filter(dish => dish.menuType === "local" || dish.menuType === "european");
+
+        const randomSpotlightdishes = getRandomdishes(menuDishes); 
+
+        randomSpotlightdishes.forEach(dish => {
+            let card = document.createElement("section");
+
+            let img = document.createElement("img");
+            img.setAttribute("src", dish.picutureLink);
+            img.setAttribute("alt", dish.name);
+            img.setAttribute("width", "300");
+            img.setAttribute("height", "200");
+            img.setAttribute("loading", "lazy");
+
+            let name = document.createElement("h4");
+            name.textContent = dish.name;
+
+            let description = document.createElement("p");
+            description.textContent = dish.description;
+
+            card.appendChild(img);
+            card.appendChild(name);
+            card.appendChild(description);
+
+            spotlightDishes.appendChild(card);
+        });
+    };
+
+    const getRandomdishes = (dishes) => {
+        const shuffled = dishes.sort(() => 0.5 - Math.random());
+        return shuffled.slice(0, Math.floor(Math.random() * 2) + 2);
+    };
+
+    // Run only after DOM is ready
+    document.addEventListener("DOMContentLoaded", () => {
+        getDishes();
+    });
 }
 
-// Create the display method
-const displaySpotlightDishes = (dishes) => {
-// Select the html element
-const sportlightDishes = document.querySelector(".spotlightDishes");
-
-// Filter the dishes to  include 'local' or 'european' dishes
-const menuDishes = dishes.filter(dish => dish.menu-type === "local"  ||  dish.menu-type === "european");
-
-// Randomly display 2 or 3 dishes from the menu
-//const randomSpotlightdishes = getRandomdishes(menuDishes);
-
-// Loop through the selected dishes and create cards
-randomSpotlightdishes.forEach(dish => {
-    // Create the section element (card)
-    let card = document.createElement("section");
-
-    // Create and populate picture for the dish
-    let img = document.createElement("img");
-    img.setAttribute("src", dish.picture-link);
-    img.setAttribute("alt", dish.name);
-    img.setAttribute("width", "300");
-    img.setAttribute("height", "200");
-    img.setAttribute("loading", "lazy");
-
-    // Create and populate the  name of the dish
-    let name = document.createElement("h4");
-    name.textContent = dish.name;
-
-    // Create and populate the description of the dish
-    let description = document.createElement("p");
-    description.textContent = dish.description;
-
-    // Append all elements to the card
-    card.appendChild(img);
-    card.appendChild(name);
-    card.appendChild(description);
-
-    // Append the card to the spotlight grid
-    sportlightDishes.appendChild(card);
-
-});
-
-};
-
-
-// Function tto randomly pick 2 or 3 dishes
-const getRandomdishes = (dishes) => {
-    // Shuffle the dishes array
-    const Shuffleddishs = dishes.sort(() => 0.5 - Math.random());
-
-    // Return 2 or 3 dishes
-    return Shuffleddishs.slice(0, Math.floor(Math.random() * 2) + 2);
-};
-
-// Run displaySpotlightDishes once the DOM content is 
-// loaded
-document.addEventListener("DOMContentLoaded", () => {
-    // Fetch and display spotlight dishes once 
-    // the page is loaded
-    getDishes();
-});
-
-}
 
 
 // End of spotlight-dishes

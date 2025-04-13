@@ -9,8 +9,7 @@ displayFooterInfo();
 
 // main.js
 import { displayDishes } from './bundle.js';
+displayDishes();
 
-document.addEventListener("DOMContentLoaded", () => {
-    displayDishes();
-});
+
 
