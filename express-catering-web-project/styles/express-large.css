@@ -1,5 +1,28 @@
 
 @media only screen and (min-width: 64rem) {
+   /* Start of Header Styling */
+  
+   h1 {
+		right: 76%;
+		bottom: 88%;
+		font-size: 1.8em;
+	}
+
+h2 {
+  padding: 3rem;
+}
+
+.business-name {
+ width: 175%;
+}
+
+.hero-text {
+  top: 48rem;
+  right: 20%;
+  text-transform: (-50%, -50%);
+}
+
+
   .spotlightDishes section {
     flex: 1 1 30%;
   }

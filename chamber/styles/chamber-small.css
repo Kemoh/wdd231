@@ -790,6 +790,9 @@ form {
 /* END OF JOIN PAGE STYLING*/
 
 
+
+/* STYLING OF DISCOVERY PAGE */
+
 #showPlaces div {
 	background-color: var(--accent-color-1);
 	margin: 1rem 8px;
@@ -842,13 +845,9 @@ grid-area: location;
 	grid-area: button;
 }
 
-
-/* STYLING OF DISCOVERY PAGE */
-
-
 /* END OF DISCOVERY PAGE */
 
-/* END OD MAIN STYLING */ 
+/* END OF MAIN STYLING */ 
 
 
 

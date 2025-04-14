@@ -47,7 +47,7 @@ h1 {
 	color: #ffffff;
 	position: absolute;
 	font-size: 1.5em;
-	right: 38%;
+	right: 37%;
 	bottom: 90%;
 }
 
@@ -56,14 +56,11 @@ h2 {
 	padding: 1rem;
 	color: #ffffff;
 	box-shadow: 0 0 5px #DEFFF2;
-	/* border-radius: 10px 10px; */
-	/* border: 6px solid blanchedalmond; */
 }
 
 .business-name {
 	margin: 1rem;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-	
 }
 
 .business-name p[title=tagline]{
@@ -102,8 +99,6 @@ h2 {
 	justify-content: space-around;
 	list-style: none;
 	margin-bottom: 1rem;
-	/* box-shadow: 0 0 10px #DEFFF2; */
-	/* background-color: #005C66; */
 }
 
 .navigation a {
@@ -157,14 +152,11 @@ h2 {
 
 .hero-text  {
 	position: absolute;	
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Oxygen", sans-serif;
 	top: 38rem;
 	color: #ffffff;
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 	transition: background-color 0.3s ease;
-	/* box-shadow: 0 0 10px var(--accent-color-1); */
-	/* border: 1px solid rgba(136, 0, 0, 0.1); */
-	/* padding: 1rem; */
 } 
 
 .hero-text p[title=first-call]{
@@ -204,26 +196,27 @@ h2 {
 /* Start of Spotlight Dishes */
 .spotlightDishes {
   display: flex;
-  gap: 1rem;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 1rem;
 }
 
 .spotlightDishes section {
-	text-align: center;
-	/* background-color:aqua; */
-	margin: .5rem;
 	 flex: 1 1 100%;
-	box-shadow: 0 0 5px #aaa;
-	border: 1px solid rgba(136, 0, 0, 0.5);
-	border-radius: 10px;
-	overflow: hidden;
+	 margin: 1rem 5px;
+	 border: 1px solid #999;
+	 border-radius: 8px;
+	 box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+	 overflow: hidden;
+	 padding-bottom: 1rem;
+	 font-family: "Oxygen", sans-serif;
+	 text-align: center;
 }
 
 
 .dishGrid h3 {
-	font-size: 1.5em;
-	margin: 3rem .5rem 0 .5rem;
+	font-size: 1.6em;
+	margin: 3rem  1rem -1.5rem;
 	color: #005C66;
 }
 
@@ -278,18 +271,121 @@ h2 {
 
 /* Start of About Us */
 summary {
-	margin: 1rem;
+	/* font-size: 1.6em; */
+	margin: 3rem  1.2rem ;
+	color: #005C66;
 	list-style: none;
+	
+}
+
+summary p {
 	font-family: "Oxygen", sans-serif;
 	color: #005C66;
+	font-size: 1.2em;
+	line-height: 1.5;
+	margin-bottom: 2rem;
 }
 
 summary h5 {
-	font-size: 1.5em;
-
+	font-size: 1.6em;
+	margin: 3rem 0 0.3rem;
 }
 
 /* End of About Us */
+
+/* Start of Menu Page */
+
+#showMenu div {
+	background-color: #ffffff;
+	margin: 1rem 8px;
+	border: 1px solid #999;
+	border-radius: 8px;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	padding-bottom: 1rem;
+	font-family: "Oxygen", sans-serif;
+	color: #005C66;
+
+	/* Use of grid-template-areas */
+	display: grid;
+	grid-template-areas: 
+	"name"
+	"photograph"
+	"description"
+	"button";
+}
+
+#showMenu div h4 {
+	grid-area: name;
+	font-size: 1.5em;
+	padding: 1rem;
+	
+}
+
+#showMenu div figure { 
+	width: 100%; 
+	grid-area: photograph;
+	}
+
+#showMenu div  p {
+	padding: 1.2rem;
+	grid-area: description;
+	line-height: 1.5;
+	font-size: 18px;
+}
+
+#showMenu div figcaption {
+padding: 1rem;
+font-size: 1.1em;
+grid-area: location;
+}
+
+#showMenu div button {
+	width: 1px 1px;
+	padding:  10px;
+	margin: 0 auto;
+	font-size: 1.2em;
+	border-radius: 10px;
+	border: 1px solid #999;
+	grid-area: button;
+}
+
+.filterButtons {
+	margin: 1rem auto;
+	padding: 1rem;
+	text-align: center;
+	box-shadow: 0 0 10px var(--accent-color-1);
+}
+
+.filterButtons button {
+	padding: .5rem 1.5rem;
+	font-weight: bold;
+}
+
+.filterButtons #local {
+	background-color:aqua;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.filterButtons #european {
+	background-color:aquamarine;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.menu-container h3 {
+	font-size: 1.6em;
+	margin: 3rem  1rem -1.5rem;
+	color: #005C66;
+
+}
+
+
+
+/* End of Menu Page */
 
 /********************* End of Main *************************/
 

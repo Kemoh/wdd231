@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="EXPRESS Restaurant & Catering Services">
+    <meta name="description"
+        content="EXPRESS Restaurant & Catering Services offers detailed menus, customizable event packages, and an easy booking system for clients. The website will feature secure payment processing and an inquiry div to streamline the catering ordering process. The website will make it easier for clients to browse catering options, request quotes, and book services. It will also act as a marketing tool, showcasing the service’s offerings and building trust, ultimately driving growth and improving customer engagement.">
+ <title>Menu: EXPRESS Restaurant & Catering Services</title>
+
+    <!-- Open Graphs for Facebook -->
+    <meta property="og:title" content="EXPRESS Restaurant & Catering Services">
+    <meta property="og:description"
+        content="Express Catering Services offers detailed menus, customizable event packages, and an easy booking system for clients. The website will feature secure payment processing and an inquiry div to streamline the catering ordering process. The website will make it easier for clients to browse catering options, request quotes, and book services. It will also act as a marketing tool, showcasing the business's offerings and building trust, ultimately driving growth and improving customer engagement.">
+     <meta property="og:image"
+        content="https://www.facebook.com/share/p/16BUgyrZER/">
+    <meta property="og:url" content="https://kemoh.github.io/wdd231/">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://kemoh.github.io/wdd231/">
+   
+   
+    <!-- Cards for Twitter(or X) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EXPRESS Restaurant & Catering Services">
+    <meta name="twitter:description"
+        content="EXPRESS Restaurant & Catering Services offers detailed menus, customizable event packages, and an easy booking system for clients. The website will feature secure payment processing and an inquiry div to streamline the catering ordering process. The website will make it easier for clients to browse catering options, request quotes, and book services. It will also act as a marketing tool, showcasing the business's offerings and building trust, ultimately driving growth and improving customer engagement.">
+    <meta name="twitter:image"
+        content="https://www.facebook.com/share/p/16BUgyrZER/">
+    <meta name="twitter:url" content="https://kemoh.github.io/wdd231/">
+
+    <!-- Google Fonts Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- STYLE SHEETS -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/express-small.css">
+    <link rel="stylesheet" href="styles/express-medium.css">
+    <link rel="stylesheet" href="styles/express-large.css">
+    <link rel="icon" href="images/favicon-express-catering-services.ico">
+
+    <!-- JavaScripts -->
+    <!-- <script src="scripts/express.js" type="module" defer></script> -->
+    <script src="scripts/menu.js" type="module" defer></script>
+   
+</head>
+<body>
+      <header>
+        <!--Express Resturant logo-->
+        <h1>EXPRESS</h1>
+        <picture class="logo-container">
+        <img
+            src="images/express-catering-service-logo.webp" alt="Express Catering Services Logo" width="60" height="60" loading="lazy">
+        </picture>
+        
+        <!-- Start of Menu -->
+        <button type="button" id="menu"></button>
+        <nav id="animateme">
+            <ul class="navigation">
+              <li><a href="index.html" title="Home" class="active">Home</a></li>
+              <li><a href="menu.html" title="Discover">Menu</a></li>
+              <li><a href="contact.html" title="Business Directory">Contact Us</a></li>
+            </ul>
+          </nav>
+          
+        <!-- Business name and tagline -->
+        <div class="business-name">
+            <h2>Restaurant & Catering<p title="services">Services</p></h2>
+            <p title="tagline">Delivering fresh, high-quality meal - quickly and reliably!</p>
+        </div>
+        <!-- End of Menu -->
+    </header>
+
+    <main>
+        <div class="menu-container">
+            <h3>Menu</h3>
+            <!-- Buttons to filter menu-->
+            <div class="filterButtons">
+                <button id="local">🍽️Local</button>
+                <button id="european">🍽️European</button>
+            </div>
+        
+            <!-- div for injecting menu photos -->
+               <div id="showMenu">
+                
+               </div>
+        </div>
+       
+    </main>
+
+     <footer>
+        <div class="chamberInfo">
+            <p title="Organization Name">EXPRESS Restaurant & Catering Services</p>
+            <p title="Adresss">No. 25 Siaka Steven Street, Freetown, Sierra Leone.</p>
+            <a href="https://sites.google.com/"></a>
+            <p title="Website">www.expresscateringservices.com</p>
+            <p title="Phone Number">(232) 78-411-575</p>
+        </div>
+        
+        <div class="socialMediaLinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="facebook-image" width="72" height="75" loading="lazy">
+            </a>
+            <a href="https://x.com">
+                <img src="images/x.svg" alt="x-image" width="72" height="75" loading="lazy">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="instagram-image" width="72" height="75" loading="lazy">
+            </a>
+        </div>
+    
+        <div class="copyright">
+            <p title="CourseTitle">WDD231 Class Project</p>
+            <p title="studentName">Umaru Bayoh</p>
+         
+            <p title="copyRightYear"><span class="copyYear"></span>
+            </p>
+            <p class="lastModifiedDate"><span class="lastModified"></span>
+            </p>
+        </div>
+
+         <!-- div for injecting viisitor message -->
+         <div id="sidebar">
+            <div id="visitor-message"></div>
+        </div>
+
+    </footer>
+</body>
+</html>

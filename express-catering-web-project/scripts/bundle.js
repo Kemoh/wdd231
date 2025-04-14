@@ -60,7 +60,7 @@ export function displayDishes() {
         try {
             const response = await fetch(url);
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             setupSlide(data.dishes);
         } catch (error) {
             console.error('Error fetching dish data:', error);
