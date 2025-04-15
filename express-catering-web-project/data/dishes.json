@@ -59,6 +59,18 @@
           "description": "Crispy battered fish served with thick-cut fries and often mushy peas or tartar sauce.",
            "menuType": "european",
           "pictureLink": "images/express-eurodish-fish%20and%20chips.webp"
+      },
+      {
+          "name": "Groundnut Soup",
+          "description": "A thick, savory stew made from groundnuts (peanuts), vegetables, and meat, usually served over rice.",
+          "menuType": "local",
+          "pictureLink": "images/express-groundnut-soup.webp"
+      },
+       {
+          "name": "Spaghetti Carbonara",
+          "description": "A creamy pasta dish made with eggs, cheese (Pecorino Romano), pancetta, and black pepper.",
+           "menuType": "european",
+          "pictureLink": "images/express-eurodish-spaghetti%20carbonara.webp"
       }
   ]
 }

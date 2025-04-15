@@ -83,4 +83,42 @@ font-size: 1.1em;
     flex: 1 1 45%;
   }
 
+  /* STYLING FOR MENU PAGE */
+
+    #showMenu div {
+        grid-template-areas: 
+        "photograph name"
+        "photograph description"
+        "photograph button";
+}
+
+    #showMenu div figure { 
+	    width: 300px;
+	}
+
+#showMenu div h4 {
+	grid-area: name;
+	margin: 0 1rem 2rem;
+}
+
+#showMenu div  p {
+	margin-top: -5rem;
+}
+
+#showMenu div button {
+	width: 7rem;
+  height: 2.5rem;
+	grid-area: button;
+}
+
+/* Start of Booking page  */
+  .form-container button {
+    width: 250px;
+}
+
+.filterButtons button {
+	padding: .5rem .7rem;
+	width: 6rem;
+}
+
 }

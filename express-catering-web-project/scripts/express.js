@@ -11,3 +11,15 @@ displayFooterInfo();
 import { displayDishes } from './bundle.js';
 displayDishes();
 
+// Import the function for Populate Timestamp and Daily Form Result
+import { populateTimestamp } from './bundle.js';
+populateTimestamp();
+
+import { displayFormResults } from './bundle.js';
+displayFormResults();
+
+import { formatDateTime } from './bundle.js';
+window.addEventListener("DOMContentLoaded", () => {
+    formatDateTime();
+});
+

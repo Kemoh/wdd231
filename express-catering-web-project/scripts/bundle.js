@@ -2,51 +2,49 @@
 export function displayFooterInfo() {
     // ******************Start of Navigation****************//
     // Select the hamburger button by using it's id and it's related ul for output.
-        const hamButton1 = document.querySelector('#menu');
-        const navigation1 = document.querySelector('#animateme');
+    const hamButton1 = document.querySelector('#menu');
+    const navigation1 = document.querySelector('#animateme');
         
-        //Add a click eventlistner to the hamburger button and a callback function that toggles the list element's list of classes.
-        hamButton1.addEventListener('click', () => {
-            navigation1.classList.toggle('open');
-            hamButton1.classList.toggle('open');
-        });
+    //Add a click eventlistner to the hamburger button and a callback function that toggles the list element's list of classes.
+    hamButton1.addEventListener('click', () => {
+        navigation1.classList.toggle('open');
+        hamButton1.classList.toggle('open');
+    });
+}
     //******************* End of Navigation****************//
 
 
     // ************* Start of Footer *********************** //
-// Select the DOM elements for output
-const currentYear = document.querySelector(".copyYear");
-const lastModified = document.querySelector(".lastModified");
-const socialMediaLinks = document.querySelector(".socialMediaLinks");
+export function formatDateTime() {
+    const currentYear = document.querySelector(".copyYear");
+    const lastModified = document.querySelector(".lastModified");
+    const formDateAndTime = document.querySelector("#timestampInput");
 
-// Use the date object for the "currentyear"
-const today = new Date();
-const lastModifiedDate = new Date(document.lastModified);
+    const today = new Date();
+    const lastModifiedDate = new Date(document.lastModified);
 
-// Format the date as dd/mm/yy
-const formattedDate = lastModifiedDate.toLocaleString('en-US', {
-    month: '2-digit',
-    day: '2-digit',
-    year: 'numeric',
-});
+    const formattedDate = lastModifiedDate.toLocaleDateString('en-GB'); // dd/mm/yyyy
+    const formattedTime = lastModifiedDate.toLocaleTimeString('en-GB', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+    });
 
-// Format the date as hh/mm/ss
-const formattedTime = lastModifiedDate.toLocaleString('en-US', {
-    hour: '2-digit',
-    minute: '2-digit',
-    second: '2-digit',
-    hour12: false,
-});
+    if (currentYear) {
+        currentYear.textContent = `© ${today.getFullYear()} Freetown Chamber of Commerce`;
+    }
 
-// Populate the current year span with the getFullYear():
-currentYear.innerHTML = `<span class="copyYear">©${today.getFullYear()} Freetown Chamber of Commerce </span>`;
+    if (lastModified) {
+        lastModified.textContent = `Last Modified: ${formattedDate} ${formattedTime}`;
+    }
 
-// Populate the "lastModified" span with the formatted date
-lastModified.innerHTML = `<span class="modifiedDate">Last Modification: ${formattedDate} ${formattedTime}</span>`;
-
+    if (formDateAndTime) {
+        formDateAndTime.value = `${formattedDate} ${formattedTime}`;
+    }
 }
 
-// Enf of Footer //
+//******************/ Enf of Footer *********************** //
 
 // Start of spotlight-dishes
 export function displayDishes() {
@@ -156,9 +154,38 @@ export function displayDishes() {
     });
 }
 
-
-
-
 // End of spotlight-dishes
 
+// Start of thankyou page for the form for Express Restaurant and Catering Services
+
+// const getString = window.location.search;
+// console.log(getString);
+
+const myInfo = new URLSearchParams(window.location.search);
+console.log(myInfo)
+
+export const populateTimestamp = () => {
+    const timestampInput = document.getElementById('timestampInput');
+    if (timestampInput) {
+        timestampInput.value = Date.now();
+    }
+};
+
+export const displayFormResults = () => {
+    const myInfo = new URLSearchParams(window.location.search);
+
+    const resultDiv = document.querySelector("#result");
+    if (resultDiv) {
+        resultDiv.innerHTML = `
+            <p>Your first name is: ${myInfo.get('firstName')}</p>
+            <p>Your last name is: ${myInfo.get('lastName')}</p>
+            <p>Your phone: ${myInfo.get('phone')}</p>
+            <p>Your email is: ${myInfo.get('email')}</p>
+            <p>The type of service you selected is: ${myInfo.get('service')}</p>
+            <p>You wrote this note: ${myInfo.get('note')}</p>
+            <p>You selected this location: ${myInfo.get('location')}</p>
+            <p>The date and time that the form was uploaded is: ${myInfo.get('timestamp')}</p>
+        `;
+    }
+};
 

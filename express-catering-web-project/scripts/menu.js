@@ -63,6 +63,39 @@ function displayItems(menu) {
 displayItems(menu);
 
 
+// FUNCTION FOR FILTER BUTTONS FOR MENU
+// Filter Button Elements
+const localBtn = document.querySelector("#local");
+const europeanBtn = document.querySelector("#european");
+const allBtn = document.querySelector("#all");
+
+// Helper function to clear the current menu display
+function clearMenu() {
+    showMenu.innerHTML = "";
+}
+
+// Filter and display local dishes
+localBtn.addEventListener("click", () => {
+    clearMenu();
+    const filteredLocal = menu.filter(dish => dish.menuType === "Local Dish");
+    displayItems(filteredLocal);
+});
+
+// Filter and display European dishes
+europeanBtn.addEventListener("click", () => {
+    clearMenu();
+    const filteredEuropean = menu.filter(dish => dish.menuType === "European Dish");
+    displayItems(filteredEuropean);
+});
+
+// Optional: Show all dishes
+if (allBtn) {
+    allBtn.addEventListener("click", () => {
+        clearMenu();
+        displayItems(menu);
+    });
+}
+
 
 // Function to calculate the number of days between two dates
 function getDaysDifference(lastVisitTimestamp) {
@@ -71,6 +104,9 @@ function getDaysDifference(lastVisitTimestamp) {
     const differenceInDays = Math.floor(differenceInMillis / (1000 * 60 * 60 * 24)); // Convert milliseconds to days
     return differenceInDays;
   }
+  
+
+// FUNCTION FOR LOCAL STORAGE
   
   // Function to display the appropriate message in the sidebar
   function displayVisitorMessage() {

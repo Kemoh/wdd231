@@ -13,17 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
 const myInfo = new URLSearchParams(window.location.search);
 // console.log(myInfo);
 
-// console.log(myInfo.get('firstName'));
-// console.log(myInfo.get('lastName'));
-// console.log(myInfo.get('email'));
-// console.log(myInfo.get('phone'));
-// console.log(myInfo.get('Organizational Title'));
-// console.log(myInfo.get('Business Name'));
-// console.log(myInfo.get('Business Description'));
-// console.log(myInfo.get('Membership Level'));
-// console.log(myInfo.get('timestamp'));
-
-
 document.querySelector("#result").innerHTML = `
 <p>Your first name is: ${myInfo.get('firstName')}<p/>
 <p>Your last name is: ${myInfo.get('lastName')}<p/>

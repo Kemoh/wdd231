@@ -22,8 +22,25 @@ h2 {
   text-transform: (-50%, -50%);
 }
 
+/* Start of menu page */
+#showMenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} 
+
+#showMenu div figure, #showMenu div figure img  { 
+	width: 200px;
+}
+
+#showMenu div h4 {
+	margin: 0 1rem 3rem;
+}
 
   .spotlightDishes section {
     flex: 1 1 30%;
   }
+
+/* End of menu page */
+
+
 }

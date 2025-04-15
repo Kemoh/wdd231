@@ -587,7 +587,6 @@ h3 {
 form {
 	margin: 0 1rem;
 	font-family: "Oxygen", sans-serif;
-
 }
 
 .membershipForm fieldset {
@@ -640,9 +639,17 @@ form {
 	  height: 100px;
 	}
 
-	input:required {border-left-color: #d70000;}
-    input:focus {border-left-color: black; outline:none;}
-    input:required:valid{border-left-color: green;}
+	input:required {
+		border-left-color: #d70000;
+		}
+
+    input:focus {
+		border-left-color: black; outline:none;
+		}
+
+    input:required:valid {
+		border-left-color: green;
+		}
 
 	.membershipForm input[type="radio"]{
 		 	margin: .3rem;		
