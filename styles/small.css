@@ -3,7 +3,7 @@
     --primary-color: #4A90E2;
     --secondary-color: #344055; 
     --accent-1: #710000; /*Blood red */
-    ---accent-color-2: #EDF060;
+    --accent-color-2: #EDF060;
     --accent-3: #D81159; /* Raspberry */
 }
 
@@ -151,7 +151,7 @@ h2 {
 }
 
 .completed {
-    background-color: var(---accent-color-2);
+    background-color: var(--accent-color-2);
     color: var(--accent-1);
 }
 
