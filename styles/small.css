@@ -48,7 +48,7 @@ header span {
     border: none;
     color: var(--primary-color);
     cursor: pointer;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
 }
 
 .hamburger::before {
