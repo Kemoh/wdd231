@@ -8,7 +8,7 @@
         "membershiplevel": "Gold",
         "businesssector": "Telecommunications",
         "websiteurl": "www.africell.sl",
-        "imageurl": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_198/images/business-directory/africell.jpg"
+        "imageurl": "https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/images/africell.webp"
     },
     {
         "name": "Easy Solar",
@@ -16,10 +16,10 @@
         "address": "48 Hill Station Road, Freetown, Sierra Leone",
         "phonenumber": "+232 99444888",
         "email": "easysolar@gmail.com",
-        "membershiplevel": "Gold",
+        "membershiplevel": "Member",
         "businesssector": "Energy",
         "websiteurl": "www.easysolar.org",
-        "imageurl": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_198/images/business-directory/Easy%20Solar.png"
+        "imageurl": "https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/images/Easy%20Solar.webp"
     },
     {
         "name": "Orange",
@@ -30,7 +30,7 @@
         "membershiplevel": "Gold",
         "businesssector": "Telecommunications",
         "websiteurl": "www.orange.sl",
-        "imageurl": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_198/images/resources/orange.jpg"
+        "imageurl": "https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/images/orange.webp"
     },
     {
         "name": "Qcell",
@@ -41,51 +41,7 @@
         "membershiplevel": "Silver",
         "businesssector": "Telecommunications",
         "websiteurl": "www.qcell.sl",
-        "imageurl": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_198/images/business-directory/qcell.jpg"
-    },
-    {
-        "name": "Aberdeen Gold and Diamond Center Limited",
-        "tagline": "No. 1 Diamond Company",
-        "address": "37 Siaka steven Street, Freetown, Sierra Leone",
-        "phonenumber": "+232 30322727",
-        "email": "aberdeengdc@gmail.com",
-        "membershiplevel": "Gold",
-        "businesssector": "Mining",
-        "websiteurl": "www.sliepa.gov.sl",
-        "imageurl": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_198/images/business-directory/Aberdeen%20Gold%20and%20Diamond%20Center%20Limited.png"
-    },
-    {
-        "name": "African Gold Stream Mining (AGSM)",
-        "tagline": "Best Diamond Company",
-        "address": "13C Main Motor Road, Congo Cross, Freetown, Sierra Leone",
-        "phonenumber": "+232 76668883",
-        "email": "africangsm@gmail.com",
-        "membershiplevel": "Silver",
-        "businesssector": "Mining",
-        "websiteurl": "www.sliepa.gov.sl",
-        "imageurl": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_198/images/business-directory/African%20Gold%20Stream%20Mining%20(AGSM)%20(SL)%20Limited.png"
-    },
-    {
-        "name": "Balmed",
-        "tagline": "known For The Best",
-        "address": "2 Africanus Road, Kissy, Freetown, Sierra Leone",
-        "phonenumber": "+232 76625205",
-        "email": "balmed@gmail.com",
-        "membershiplevel": "Silver",
-        "businesssector": "Agribusiness and Agro-Processing",
-        "websiteurl": "www.sliepa.gov.sl",
-        "imageurl": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_198/images/business-directory/balmed-holdings-ltd.jpg"
-    },
-    {
-        "name": "Bidnetwork Sierra Leone",
-        "tagline": "Affordable Newtwok",
-        "address": "37 Upper Brook street, Freetown, Sierra Leone",
-        "phonenumber": "+232 79470049",
-        "email": "bidnetwork@gmail.com",
-        "membershiplevel": "Silver",
-        "businesssector": "Agribusiness and Agro-Processing",
-        "websiteurl": "www.sliepa.gov.sl",
-        "imageurl": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_198/images/business-directory/bid-network.jpg"
+        "imageurl": "https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/images/qcell.webp"
     },
     {
         "name": "Bintumani Hotel",
@@ -96,7 +52,7 @@
         "membershiplevel": "Gold",
         "businesssector": "Hospitality",
         "websiteurl": "www.bintumanihotelfreetown.online",
-        "imageurl": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_198/images/business-directory/bintumani.jpg"
+        "imageurl": "https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/images/bintumani.webp"
     },
     {
         "name": "Atlantic Lumley Hotel",
@@ -107,31 +63,7 @@
         "membershiplevel": "Gold",
         "businesssector": "Hospitality",
         "websiteurl": "www.atlantichotel-sl.com",
-        "imageurl": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_198/images/resources/atlantic-lumley-hotel.jpg"
-    },
-
-    {
-        "name": "Bees Farmers Association",
-        "tagline": "Helping Farmers",
-        "address": "30 Bo/Taima Highway, Bo District, Sierra Leone",
-        "phonenumber": "+232 78693542",
-        "email": "beesfarmers@gmail.com",
-        "membershiplevel": "Silver",
-        "businesssector": "Agriculture",
-        "websiteurl": "www.sliepa.gov.sl",
-        "imageurl": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_198/images/business-directory/bees-farmers-assoc.jpg"
-    },
-
-    {
-        "name": "Kasiyatama Cocoa Farmers Cooperative",
-        "tagline": "Reliable Coaco Products",
-        "address": "Kono, sierra Leone",
-        "phonenumber": "+232 77028280",
-        "email": "kasiyatama@gmail.com",
-        "membershiplevel": "Silver",
-        "businesssector": "Agriculture",
-        "websiteurl": "www.sliepa.gov.sl",
-        "imageurl": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_198/images/business-directory/kasiyatama-cocoa-farmers-coop.jpg"
+        "imageurl": "https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/images/atlantic-lumley-hotel.webp"
     },
     {
         "name": "Access Bank",
@@ -139,10 +71,10 @@
         "address": "30 Siaka Steven Street, Freetown, Sierra Leone",
         "phonenumber": "+232 30969943",
         "email": "accessbank@gmail.com",
-        "membershiplevel": "Gold",
+        "membershiplevel": "Silver",
         "businesssector": "Banking",
         "websiteurl": "www.sierraleone.accessbankplc.com",
-        "imageurl": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_198/images/business-directory/access.jpg"
+        "imageurl": "https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/images/access.webp"
     },
     {
         "name": "GT Bank",
@@ -153,7 +85,7 @@
         "membershiplevel": "Gold",
         "businesssector": "Banking",
         "websiteurl": "www.gtb.sl",
-        "imageurl": "https://secure-cdn.scdn6.secure.raxcdn.com/media/userfiles/subsite_198/images/business-directory/gtbank.jpg"
+        "imageurl": "https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/images/gtbank.webp"
     }
 ]
 }
