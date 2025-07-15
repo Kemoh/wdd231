@@ -1,0 +1,86 @@
+@media only screen and (min-width: 608px){   
+    header span {
+        font-size: 1rem;
+    }
+
+    .trade-fair p {
+    font-size: 1.5rem;
+}
+
+.discover-cta-button {
+    font-size: 1.3rem;
+    top: 90%;
+}
+}
+
+@media only screen and (min-width: 800px) {
+    header {
+        gap: 1rem;
+    }
+
+    header span {
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .trade-fair p {
+        font-size: 1.5rem;
+        top: 1.5rem;
+}
+
+    header img {
+        width: 70px;
+        height: auto;
+}
+
+    .discover-cta-button {
+        font-size: 1.5rem;
+        top: 90%;
+}
+
+.navigation-1 a, .navigation-2 a {
+    font-size: 1.1rem;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+
+    header img {
+    width: 100px;
+    height: auto;
+}
+
+    header span {
+        font-size: 1.5rem;
+        padding-left: 1rem;
+    }
+
+    .trade-fair p {
+        font-size: 2rem;
+        top: 2.5rem;
+}
+
+h1 {
+    font-size: 2rem;
+} 
+
+    .discover-cta-button {
+        font-size: 2rem;
+        top: 90%;
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+
+}
+ 
+

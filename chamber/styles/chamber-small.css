@@ -1,6 +1,6 @@
 :root {
     --primary-color:  #344055;
-    --secondary-color: #287C8E;
+    --secondary-color: #0056b3;
     --accent-1: #778899;
     --accent-2: #ffd700;
 
@@ -28,11 +28,10 @@ header span {
 
 header {
     display: grid;
-    grid-template-columns: 60px auto 44px 44px;
-    padding: 5px 10px;
+    grid-template-columns: 60px 1fr 45px 45px;
+    padding: 5px 0;
     background-color: var(--primary-color);
     align-items: center;
-    justify-content: end;
 }
 
 /* -----Hamburger Navigation 1 and 2 -----*/
@@ -42,6 +41,8 @@ header {
     color: #ffffff;
     cursor: pointer;
     font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+    width: 100%;
+    height: auto;
 }
 
 .hamburger-1::before {
@@ -80,57 +81,176 @@ header {
     display: block;
     padding: .8rem 10px;
     text-decoration: none;
-    border: solid 1px #ddd;
-    color: var(--primary-color);
-}
-
-.navigation-1 li.active, .navigation-2 li.active {
-    background-color: #eee;
+    border: 1px solid #344055;
+   background-color: var(--accent-1);
+    color: var(--accent-1);
+    color: #ffffff;
 }
 
 .navigation-1 a:hover, .navigation-2 a:hover {
-    background-color: #f0f6ff;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    background: var(--primary-color);
 }
 
-/* ------ Directory ------ */
+.navigation-1 li.active a, .navigation-2 li.active a {
+    color: #ffff00;
+}
+
+/* ----Directory Listings Section --- */
+/* -----Hero Div Section ------*/
 .dir-container {
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-.trade-fair p:first-child {
+.dir-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Text Banner */
+.trade-fair p {
     position: absolute;
-    font-size: 1.35rem;
-    top: .5rem;
-    padding: 5px 10px;
+    top: 1rem;
+    padding: 10px;
     color: #ffffff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
-.trade-fair .speakers a {
-    top: 11rem;
-}
-
-.speakers  a {
-    padding: .5rem;
-    font-size: 1.2rem;
-    text-align: center;
-    color: #ffffff;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    text-decoration: none;
+/* CTA Button */
+.discover-cta-button {
     position: absolute;
-    top: 95%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: .5rem 1rem;
+    border: 1px solid var(--accent-1);
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
     font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
 }
 
+.discover-cta-button a:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Directory Listings Section */
+
 h1 {
-    padding: 5px 10px;
+    padding-bottom: .5rem;
     color: var(--primary-color);
 }
+
+h2 {
+    font-size: 1.2rem;
+}
+
+.directory-section {
+    padding: 1rem 10px;
+}
+
+
+/* Grid/List Filtering */
+.filtercards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--secondary-color);
+    padding: 1rem;
+}
+
+.filtercards button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 4px;
+    background: #ffffff;
+}
+
+.filtercards button.active {
+    color: #ffffff;
+    background: var(--primary-color);
+}
+
+/* Design the grid-view */
+.directory-cards.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    align-items: center;
+
+    .directory-card {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-left: 5px solid var(--accent-2); 
+        padding: 1rem 10px;
+        border-radius: 1rem;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        font-size: 14px;
+    }
+
+     img {
+		border: 1px solid #fff;
+		box-shadow: 0 0 1rem #555;
+        margin-bottom: 1rem;
+	}
+
+    p {
+        font-weight: normal;
+    }
+} /*End of grid-view */
+
+
+/* Design the list-view */
+.directory-cards.list-view {
+    display: flex;
+    flex-direction: column;
+    
+    .directory-card {
+        display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin: 0;
+		padding: 0.25rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        
+        img, p:last-child, p:first-child, .tag {
+			display: none;
+		}
+
+		h2 {
+			font-size: 1rem;
+		}
+
+        .mobilenumber {
+            text-align: center;
+        }
+
+            p {
+        font-weight: normal;
+    }
+
+		&:nth-child(even) {
+			background-color: #ccc;
+		}
+	}
+} /*End of lisrt-view
+
+
 
 /* ----- Events Section ------*/
 .event-section {
@@ -161,18 +281,21 @@ h1 {
 
 /*-----Footer-----*/
 footer {
-    display: flex;
-    flex-direction: column;
+    /* display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center; */
     padding: 1rem 10px;
     color: #ffffff;
     background-color: var(--primary-color);
-    justify-content: center;
-    align-items: center;
 }
 
 .social {
     display: flex;
     gap: 2rem;
+    justify-content: center;
+    align-items: center;
     padding: 2rem 0;
 }
 
@@ -193,8 +316,4 @@ footer {
 
 .social a:hover {
     background-color: var(--accent-1);
-}
-
-footer p {
-    padding: 5px;
 }

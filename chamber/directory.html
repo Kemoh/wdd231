@@ -30,6 +30,7 @@
     <script src="scripts/chamber-nav.js" defer>
     </script>
     <script src="scripts/dates.js" defer></script>
+    <script src="scripts/members.js" defer></script>
 </head>
 
 <body>
@@ -76,28 +77,30 @@
     <main>
          <!----- Hero Section ----->
       <section class="dir-container">
-            <img src="images/directory_hero.webp" alt="FCC Hero Image" width="#" height="#">
+            <img src="images/directory_hero.webp" alt="FCC Hero Image" width="1200" height="800">
             
             <div class="trade-fair">
-                <p><strong> Discover Businesses Listed In Our Directory And Connect!
+                <p>Trade Fair 2025 is Here! Live At The Town Hall! Oppurtunities And Connections Awaits You!
                 </p>
-                <div class="speakers">
-                    <a href="#">Explore Businesses</a>
-                </div>
+                <a href="#" class="discover-cta-button" aria-label="Discover Businesses">Discover Businesses</a>
             </div>
         </section>
 
-        <!-- Directory Listings -->
-        <section class="business-listings">
+    <!--- Directory Listings Section -->
+        <section class="directory-section">
             <h1>Directory</h1>
-            <!-- Placeholder div for cards -->
-            <div id="listings" class="business-cards">
 
-            </div>
+    <!-- Buttons to filter businesses -->
+        <div class="filtercards">
+            <button id="grid" class="active">⏹️Grid</button>
+            <button id="list">📄List</button>
+        </div>
+
+            <!-- Business Directory -->
+            <article id="listings" class="directory-cards">
+
+            </article>
         </section>
-             
-
-        
     </main>
 
     <footer>
@@ -113,13 +116,13 @@
         <!-- Course Social Media Links -->
         <div class="social">
             <a href="https://www.linkedin.com/in/bayohumaru/" target="_blank">
-                <img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="44" height="44">
             </a>
             <a href="https://www.facebook.com/" target="_blank">
-                <img src="images/facebook.svg" alt="Facebook" width="16" height="16">
+                <img src="images/facebook.svg" alt="Facebook" width="44" height="44">
             </a>
             <a href="https://x.com/" target="_blank">
-                <img src="images/twitter-x.svg" alt="Twitter-X" width="16" height="16">
+                <img src="images/twitter-x.svg" alt="Twitter-X" width="44" height="44">
             </a>
         </div>
 
