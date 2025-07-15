@@ -60,7 +60,7 @@ const displayMembers = (members) => {
         card.appendChild(websiteurl);
 
         // Add classList for Styling card
-        card.classList.add('directory-card');
+        card.classList.add('business-cards');
 
         // Append the loaded card to the cards div selected in the DOM above
         cards.appendChild(card);

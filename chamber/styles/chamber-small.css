@@ -155,7 +155,7 @@ h2 {
     font-size: 1.2rem;
 }
 
-.directory-section {
+.business-container {
     padding: 1rem 10px;
 }
 
@@ -184,13 +184,13 @@ h2 {
 }
 
 /* Design the grid-view */
-.directory-cards.grid-view {
+.cards-container.grid-view {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     align-items: center;
 
-    .directory-card {
+    .business-cards {
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -216,11 +216,11 @@ h2 {
 
 
 /* Design the list-view */
-.directory-cards.list-view {
+.cards-container.list-view {
     display: flex;
     flex-direction: column;
     
-    .directory-card {
+    .business-cards {
         display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		margin: 0;
