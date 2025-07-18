@@ -1,6 +1,31 @@
-@media only screen and (min-width: 608px){   
-    header span {
+@media only screen and (min-width: 768px){  
+    header {
+        position: relative;
+    } 
+
+    .header-nav span {
+        margin-left: -24rem;
         font-size: 1rem;
+    }
+
+    .hamburger-2 {
+        display: none;
+    }
+
+.navigation-1 {
+    display: inline;
+    position: absolute;
+    top: 7px;
+    right: 50px;
+}
+
+.navigation-1 ul {
+        display: flex;
+    }
+
+    .navigation-1 a {
+        background: none;
+        border: none;
     }
 
     .trade-fair p {
@@ -11,56 +36,28 @@
     font-size: 1.3rem;
     top: 90%;
 }
-}
-
-@media only screen and (min-width: 800px) {
-    header {
-        gap: 1rem;
-    }
-
-    header span {
-        font-size: 1.2rem;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    .trade-fair p {
-        font-size: 1.5rem;
-        top: 1.5rem;
-}
-
-    header img {
-        width: 70px;
-        height: auto;
-}
-
-    .discover-cta-button {
-        font-size: 1.5rem;
-        top: 90%;
-}
-
-.navigation-1 a, .navigation-2 a {
-    font-size: 1.1rem;
-}
 
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+}
+
+@media only screen and (min-width: 1060px) {
+        .header-nav span {
+        margin-left: -37rem;
+        font-size: 1.2rem;
+    }
+
+    .navigation-1 a {
+        font-size: 1.2rem;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
-
-    header img {
-    width: 100px;
-    height: auto;
-}
-
-    header span {
-        font-size: 1.5rem;
-        padding-left: 1rem;
+    .header-nav span {
+        margin-left: -45rem;
     }
 
     .trade-fair p {
@@ -83,4 +80,3 @@ footer p {
 
 }
  
-
