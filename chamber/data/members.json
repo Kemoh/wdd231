@@ -5,9 +5,10 @@
         "address": "Wilberforce Village, Freetown, Sierra Leone",
         "phonenumber": "+232 77881345",
         "email": "africell@gmail.com",
-        "membershiplevel": "Gold",
+        "membershiplevel": "gold",
         "businesssector": "Telecommunications",
         "websiteurl": "www.africell.sl",
+        "advertcontract": "yes",
         "imageurl": "https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/images/africell.webp"
     },
     {
@@ -16,9 +17,10 @@
         "address": "48 Hill Station Road, Freetown, Sierra Leone",
         "phonenumber": "+232 99444888",
         "email": "easysolar@gmail.com",
-        "membershiplevel": "Member",
+        "membershiplevel": "bronze",
         "businesssector": "Energy",
         "websiteurl": "www.easysolar.org",
+        "advertcontract": "no",
         "imageurl": "https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/images/Easy%20Solar.webp"
     },
     {
@@ -27,9 +29,10 @@
         "address": "10 Siaka Steven Street, Freetown, Sierra Leone",
         "phonenumber": "+232 72000001",
         "email": "orange@gmail.com",
-        "membershiplevel": "Gold",
+        "membershiplevel": "gold",
         "businesssector": "Telecommunications",
         "websiteurl": "www.orange.sl",
+        "advertcontract": "yes",
         "imageurl": "https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/images/orange.webp"
     },
     {
@@ -41,6 +44,7 @@
         "membershiplevel": "Silver",
         "businesssector": "Telecommunications",
         "websiteurl": "www.qcell.sl",
+        "advertcontract": "no",
         "imageurl": "https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/images/qcell.webp"
     },
     {
@@ -49,9 +53,10 @@
         "address": "11 Man 'O' War Bay, Aberdeen, Freetown, Sierra Leone",
         "phonenumber": "+232 76748407",
         "email": "bintumani@gmail.com",
-        "membershiplevel": "Gold",
+        "membershiplevel": "gold",
         "businesssector": "Hospitality",
         "websiteurl": "www.bintumanihotelfreetown.online",
+        "advertcontract": "yes",
         "imageurl": "https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/images/bintumani.webp"
     },
     {
@@ -60,9 +65,10 @@
         "address": "84 Lumley Beach Road, Freetown, sierra Leone",
         "phonenumber": "+232 80212121",
         "email": "atlantic@gmail.com",
-        "membershiplevel": "Gold",
+        "membershiplevel": "gold",
         "businesssector": "Hospitality",
         "websiteurl": "www.atlantichotel-sl.com",
+        "advertcontract": "yes",
         "imageurl": "https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/images/atlantic-lumley-hotel.webp"
     },
     {
@@ -71,9 +77,10 @@
         "address": "30 Siaka Steven Street, Freetown, Sierra Leone",
         "phonenumber": "+232 30969943",
         "email": "accessbank@gmail.com",
-        "membershiplevel": "Silver",
+        "membershiplevel": "silver",
         "businesssector": "Banking",
         "websiteurl": "www.sierraleone.accessbankplc.com",
+        "advertcontract": "yes",
         "imageurl": "https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/images/access.webp"
     },
     {
@@ -82,9 +89,10 @@
         "address": "12 Wilberforce Street, Freetown, Sierra Leone",
         "phonenumber": "+232 99088888",
         "email": "gtbank@gmail.com",
-        "membershiplevel": "Gold",
+        "membershiplevel": "gold",
         "businesssector": "Banking",
         "websiteurl": "www.gtb.sl",
+        "advertcontract": "yes",
         "imageurl": "https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/images/gtbank.webp"
     }
 ]
