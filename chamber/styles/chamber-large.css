@@ -1,15 +1,20 @@
-@media only screen and (min-width: 768px){  
-    header {
+@media only screen and (min-width: 768px) {  
+    /***** Start of Directory*****/
+    .header-nav  {
+        display: flex;
+        align-items: center;
         position: relative;
     } 
 
-    .header-nav span {
-        margin-left: -24rem;
-        font-size: 1rem;
+    /* Buttons */
+     #ham-btn-2 {
+        display: none;
     }
 
-    .hamburger-2 {
-        display: none;
+    #ham-btn-1 {
+        position: absolute;
+        right: 0;
+        padding-right: 10px;
     }
 
 .navigation-1 {
@@ -19,7 +24,7 @@
     right: 50px;
 }
 
-.navigation-1 ul {
+.navigation-1 ul, .navigation-2 ul {
         display: flex;
     }
 
@@ -41,25 +46,75 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+/***** End of Directory *****/
 
+/***** Start of Home *****/
+.hero-section img {
+    aspect-ratio: 16 / 10;
 }
 
-@media only screen and (min-width: 1060px) {
-        .header-nav span {
-        margin-left: -37rem;
-        font-size: 1.2rem;
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.hero-content p {
+    padding-left: 16rem;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+}
+
+.hero-content p:nth-of-type(6) {
+    padding-top: .5rem;
+    font-size: 1.5rem;
+}
+
+.hero-content p {
+    line-height: 2.5rem;
+    padding-left: 17rem;
+}
+
+.hero-content p:nth-of-type(6) span {
+    padding-left: 3rem;
+    padding-top: 2rem;
+}
+
+.cta-button {
+    margin-top: 2rem;
+    margin-left: 8rem;
+}
+}
+/***** End of Home *****/
+
+@media only screen and (min-width: 1024px) {
+    /***** Start of Home *****/
+    .header-nav span {
+        font-size: 1rem;
     }
 
-    .navigation-1 a {
-        font-size: 1.2rem;
+    .navigation-2 a {
+        font-size: 1rem;
     }
+
+    .hero-content h1 {
+        font-size: 3.75rem;
+    }
+
+    .hero-content p {
+    padding-left: 35rem;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
 }
+
+.cta-button {
+   margin-left: 30rem;
+}
+
+/***** End of Home *****/
+}
+
 
 @media only screen and (min-width: 1200px) {
-    .header-nav span {
-        margin-left: -45rem;
-    }
-
+    /***** Start of Directory *****/
     .trade-fair p {
         font-size: 2rem;
         top: 2.5rem;
@@ -77,6 +132,33 @@ h1 {
 footer p {
     font-size: 1.2rem;
 }
+/***** End of Directory *****/
 
+    /***** Start of Home *****/
+    .hero-content p {
+        padding-left: 40rem;
+    }
+
+    .cta-button {
+        margin-left: 35rem;
+    }
+    /***** End of Home *****/
 }
  
+@media only screen and (min-width: 1440px) {
+    .header-nav span {
+        font-size: 1.2rem;
+    }
+
+    .navigation-1 a {
+        font-size: 1.2rem;
+    }
+
+    .hero-content p {
+        padding-left: 50rem;
+    }
+
+    .cta-button {
+        margin-left: 50rem;
+    }
+}
