@@ -2,7 +2,7 @@
 const url = 'https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/data/members.json';
 
 // Select the DOM element for output
-const cards = document.querySelector('#listings');
+const cards = document.querySelector('#adverts');
 
 // Fetch data using the async/await method
 async function getMembersData() {
@@ -18,13 +18,14 @@ async function getMembersData() {
 // Call the getMembersData function
 getMembersData();
 
+
 // Define displayMembers function named "displayMembers" that handles a single parameter named "members"
 const displayMembers = (members) => {
     // Use forEach loop to process each member
     members.forEach(member => {
         // Create elements to add to the div.cards element
         let card = document.createElement('div');
-        let name = document.createElement('h2');
+        let name = document.createElement('h4');
         let logoImage = document.createElement('img');
         let address = document.createElement('p');
         address.classList.add('address');
@@ -66,28 +67,3 @@ const displayMembers = (members) => {
         cards.appendChild(card);
     }); // end of arrow function and forEach loop
 }
-
-// Toggle Between Views
-// Select the DOM elements for output
-const gridbutton = document.querySelector('#grid');
-const listbutton = document.querySelector('#list');
-const listings = document.querySelector('#listings');
-
-// Add Event Listeners to the gridbutton by using classList to add and remove views
-gridbutton.addEventListener('click', () => {
-    listings.classList.remove('list-view');
-    listings.classList.add('grid-view');
-    gridbutton.classList.add('active');
-    listbutton.classList.remove('active');
-});
-
-// Add Event Listeners to the gridbutton by using classList to add and remove views
-listbutton.addEventListener('click', () => {
-    listings.classList.remove('grid-view');
-    listings.classList.add('list-view');
-    listbutton.classList.add('active');
-    gridbutton.classList.remove('active');
-});
-
-// Set initial view
-listings.classList.add('grid-view');
