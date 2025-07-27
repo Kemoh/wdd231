@@ -1,0 +1,53 @@
+/* -----Color Schema----- */
+:root {
+    --primary-color: #4A90E2;
+    --secondary-color: #344055; 
+    --accent-1: #710000; /*Blood red */
+    --accent-2: #3A0CA3; /* Zaffre */
+    --accent-3: #D81159; /* Raspberry */
+}
+
+body {
+    font-family: 'Oxygen' sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-shadow: 0 0 30px #111;
+    color: var(--accent-2);
+    margin: 0;
+    padding: 5px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section {
+    margin: 0.2rem;
+	padding: 0.5rem;
+	background-color: #ddd;
+	border: 1px solid rgb(0 0 0 / 10%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+section p {
+    margin: 0;
+    padding: 3px;
+}
+
+
+img {
+	width: auto;
+	max-width: 325px;
+	box-shadow: 0 0 30px #777;
+	height: 200px;
+	border: 1px solid #111;
+    margin: .5rem;
+}

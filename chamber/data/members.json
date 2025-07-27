@@ -1,0 +1,100 @@
+
+{"members":[
+    {
+        "memberName": "Africell",
+        "memberTagline": "No. 1 Mobile Company",
+        "memberAddress": "Wilberforce Village, Freetown, Sierra Leone",
+        "phoneNumber": "+232 77881345",
+        "memberEmail": "africell@gmail.com",
+        "membershipLevel": "gold",
+        "businessSector": "Telecommunications",
+        "websiteURL": "www.africell.sl",
+        "isAdvert": true,
+        "imageURL": "https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/images/africell.webp"
+    },
+    {
+        "memberName": "Easy Solar",
+        "memberTagline": "Clean Energy",
+        "memberAddress": "48 Hill Station Road, Freetown, Sierra Leone",
+        "phoneNumber": "+232 99444888",
+        "memberEmail": "easysolar@gmail.com",
+        "membershipLevel": "bronze",
+        "businessSector": "Energy",
+        "websiteURL": "www.easysolar.org",
+        "isAdvert": false,
+        "imageURL": "https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/images/Easy%20Solar.webp"
+    },
+    {
+        "memberName": "Orange",
+        "memberTagline": "The Best Mobile Company",
+        "memberAddress": "10 Siaka Steven Street, Freetown, Sierra Leone",
+        "phoneNumber": "+232 72000001",
+        "memberEmail": "orange@gmail.com",
+        "membershipLevel": "gold",
+        "businessSector": "Telecommunications",
+        "websiteURL": "www.orange.sl",
+        "isAdvert": true,
+        "imageURL": "https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/images/orange.webp"
+    },
+    {
+        "memberName": "Qcell",
+        "memberTagline": "Best Amongst The Rest",
+        "memberAddress": "23 Siaka Steven Street, Freetown, Sierra Leone",
+        "phoneNumber": "+232 31394716",
+        "memberEmail": "qcell@gmail.com",
+        "membershipLevel": "Silver",
+        "businessSector": "Telecommunications",
+        "websiteURL": "www.qcell.sl",
+        "isAdvert": false,
+        "imageURL": "https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/images/qcell.webp"
+    },
+    {
+        "memberName": "Bintumani Hotel",
+        "memberTagline": "No.1 Hotel",
+        "memberAddress": "11 Man 'O' War Bay, Aberdeen, Freetown, Sierra Leone",
+        "phoneNumber": "+232 76748407",
+        "memberEmail": "bintumani@gmail.com",
+        "membershipLevel": "gold",
+        "businessSector": "Hospitality",
+        "websiteURL": "www.bintumanihotelfreetown.online",
+        "isAdvert": true,
+        "imageURL": "https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/images/bintumani.webp"
+    },
+    {
+        "memberName": "Atlantic Lumley Hotel",
+        "memberTagline": "Best Hotel",
+        "memberAddress": "84 Lumley Beach Road, Freetown, sierra Leone",
+        "phoneNumber": "+232 80212121",
+        "memberEmail": "atlantic@gmail.com",
+        "membershipLevel": "gold",
+        "businessSector": "Hospitality",
+        "websiteURL": "www.atlantichotel-sl.com",
+        "isAdvert": true,
+        "imageURL": "https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/images/atlantic-lumley-hotel.webp"
+    },
+    {
+        "memberName": "Access Bank",
+        "memberTagline": "No.1 Bank",
+        "memberAddress": "30 Siaka Steven Street, Freetown, Sierra Leone",
+        "phoneNumber": "+232 30969943",
+        "memberEmail": "accessbank@gmail.com",
+        "membershipLevel": "silver",
+        "businessSector": "Banking",
+        "websiteURL": "www.sierraleone.accessbankplc.com",
+        "isAdvert": true,
+        "imageURL": "https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/images/access.webp"
+    },
+    {
+        "memberName": "GT Bank",
+        "memberTagline": "Best Bank",
+        "memberAddress": "12 Wilberforce Street, Freetown, Sierra Leone",
+        "phoneNumber": "+232 99088888",
+        "memberEmail": "gtbank@gmail.com",
+        "membershipLevel": "gold",
+        "businessSector": "Banking",
+        "websiteURL": "www.gtb.sl",
+        "isAdvert": false,
+        "imageURL": "https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/images/gtbank.webp"
+    }
+]
+}

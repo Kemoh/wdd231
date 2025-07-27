@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umaru Bayoh Course Home Page</title>
+    <meta name="description" content="Course information for the required courses that are in the first certificate called Web and Computer Programming of the Software Development degree from Brigham Young Unbiversity, in partnership with BYU Pathway Worldwide.">
+     <meta name="author" content="Umaru Bayoh">
+     <!-- Butterfly Favicon -->
+     <link rel="icon" href="favicon.ico">
+     <!-- Facebooh Open Graphs Properties -->
+      <meta property="og:title" content="Umaru Bayoh Course Home Page">
+      <meta property="og:description" content="Course information for my first certificate named Web and Computer Programming. This is the first certificate for the bachelor degree in Software Development offered by Brigham Young University in partnership with BYU Pathway Worldwide.">
+      <meta property=og:url content="https://www.facebook.com/umaru.bayoh.14/">
+      <meta property="og:image" 
+      content="https://scontent.ffna2-1.fna.fbcdn.net/v/t39.30808-6/518099848_1340699747670900_6722025310016731399_n.webp?_nc_cat=100&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=MVDfKFMB5uYQ7kNvwE-PAsZ&_nc_oc=Adl4sYG1AG6I2kP52o_5umdVaSPqMAdpF6YYGCxYcZrbV07BObTx1t9DyiyZiLmv8ao&_nc_zt=23&_nc_ht=scontent.ffna2-1.fna&_nc_gid=diY1DevBbzOnzkkH9ROEzg&oh=00_AfRWtPzjMwKtZADMd9ikqkPA7gv01qBQDNhwfPCCmz16pg&oe=68747817">      
+      
+      <!-- Course Font Style -->
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+       <!-- Course Stylesheets -->
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <!-- Course JavaScripts -->
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/dates.js" defer></script>
+        <script src="scripts/courses.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/course-logo.svg" alt="Site Logo" width="60" height="60">
+        <span>Umaru Bayoh</span>
+        <button id="ham-btn" class="hamburger" aria-label="Hamburger Button"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="active">
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Chamber Project</a>
+            </li>
+            <li>
+                <a href="#">Final Project</a>
+            </li>    
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>I am Umaru Bayoh from Freetown, Sierra Leone, West Africa. I have a lovely wife and three children - two boys and a girl. I am a christian and I fellowship Victory Christian fellowship Worldwide and The Church of Jesus Christ of Latter-day Saints. I am currently studying a bachelor degree in software engineering at Brigham Young University and I am looking forward to acquire my fiorst certificate of the bachelor degree program which is called Web and Computer Programming. 
+            </p>
+        </section>
+
+        <!-- Student Picture Section -->
+        <section class="student">
+            <h2>Student Photo</h2>
+                <img src="images/student-profile.webp" alt="Student Profile Picture" width="320" height="427">
+        </section>
+
+        <!-- Course Card Section -->
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+
+            <!-- Filter Buttons -->
+            <div class="course-filter-btns">
+                <button id="all">ALL</button>
+                <button id="wdd">WDD</button>
+                <button id="cse">CSE</button>
+            </div>
+            
+            <!-- Insert Total Courses -->
+            <p id="course-count" class="count-courses">
+            </p>
+
+            <!-- Adding Course Cards -->
+            <div id="display-courses" class="show-courses">
+
+            </div>
+
+            <!-- Adding Total of Credits 
+             -->
+            <p id="credit-count" class="total-credit">
+                
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Course Social Media Links -->
+        <div class="social">
+            <a href="https://github.com/Kemoh" target="_blank">
+                <img src="images/github-profile.svg" alt="GitHub Profile" width="16" height="16">
+            </a>
+            <a href="https://www.linkedin.com/in/bayohumaru/" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16">
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook" width="16" height="16">
+            </a>
+            <a href="https://x.com/" target="_blank">
+                <img src="images/twitter-x.svg" alt="Twitter-X" width="16" height="16">
+            </a>
+        </div>
+         <div class="footer-paragraphs">
+            <!-- Placeholder for current year -->
+            <p id="current-year"></p>
+            <!-- Placeholder for last modified date -->
+            <p id="last-modified"></p>
+         </div>
+    </footer>
+</body>
+</html>

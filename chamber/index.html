@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freetown Chamber of Commerce Home Page</title>
+    <meta name="description" content="Join the Freetown chamber of Commerce for business oppurtunities, growth, news, events, and resources for business development.">
+    <meta name="author" content="Freetown Chamber of commerce">
+
+     <!-- Facebooh Open Graphs Properties -->
+    <meta property="og:title" content="Freetown Chamber of Commerce Directory">
+    <meta property="og:description" content="Explore our trusted directory of local businesses and services in Freetown. Connect with professionals and support local growth.">
+    <meta property="og:url" content="https://kemoh.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://kemoh.github.io/wdd231/chamber/images/directory_hero.webp">
+
+    <!--  Font Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber-small.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <!-- Butterfly Favicon -->
+    <link rel="icon" href="chamber-favicon.ico">
+
+
+    <!-- JavaScripts -->
+    <script src="scripts/chamber-nav.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/adverts.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-nav">
+            <!-- Chamber Logo -->
+            <img src="images/course-logo.svg" alt="Site Logo" width="60" height="60">
+            <!-- Chamber Name -->
+            <span>FREETOWN CHAMBER OF COMMERCE</span>
+            <!-- Hamburger Buttons -->
+            <button id="ham-btn-1" class="hamburger-1" aria-label="Hamburger Button 1"></button>
+            <button id="ham-btn-2" class="hamburger-2" aria-label="Hamburger Button 2"></button>
+            <!-- Navigation 1 -->
+            <nav id="nav-bar-1"  class="navigation-1">
+                <ul>
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="directory.html">Directory</a>
+                    </li>
+                    <li>
+                        <a href="join.html">Join</a>
+                    </li>    
+                    <li>
+                        <a href="discover.html">Discover</a>
+                    </li>    
+                </ul>
+            </nav>
+     
+            <!-- Navigation 2 -->
+            <nav id="nav-bar-2" class="navigation-2">
+                <ul>
+                    <li class="active">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="poadcast.html">Podcast</a>
+                    </li>
+                    <li>
+                        <a href="events.html">Events</a>
+                    </li>       
+                </ul>
+            </nav> 
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <div class="hero-section">
+             <!-- Hero Image -->
+            <picture>
+                <!-- Large: 1000px and above -->
+                 <source 
+                    srcset="images/home_hero_large.webp 1500w" 
+                    media="(min-width:1000px)" 
+                    sizes="100vw">
+
+                    <!-- Medium: 500px to 999px -->
+                    <source 
+                    srcset="images/home_hero_medium.webp 1000w" 
+                    media="(min-width:500px)" 
+                    sizes="100vw">
+
+                    <!-- Small: below 500px -->
+                    <img 
+                    src="images/home_hero_small.webp" 
+                    alt="Home Hero Small" 
+                    width="425" 
+                    height="600" 
+                    loading="lazy">
+            </picture>
+                
+            <!-- Hero Content  -->
+            <div class="hero-content">
+                <span>
+                    Freetown Chamber of Commerce
+                </span>
+                <!-- Text Overlay -->
+                <div class="Overlay-text">
+                    <p>🟠Connect With Local Businesses</p>
+                    <p>🟡Keep Up With Local And International Markets</p>
+                    <p>🟢Entrepreneurship Resouces And Trainings</p>
+                    <p>⚪Pitch Your Business Idea To Investors</p>
+                    <p>🔵Trade Fair Events</p>
+                    <p>🎗️JOIN US TODAY FOR GROWTH AND MARKET VISIBILITY!</p>
+                    <!-- CTA Link -->
+                     <div class="cta-button">
+                        <a  href="directory.html">Join Me</a>
+                     </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="home-section">
+                <h1>Home</h1>
+                <!-- Events Section -->
+                <h2>Events</h2>
+                <!-- Event 1 -->
+          <div class="event-container">
+            <section class="event-item-1">
+                <h3>Trade Fair</h3>
+                <dl>
+                    <dt>Date:</dt>
+                    <dd>August 25,2025</dd>
+                    <dt>Time:</dt>
+                    <dd>8:00 AM - 5:00 PM</dd>
+                    <dt>Place:</dt>
+                    <dd>Freetown City Council Hall</dd>
+                </dl>
+                <p>Join us for this remarkable event that brings businesses together and creates connections. Take your business to the next level by participating.
+                </p>
+                <div class="cta-button">
+                    <a href="events.html">Register Me</a>
+                </div>
+            </section>
+            <!-- Event 2 -->
+             <section class="event-item-2">
+                <h3>Workshop: Digital Marketing for SMEs</h3>
+                <dl>
+                    <dt>Date:</dt>
+                    <dd>September 6,2025</dd>
+                    <dt>Time:</dt>
+                    <dd>9:00 AM - 2:00 PM</dd>
+                    <dt>Place:</dt>
+                    <dd>Freetown City Council Hall</dd>
+                </dl>
+                <p>Discover essential strategies to boost your online presence and reach more customers. Limited seats available. Registration is now open!
+                </p>
+                <div class="cta-button">
+                    <a href="events.html">Register Me</a>
+                </div>
+            </section>
+         </div>
+        </section>
+        <!-- Current Weather -->
+        <section class="weather-section">
+            <div class="get-data">
+                <h2>Current Weather</h2>
+                <!-- Weather Icon -->
+                <figure>
+                    <img id="weather-icon" src="" alt="Weather Icon" width="100" height="100">
+                </figure>
+                <!-- Weather Data -->
+                 <div class="weather-data">
+                    <p id="current-temp"></p>
+                    <p id="weather-condition"></p>
+                    <p id="current-humidity"></p>
+                    <p id="current-high-temp"></p>
+                    <p id="current-low-temp"></p>
+                    <p id="current-sunrise-time"></p>
+                    <p id="current-sunset-time"></p>
+                </div>
+            </div>
+            <div class="forecast-list">
+                <h2>Weather Forecast</h2>
+                <p id="forecast-1"></p>
+                <p id="forecast-2"></p>
+                <p id="forecast-3"></p>
+            </div>
+        </section>
+        <!--- Advertisment Section -->
+        <section class="business-container">
+            <h2>Spotlight Adverts</h2>
+            <!-- Gold And Silver Members -->
+             <div id="adverts" class="cards-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Company Info -->
+         <div class="company-info">
+             <p>Freetown Chamber of Commerce</p>
+             <p>21 Siaka Steven Street</p>
+             <p>Freetown, Sierra Leone</p>
+             <p>info@fcc.org</p>
+             <p> (+232) 76 111 222</p>
+         </div>
+        
+        <!-- Course Social Media Links -->
+        <div class="social">
+            <a href="https://www.linkedin.com/in/bayohumaru/" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="44" height="44">
+            </a>
+            
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook-logo.svg" alt="Facebook" width="44" height="44">
+            </a>
+            <a href="https://x.com/" target="_blank">
+                <img src="images/twitter-x.svg" alt="Twitter-X" width="44" height="44">
+            </a>
+        </div>
+
+            <!-- Current year -->
+         <div class="footer-paragraphs">
+            <p>WDD231 Class Project</p>
+            <p>Umaru Bayoh</p>
+            <!-- Placeholder for current year -->
+            <p id="current-year"></p>
+            <!-- Placeholder for last modified date -->
+            <p id="last-modified"></p>
+         </div>
+    </footer>
+</body>
+</html>
