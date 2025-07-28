@@ -1,10 +1,11 @@
 @media only screen and (min-width: 768px) {  
-    /***** Start of Directory*****/
-    .header-nav  {
-        display: flex;
-        align-items: center;
-        position: relative;
-    } 
+    
+/***** Start of Directory*****/
+.header-nav  {
+    display: flex;
+    align-items: center;
+    position: relative;
+} 
 
     /* Buttons */
      #ham-btn-2 {
@@ -45,9 +46,9 @@
 footer {
     display: grid;
     grid-template-columns: 1fr 1.2fr 1fr;
+    font-size: 18px;
 }
 
-/***** Start of Home *****/
 
 /* Header Section */
 .hero-content .cta-button {
@@ -69,61 +70,111 @@ footer {
     margin-left: 8rem;
 }
 
+/* Home Section */
+.home-container {
+    padding: var(--gutter-md);
+}
 
 /* Home Section */
+body {
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-sm);
+}
 
-/* Event Section */
+
+/* Event section */
 .event-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
 }
 
-.event-item-1, .event-item-2 {
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    margin-top: 1rem;
-    padding: 0 1rem;
+.event-container h2 {
+    grid-row: 1/2;
+    grid-column: 1/3;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: -1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.event-container section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-}
-
-/* Weather Section */
-.weather-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: .5rem;
-}
-
-.get-data h2 {
-    margin-top: -1rem;
-}
-
-.get-data, .forecast-list {
-    border: 1px solid #ccc;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.event-item-1 h3 {
-    padding: 2rem;
-}
+.event-item-1 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+} 
 
 .event-item-2 {
-    margin-top: 1.2rem;
+    grid-row: 2/3;
+    grid-column: 2/3;  
+} 
+
+.event-item-1, .event-item-2 {
+    font-weight: 200;
+    font-family: 'Oxygen', sans-serif;
+    padding-bottom: .5rem;
+    border-radius: 0 0 12px 12px;
+    background-color: var(--accent-color-4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .event-item-1 h3, .event-item-2 h3 {
-    margin: 0 -1rem;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-}/**** END OF 768px ****/
+/* .event-item-1 h3 {
+    padding-bottom: 3rem;
+} */
+
+.event-item-1 dl, .event-item-2 dl {
+    display: grid;
+    grid-template-columns: .4fr auto;
+    padding: 1rem 10px;
+}
+
+.event-item-1 dt, .event-item-2 dt {
+    font-weight: 700;
+    padding-bottom: .3rem;
+}
+
+.event-item-1 dt, .event-item-2 dt {
+    padding-right: .5rem;
+}
+
+.event-item-1 p, .event-item-2 p {
+    padding: 0 10px;
+}
+
+.event-item-1 .cta-button, .event-item-2 .cta-button {
+    width: 60%;
+}
+
+/* Weather Section */
+
+.weather-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.get-data {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.forecast-list {
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+.event-container h3 {
+    font-size: 1.3rem;
+}
+
+}
+/**** END OF 768px ****/
 
 
 @media only screen and (min-width: 1024px) {
@@ -146,115 +197,102 @@ footer {
 
 /* Hero Section */
 .hero-content p {
-    padding-left: 11.5rem;
+    padding-left: 12rem;
     font-size: 1.3rem;
     line-height: 2.3rem;
 }
 
 .hero-content .cta-button {
      width: 20%;
-     margin-left: 14rem;
+     margin-left: 16rem;
 }
 
-/* ----- Events Section ------*/
-
-.events-weather {
-    display: grid;
-    grid-template-columns: 1fr .5fr .3fr;
-    gap: .5rem;
+/* Event Section */
+.event-container .cta-button {
+    width: 50%;
 }
 
-.event-item-1 h3, .event-item-2 h3, .current-weather-data h3 {
+} /**** END OF 1024PX ****/
+
+
+@media only screen and (min-width: 1200px) {
+
+/* Header Section */
+
+.header-nav span {
     font-size: 1.2rem;
-    margin: 0 -1rem;
+} 
+
+.hero-content span {
+    font-size: 2.5rem;
 }
 
-.event-item-1 h3 {
-    margin-top: -1rem;
-   padding-bottom: 1.2rem;
+.hero-content p {
+    padding-left: 13.5rem;
 }
 
-.weather-data {
-    margin-top: 1.6rem;
+.hero-content p:nth-of-type(6) {
+    font-size: 1.5rem;
 }
 
-.forecast {
-    margin-top: 2rem;
+.hero-content .cta-button {
+    width: 20%;
+    margin-left: 18rem;
 }
 
-.event-item-1 dl, .event-item-2 dl, .event-item-1 p, .event-item-2 p,
-.current-data, .forecast 
- {
-    font-size: 1rem;
+/***** Start of Home *****/
+.home-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
 }
 
-/* .event-item-2 {
-    padding-bottom: 1.3rem;
-} */
+.home-container h1 {
+    grid-row: 1/2;
+    grid-column: 1/3;
+    margin-bottom: -1.5rem;
+}
 
-.events-container .cta-button {
+.event-container {
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.weather-section {
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+.business-container {
+    grid-row: 3/4;
+    grid-column: 1/5;
+}
+
+.cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.event-container h2, .weather-section h2 {
+    font-size: 1.8rem;
+}
+
+.weather-data, figure {
+    padding-bottom: 13.5rem;
+} 
+
+.event-container .cta-button {
     width: 80%;
 }
 
-.weather-data {
-    grid-template-columns: .5fr 1fr;
-} 
-
-.weather-data figure {
-    text-align: left;
+.event-item-1 .cta-button {
+    margin-top: 3rem;
 }
 
-.current-weather-data {
-    margin-right: 2rem;
-}
-
-.weather-forecast-container {
-    margin-left: -2rem;
-    margin-bottom: 1rem;
-}
-
-.events-container {
-    grid-template-columns: .8fr .8fr;
-}
+} /* END OF 1200PX */
 
 
-} /**** END OF 1024PX ****/
-/***** End of Home *****/
-
-@media only screen and (min-width: 1200px) {
-/***** Start of Directory *****/
-
-.trade-fair p {
-        font-size: 2rem;
-        top: 2.5rem;
-}
-
-h1 {
-    font-size: 2rem;
-} 
-
-.discover-cta-button {
-        font-size: 2rem;
-        top: 90%;
-}
-
-footer p {
-    font-size: 1.2rem;
-}
-
-/***** End of Directory *****/
-
-
-/***** Start of Home *****/
-.hero-content p {
-    padding-left: 40rem;
-}
-
-.header-nav .cta-button {
-    margin-left: 35rem;
-    }
-}
-    /***** End of Home *****/
 
 @media only screen and (min-width: 1440px){
 /* Start Home */
@@ -272,45 +310,42 @@ footer p {
 /* Start Hero */
 
 .hero-content span {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .hero-content p {
-    margin-left: -15rem;
+    font-size: 1.5rem;
+    margin-left: 8rem;
 }
 
 
 .hero-content .cta-button {
     width: 20%;
-    margin-left: 25rem;
+    margin-left: 22rem;
 }
 
 /* Home Section */
-.home-section h2, .weather-section h2, .business-container h2 {
-    font-size: 2rem;
+
+.forecast-list #forecast-1 {
+    padding-top: 1rem;
 }
 
-/* Start Events */
-
-.event-item-1 h3, .event-item-2 h3, .current-weather-data h3 {
-    font-size: 1.5rem;
+.event-item-1 .cta-button {
+    margin-top: 1rem;
 }
 
-.event-item-1 dl, .event-item-2 dl, .event-item-1 p, .event-item-2 p,
-.current-data, .forecast
-{
-    font-size: 1.2rem;
+.event-item-2 .cta-button {
+    margin-top: 3rem;
 }
 
-.events-container .cta-button {
-    width: 80%;
+.get-data h2 {
+    margin-top: -2rem;
 }
 
 /* Footer Section */
 footer {
-    font-size: 2.5rem;
+    font-size: 1.3rem;
     grid-template-columns: auto 1fr auto;
 }
 } 
 /**** END OF 1440px ****/
-
