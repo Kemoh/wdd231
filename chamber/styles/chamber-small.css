@@ -30,43 +30,44 @@ body {
     font-family: var(--body-font);
     font-size: var(--font-size-sm);
     line-height: var(--line-height-sm);
-    background-color: var(--body-bg-color);
 }
 
 /***** Start of Header *****/
 .header-nav {
 	display: grid;
     grid-template-columns: 60px 1fr 45px 45px;
-    align-items: center;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
 	background-color: var(--primary-bg-color);
 }
 
-.navigation-1, .navigation-2 {
-	grid-row: 2/3;
-	grid-column: 1/5;
-}
-
 .header-nav span {
-    font-size: .9rem;
+    font-size: .7rem;
     font-weight: 700;
     color: #ffffff;
+     padding: 5px 10px;
 }
 
-/* -----Hamburger Navigation 1 and 2 -----*/
+/* -----Hamburger Buttons 1 and 2 -----*/
 .hamburger-1, .hamburger-2 {
     background: none;
     border: none;
-    color: #ffffff;
     cursor: pointer;
-    font-size: 2rem;
+    padding: 0.25rem 10px;
 }
 
 .hamburger-1::before {
-    content: "\25D0";
+    content: "\2630";
+    color: #ffffff;
+    font-size: 2rem;
+    background-color: var(--primary-bg-color);
 }
 
 .hamburger-2::before {
-    content: "\2630";
+    content: "\25D0";
+    color: #ffffff;
+    font-size: 2rem;
+    background-color: var(--primary-bg-color);
 }
 
 .hamburger-1.show::before, .hamburger-2.show::before {
@@ -75,17 +76,23 @@ body {
     color: #ff0000;
 }
 
+
 /* -----Navigation 1 and 2 ----- */
 .navigation-1, .navigation-2 {
+	grid-row: 2/3;
+	grid-column: 1/5;
     display: none;  /* hide nav element by default */
+}
+
+.header-nav img {
+    margin-bottom: -10px;
 }
 
 .navigation-1.show, .navigation-2.show {
     display: block; /* show nav element when it has a class of 'show' */
-
 }
 
-.navigation-1 ul, .navigation-2 ul {
+.navigation-1 li, .navigation-2 li {
     list-style-type: none;
 }
 
@@ -94,9 +101,7 @@ body {
     padding: .8rem 10px;
     text-decoration: none;
     color: #ffffff;
-    font-size: 16px;
     border: 1px solid var(--accent-3);
-    background-color: var(--primary-bg-color);
 }
 
 .navigation-1 a:hover, .navigation-2 a:hover {
@@ -209,14 +214,13 @@ footer {
 
 .hero-content p {
     text-align: left;
-    line-height: 2rem;
     padding-left: 4rem;
     font-size: 1.25rem;
 }
 
 .hero-content p:nth-of-type(6) {
     padding-top: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .cta-button {
@@ -389,27 +393,25 @@ footer {
 .cards-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    gap: 25px;
     align-items: center;
+    place-items: center;
     margin-top: 1rem; 
 }
 
 .business-cards {
-    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     padding: 1rem;
+    border: 1px solid #ddd;
     border-radius: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color:var(--accent-color-4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    font-size: 14px;
-    word-break: break-all;
-    border: 5px solid var(--accent-2);
-    background-color: var(--accent-color-4);
-    max-width: 100%;
-    height: 100%;
+    text-align: center;
+    width: 100%;
 }
 
 .business-container {
@@ -428,6 +430,223 @@ footer {
 }
 
 /***** End of Home *****/
+
+
+/***** Start of Join *****/
+/* Form Section */
+
+html {
+  -webkit-text-size-adjust: 100%; 
+  -ms-text-size-adjust: 100%;
+}
+
+.join-container, .thank-you {
+    padding: var(--gutter-sm);
+}
+
+.join-container h2, .thank-you h2 {
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--primary-bg-color);
+    margin-bottom: 2rem;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    color: purple;
+    padding-top: .2rem;
+}
+
+.join-section {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.join-section h3 {
+    font-size: .95rem;
+    text-align: left;
+    color: var(--primary-bg-color);
+    margin-top: 1.5rem;
+    margin-bottom: .5rem;
+    border-bottom: 2px solid #eee;
+}
+
+input[type = text], input[type = tel], input[type = email], textarea {
+    display: block;
+      margin: .1rem 0 1rem 0 ;
+      padding: .3rem;
+      border: 1px solid #999;
+      border-radius: 4px;
+      border-left-width: 5px;
+      border-left-color:#555;
+      font-size: 1rem;
+      color: #3D405B;
+      width: 250px;
+}
+
+textarea {
+    width: 250px;
+	height: 150px;
+}
+
+input[type = radio] {
+    vertical-align: middle;
+    margin-right: 6px;
+    width: 15px;
+    height: 15px;
+}
+
+input:required {border-left-color: #d70000;}
+input:focus {border-left-color: #000000; outline: none;}
+
+input[type = submit] {
+border: none;
+text-align: center;
+background-color: #3D405B;
+color: white;
+border-radius: 1rem;
+padding: .75rem 6rem;
+margin: 1rem 0;
+font-size: 1.2rem;
+font-family: 'Roboto', sans-serif;
+-webkit-appearance: none;
+appearance: none;
+}
+
+input:-webkit-autofill{
+    -webkit-text-fill-color: #3D405B;
+}
+
+ #results {
+    background-color: #F4F1DE;
+    padding: 1rem;
+    border: 1px solid #E07A5F;
+    border-radius: 6px;
+    margin: 1rem 0;
+  }
+
+
+/* Membership Level Section */
+#level-dialog {
+    border: 3px solid rgba(0, 0, 0, 0.5);
+    margin: auto;
+}
+
+#level-dialog div {
+    display: grid;
+    grid-template-columns: auto 44px;
+    background-color: #ddd;
+    padding: 6px;
+    border-bottom: 1px solid #aaa;
+}
+
+.level-card-container h1 {
+    font-size: 2rem;
+}
+
+#level-dialog h2 {
+    margin: 0;
+    background-color: var(--primary-bg-color);
+}
+
+#level-dialog button {
+    margin: 0 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #aaa;
+}
+
+#level-dialog p {
+    padding: 10px;
+    color: #375170;
+}
+
+::backdrop {
+    background-color: rgba(225, 225, 225, 0.75);
+}
+
+/* Card Section */
+
+.level-card-container {
+    margin: 2rem 0;
+}
+
+#show-level-card section {
+    margin: 1rem auto;
+    padding-bottom: 1rem;
+    text-align: center;
+    background-color: #8884ff80;
+    border: 1px solid rgba(55, 55, 55, 0.5);
+    border-radius: 0 20px 0 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: var(--header-font);
+    width: 100%;
+    height: 100%;
+    transform: translateY(40px);
+    animation: cardFadeIn 1s ease-in-out forwards;
+}
+
+/* Keyframes */
+@keyframes cardFadeIn {
+    form {
+        transform: translateY(40px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+#show-level-card section:hover {
+    transform: translate(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+.level-card-container h2, .join-section h2 {
+    padding: 1rem;
+    font-size: 1.3rem;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--primary-bg-color);
+    font-family: var(--header-font);
+}
+
+ #show-level-card h2 {
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #000000;
+    background: #8884ff80;;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ #show-level-card button {
+    border: none;
+    padding: 10px 18px;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #003366;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ #show-level-card button:hover {
+    background: #00509e;;
+ }
+/* End of Join Page*/
+
+
+
+
+
 
 
 

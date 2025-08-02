@@ -1,0 +1,53 @@
+*{box-sizing: border-box;}
+
+#mydialog div {
+    display: grid;
+    grid-template-columns: auto 44px;
+    background-color: #ddd;
+    padding: 6px;
+    border-bottom: 1px solid #aaa;
+}
+
+#mydialog h2 {
+    margin: 0;
+    color: #275690;
+}
+
+#mydialog button {
+    margin: 0 5px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #aaa;
+}
+
+#mydialog p {
+    padding: 0;
+    color: #375170;
+}
+
+::backdrop {
+    background-color: rgba(225, 225, 225, 0.75);
+}
+
+
+
+nav a {
+  flex: 1 1 100%;
+  display: block;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid rgba(0,0,0,.1);
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+
+
+nav a:hover,
+nav a:focus {
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}

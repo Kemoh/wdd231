@@ -85,15 +85,10 @@ const displayMembers = (members) => {
         let name = document.createElement('h3');
         let logoImage = document.createElement('img');
         let address = document.createElement('p');
-        address.classList.add('address');
         let websiteurl = document.createElement('p');
-        websiteurl.classList.add('weburl');
         let phonenumber = document.createElement('p');
-        phonenumber.classList.add('mobilenumber');
         let tagline = document.createElement('p');
-        tagline.classList.add('tag');
         let membersLevel = document.createElement('p');
-        membersLevel.classList.add('.memberlevel');
         
         // Set attributes for img element memberNamed logoImage
         logoImage.setAttribute('src', member.imageURL);
@@ -106,11 +101,11 @@ const displayMembers = (members) => {
         name.textContent = `${member.memberName}`;
 
         // Populate the p elements with their content
-        address.textContent = `${member.memberAddress}`;
-        websiteurl.textContent = `${member.websiteURL}`;
-        phonenumber.textContent = `${member.phoneNumber}`;
-        tagline.textContent = `${member.memberTagline}`;
-        membersLevel.textContent = `${member.membershipLevel}`;
+        address.innerHTML = `<span class='label'>${member.memberAddress}</span>`;
+        websiteurl.innerHTML = `<span class='labe'>${member.websiteURL}</span>`;
+        phonenumber.innerHTML = `<span class='label'>${member.phoneNumber}</span>`;
+        tagline.innerHTML = `<span class='label'>${member.memberTagline}</span>`;
+        membersLevel.innerHTML = `<span class='label'>${member.membershipLevel}</span>`;
        
         // Append elements to the div.card created above
         card.appendChild(logoImage);

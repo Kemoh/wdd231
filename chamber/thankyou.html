@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freetown Chamber of Commerce Join Page</title>
+    <meta name="description" content="Join the Freetown Chamber of Commerce today and connect with Sierra Leone's leading business network. Gain exclusive benefits, grow your business, and shape the future of commerce in Freetown.">
+    <meta name="author" content="Freetown Chamber of Commerce">
+
+     <!-- Facebooh Open Graphs Properties -->
+    <meta property="og:title" content="Freetown Chamber of Commerce Directory">
+    <meta property="og:description" content="Explore our trusted directory of local businesses and services in Freetown. Connect with professionals and support local growth.">
+    <meta property="og:url" content="https://kemoh.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://kemoh.github.io/wdd231/chamber/images/directory_hero.webp">
+
+    <!--  Font Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber-small.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <!-- Butterfly Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+
+    <!-- JavaScripts -->
+    <script src="scripts/chamber-nav.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/join-form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-nav">
+
+            <!-- Chamber Logo -->
+            <img src="images/white_tree_logo.svg" alt="Site Logo" width="60" height="60">
+
+            <!-- Chamber Name -->
+            <span>FREETOWN CHAMBER OF COMMERCE</span>
+
+            <!-- Hamburger Buttons -->
+            <button id="ham-btn-1" class="hamburger-1" aria-label="Hamburger Button 1"></button>
+            <button id="ham-btn-2" class="hamburger-2" aria-label="Hamburger Button 2"></button>
+            
+            <!-- Navigation 1 -->
+            <nav id="nav-bar-1"  class="navigation-1">
+                <ul>
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="directory.html">Directory</a>
+                    </li>
+                    <li>
+                        <a href="join.html">Join</a>
+                    </li>    
+                    <li>
+                        <a href="discover.html">Discover</a>
+                    </li>    
+                </ul>
+            </nav>
+     
+            <!-- Navigation 2 -->
+            <nav id="nav-bar-2" class="navigation-2">
+                <ul>
+                    <li class="active">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="poadcast.html">Podcast</a>
+                    </li>
+                    <li>
+                        <a href="events.html">Events</a>
+                    </li>       
+                </ul>
+            </nav> 
+        </div>
+    </header>
+    <main>
+      <section class="thank-you">
+      <h1>Thank You</h1>
+      <h2>Member Application Details</h2>
+      <p>Thank you for your interest in joing the Freetown Chamber of Commerce! We will reach out to you in a week's time via the email provided.<br>Below are the information you sent to us:</p>
+      
+      <div id="results"></div>
+
+       <!-- Hidden timestamp field -->
+      <input type="hidden" name="current-date-time"  id="current-date-time">
+    </section>    
+    </main>
+
+    <footer>
+        <!-- Company Info -->
+         <div class="company-info">
+             <p>Freetown Chamber of Commerce</p>
+             <p>21 Siaka Steven Street</p>
+             <p>Freetown, Sierra Leone</p>
+             <p>info@fcc.org</p>
+             <p> (+232) 76 111 222</p>
+         </div>
+        
+        <!-- Course Social Media Links -->
+        <div class="social">
+            <a href="https://www.linkedin.com/in/bayohumaru/" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="44" height="44" loading="lazy">
+            </a>
+            
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook" width="64" height="64" loading="lazy">
+            </a>
+
+            <a href="https://x.com/" target="_blank">
+                <img src="images/twitter-x.svg" alt="Twitter-X" width="44" height="44" loading="lazy">
+            </a>
+        </div>
+
+            <!-- Current year -->
+         <div class="footer-paragraphs">
+            <p>WDD231 Class Project</p>
+            <p>Umaru Bayoh</p>
+            <!-- Placeholder for current year -->
+            <p id="current-year"></p>
+            <!-- Placeholder for last modified date -->
+            <p id="last-modified"></p>
+         </div>
+    </footer>
+</body>
+</html>

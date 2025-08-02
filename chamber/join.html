@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freetown Chamber of Commerce Join Page</title>
+    <meta name="description" content="Join the Freetown Chamber of Commerce today and connect with Sierra Leone's leading business network. Gain exclusive benefits, grow your business, and shape the future of commerce in Freetown.">
+    <meta name="author" content="Freetown Chamber of Commerce">
+
+     <!-- Facebooh Open Graphs Properties -->
+    <meta property="og:title" content="Freetown Chamber of Commerce Directory">
+    <meta property="og:description" content="Explore our trusted directory of local businesses and services in Freetown. Connect with professionals and support local growth.">
+    <meta property="og:url" content="https://kemoh.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://kemoh.github.io/wdd231/chamber/images/directory_hero.webp">
+
+    <!--  Font Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber-small.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <!-- Butterfly Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+
+    <!-- JavaScripts -->
+    <script src="scripts/chamber-nav.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/levels-data.js" type="module" defer></script>
+    <script src="scripts/join-levels.js" type="module" defer></script>
+    <script src="scripts/join-form.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-nav">
+
+            <!-- Chamber Logo -->
+            <img src="images/white_tree_logo.svg" alt="Site Logo" width="60" height="60">
+
+            <!-- Chamber Name -->
+            <span>FREETOWN CHAMBER OF COMMERCE</span>
+
+            <!-- Hamburger Buttons -->
+            <button id="ham-btn-1" class="hamburger-1" aria-label="Hamburger Button 1"></button>
+            <button id="ham-btn-2" class="hamburger-2" aria-label="Hamburger Button 2"></button>
+            
+            <!-- Navigation 1 -->
+            <nav id="nav-bar-1"  class="navigation-1">
+                <ul>
+                    <li class="active">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="directory.html">Directory</a>
+                    </li>
+                    <li>
+                        <a href="join.html">Join</a>
+                    </li>    
+                    <li>
+                        <a href="discover.html">Discover</a>
+                    </li>    
+                </ul>
+            </nav>
+     
+            <!-- Navigation 2 -->
+            <nav id="nav-bar-2" class="navigation-2">
+                <ul>
+                    <li class="active">
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="poadcast.html">Podcast</a>
+                    </li>
+                    <li>
+                        <a href="events.html">Events</a>
+                    </li>       
+                </ul>
+            </nav> 
+        </div>
+    </header>
+
+    <main>
+        <section class="join-container">
+            <h1>Join</h1>
+
+            <!-- Membership Form -->
+             <section class="join-section">
+                <h2>Membership Application Form</h2>
+                
+                <form action="thankyou.html" method="get" id="join-form" class="form-design">
+                    <label>First Name: <input type="text" name="first" title="Your First Name" autocomplete="given-name" required></label>
+                    <label>Last Name: <input type="text" name="last" title="Your Last Name" autocomplete="family-name" required></label>
+                    <label for="organization-title">Organizational Title: <input type="text" id="organization-title" name="organization-title" title="Your business/organization's title" autocomplete="organization-title" required></label>
+                    <label>Email: <input type="email"
+                    name="email" title="Your Email"  autocomplete="email"  placeholder="john89@gmail.com" required></label>
+                    <label>Cell Phone: <input type="tel" name="phone" title="A phone number with dashed" autocomplete="tel"  placeholder="+232-70-123-456"></label>
+                    <label>Organization: <input type="text" name="organization" title="Your business/organization's name"  autocomplete="organization" required></label>
+                    <label>Business Description <textarea name="description" title="Your business/organization's description"></textarea></label>
+
+                    <h3>Select Membership Type</h3>
+                    <label><input type="radio" name="membership-type" title="Non-Profit Membership" value="Non-Profit" checked>Non-Profit</label>
+                    <label><input type="radio" name="membership-type" title="Bronze Membership"  value="Bronze">Bronze</label>
+                    <label><input type="radio" name="membership-type" title=" Silver Membership"  value="Silver">Silver</label>
+                    <label><input type="radio" name="membership-type" title="Gold Membership"  value="Gold">Gold</label>
+
+                    <!-- Form Submit Buton -->
+                    <input type="submit" value="Join Me">
+                </form>
+             </section> <!--End of form Section-->
+
+        <!-- Card Section -->
+            <section class="level-card-container">
+                <h2>Membership Levels</h2>
+                <!-- LevelsCard Section -->
+                <div id="show-level-card"></div>
+
+                <!-- Single Dialog for levelsCard -->
+                 <dialog id="level-dialog">
+                    <div>
+                        <h2>Sample Title</h2>
+                        <button>X</button>
+                    </div>
+                    <p id="dialog-description"></p>
+                    <p id="dialog-benefits"></p>
+                 </dialog>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Company Info -->
+         <div class="company-info">
+             <p>Freetown Chamber of Commerce</p>
+             <p>21 Siaka Steven Street</p>
+             <p>Freetown, Sierra Leone</p>
+             <p>info@fcc.org</p>
+             <p> (+232) 76 111 222</p>
+         </div>
+        
+        <!-- Course Social Media Links -->
+        <div class="social">
+            <a href="https://www.linkedin.com/in/bayohumaru/" target="_blank">
+                <img src="images/linkedin.svg" alt="LinkedIn" width="44" height="44" loading="lazy">
+            </a>
+            
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="images/facebook.svg" alt="Facebook" width="64" height="64" loading="lazy">
+            </a>
+
+            <a href="https://x.com/" target="_blank">
+                <img src="images/twitter-x.svg" alt="Twitter-X" width="44" height="44" loading="lazy">
+            </a>
+        </div>
+
+            <!-- Current year -->
+         <div class="footer-paragraphs">
+            <p>WDD231 Class Project</p>
+            <p>Umaru Bayoh</p>
+            <!-- Placeholder for current year -->
+            <p id="current-year"></p>
+            <!-- Placeholder for last modified date -->
+            <p id="last-modified"></p>
+         </div>
+    </footer>
+</body>
+</html>
