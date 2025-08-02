@@ -45,7 +45,7 @@
 footer {
     display: grid;
     grid-template-columns: 1fr 1.2fr 1fr;
-    font-size: 18px;
+    text-align: left;
 }
 
 
@@ -189,6 +189,8 @@ body {
 .level-card-container {
     margin: 0;
 }
+
+
 
 }
 /**** END OF 768px ****/

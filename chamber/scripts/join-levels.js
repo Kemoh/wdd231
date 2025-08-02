@@ -10,7 +10,7 @@ const memberLevel = document.querySelector('#show-level-card');
 // Select dialog DOM elements
 const levelDialog = document.querySelector('#level-dialog');
 
-const levelDialogHeading = document.querySelector('#level-dialog h2');
+const levelDialogHeading = document.querySelector('#level-dialog h3');
 
 const levelDialogDescription = document.querySelector('#dialog-description');
 
@@ -27,7 +27,7 @@ function displayMemberLevels() {
         //console.log(level);
         // Create elements
         const sectionContainer = document.createElement('section');
-        const sectionHeading = document.createElement('h2');
+        const sectionHeading = document.createElement('h3');
         const learnMoreLink = document.createElement('button');
        
 
