@@ -9,13 +9,13 @@ const myInfo = new URLSearchParams(window.location.search);
 //console.log(myInfo);
 
 // Select the DOm element in the thanks.html to display info in the thanks.html page instead of the console
-// document.querySelector('#results').innerHTML = `<p>Your first name is: ${myInfo.get('first')}</P>
-// <p>Your last name is: ${myInfo.get('last')}</P>
-// <p>Your title is: ${myInfo.get('organization-title')}</P>
-// <p>Your email address is: ${myInfo.get('email')}</P>
-// <p>Your contact number is: ${myInfo.get('phone')}</P>
-// <p>The name of your organization is: ${myInfo.get('organization')}</P>
-// <p>A brief description of your organization is: ${myInfo.get('description')}</P>`
+document.querySelector('#results').innerHTML = `<p>Your first name is: ${myInfo.get('first')}</P>
+<p>Your last name is: ${myInfo.get('last')}</P>
+<p>Your title is: ${myInfo.get('organization-title')}</P>
+<p>Your email address is: ${myInfo.get('email')}</P>
+<p>Your contact number is: ${myInfo.get('phone')}</P>
+<p>The name of your organization is: ${myInfo.get('organization')}</P>
+<p>A brief description of your organization is: ${myInfo.get('description')}</P>`
 
 
 // Set current date and time using toLocalDateString() and to toLocalTimeString() methods
