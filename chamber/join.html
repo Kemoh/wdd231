@@ -27,8 +27,8 @@
     <!-- JavaScripts -->
     <script src="scripts/chamber-nav.js" defer></script>
     <script src="scripts/dates.js" defer></script>
-    <script src="scripts/levels-data.js" type="module" defer></script>
-    <script src="scripts/join-levels.js" type="module" defer></script>
+    <script src="scripts/levels-data.js" type="module"></script>
+    <script src="scripts/join-levels.js" type="module"></script>
     <script src="scripts/join-form.js" defer></script>
 </head>
 
@@ -107,6 +107,10 @@
 
                     <!-- Form Submit Buton -->
                     <input type="submit" value="Join Me">
+
+                    <!-- Hidden timestamp field -->
+                     
+                    <input type="hidden" name="current-date-time"  id="current-date-time">
                 </form>
              </section> <!--End of form Section-->
 
