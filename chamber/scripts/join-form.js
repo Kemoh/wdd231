@@ -1,14 +1,15 @@
-
 // FORM SECTION
 // Select the DOM element to output results
-// const getString = window.location.search;
-// console.log(getString);
+const getString = window.location.search;
+console.log(getString);
 
-// Use the URLSearchParams object to display the information
+
+//Use the URLSearchParams object to display the information
 const myInfo = new URLSearchParams(window.location.search);
-//console.log(myInfo);
+console.log(myInfo);
 
-// Select the DOm element in the thanks.html to display info in the thanks.html page instead of the console
+
+// Select the DOM element in the join.html to display info in the thanks.html page instead of the console
 document.querySelector('#results').innerHTML = `<p>Your first name is: ${myInfo.get('first')}</P>
 <p>Your last name is: ${myInfo.get('last')}</P>
 <p>Your title is: ${myInfo.get('organization-title')}</P>
@@ -20,6 +21,9 @@ document.querySelector('#results').innerHTML = `<p>Your first name is: ${myInfo.
 
 // Set current date and time using toLocalDateString() and to toLocalTimeString() methods
 document.addEventListener('DOMContentLoaded', () => {
+    // Select the DOM element and assign it to a variable
+    let hiddenInput = document.getElementById('current-date-time');
+
     // Get current date
     const now = new Date(); 
 
@@ -30,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         month: '2-digit',
         year: 'numeric'
     };
+
     const datePart = now.toLocaleDateString('en-GB', dateOptions).replace(/\//g, '-');
 
     // Set up the time format object parameter for toLocalDateString method
@@ -38,18 +43,24 @@ document.addEventListener('DOMContentLoaded', () => {
         minute: '2-digit',
         hour12: true
     };
+
     const timePart = now.toLocaleTimeString('en-GB', timeOptions);
 
     // Combine date and time
     const timeStamp = `${datePart} ${timePart};`
-
-    // Set hidden input value
-    document.getElementById('current-date-time').value = timeStamp;
-
+    
     // Display timestamp
     if (timeStamp) {
     console.log(`Form was loaded at: ${timeStamp}`); 
     } else {
         console.log('No timestamp found in URL.');
     };
+
+    // Set hidden input value
+    hiddenInput = timeStamp;
+
 });
+
+
+
+

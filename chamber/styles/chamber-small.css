@@ -646,140 +646,213 @@ input:-webkit-autofill{
 
 
 
+/* Start of Discover Page */
 
+.discover-container h1 {
+   padding: 1rem 10px;
+   margin-bottom: -2rem;
+}
 
+#showPlaces div {
+	background-color: var(--accent-color-1);
+	margin: 10px;
+    margin-bottom: 2rem;
+	border: 1px solid #999;
+	border-radius: 8px;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	padding-bottom: 1rem;
 
+	/* Use of grid-template-areas */
+	display: grid;
+	grid-template-areas: 
+	"name"
+	"photograph"
+    "address"
+	"description"
+	"button";
+}
 
+#showPlaces div h2 {
+	grid-area: name;
+    background: none;
+    color: navy;
+    font-size: 1.5rem;
+    text-align: center;
+}
 
-/***** Start of Directory  *****/
-/* Hero Div Section */
-/* .dir-container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-} */
-
-/* .dir-container img {
+#showPlaces div figure { 
+	grid-area: photograph;
     width: 100%;
     height: auto;
-    display: block;
-} */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-/* Text Banner */
-/* .trade-fair p {
-    position: absolute;
-    top: 1rem;
-    padding: 10px;
-    color: #ffffff;
-    text-align: center;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-} */
+#showPlaces div .first-p {
+    grid-area: address;
+    font-size: 16px;
+    font-weight: 700;
+}
 
-/* CTA Button */
-/* .discover-cta-button {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: .5rem 1rem;
-    border: 1px solid var(--accent-1);
-    border-radius: 10px;
-    color: #ffffff;
-    font-size: 1rem;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-} */
+#showPlaces div .second-p {
+    grid-area: description;
+}
 
-/* .trade-fair a:hover {
-    background-color: var(--secondary-color);
-} */
+#showPlaces div p {
+    padding: .5rem 10px;
+}
+
+#showPlaces div button {
+    grid-area: button;
+	padding:  10px 10px;
+	margin: 0 10px ;
+    font-weight: 700;
+	border-radius: 10px;
+	border: 1px solid #999;
+}
+
+/* Visitor Message Styling */
+#visitor-message {
+	color: var(--accent-2);
+	text-align: center;
+}
+
+/* End of Discover Page */
 
 
-/* Grid/List Filtering */
-/* .filtercards {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+/* Directory Page */
+
+.directory-container {
+    margin: 0 auto;
+    padding: 0.5rem;
+    max-width: 700px;
+    background-color: #ffffff;
+}
+
+.directory-container h1 {
+    margin-bottom: -1.3rem;
+}
+
+
+/* Grid/Lists Buttons */
+.menu {
+    margin: 1rem auto;
+	padding: 0.5rem;
+	background-color: #333;
+	text-align: center;
+
+    	button {
+		padding: 0.5rem 1rem;
+		font-weight: 700;
+	}
+}
+
+
+/* Card */
+.grid section {
+    border: 1px solid rgb(0 0 0 / 10%);
+	padding: 0.5rem;
+	background-color: #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    	.weburl {
+		    font-size: 0.85rem;
+		    color: navy;
+    }
+
+        h2 {
+		    font-size: 1.2rem;
+            background: none;
+	}
+
+        .tag, .address, .mobilenumber {
+            font-size: 1rem;
+        }
+}
+
+
+/* Grid View */
+.grid {
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1rem;
     margin-bottom: 1rem;
-    background-color: var(--secondary-color);
-    padding: 1rem;
-} */
-/* 
-.filtercards button {
-    padding: 0.5rem 1rem;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    border-radius: 4px;
-    background: #ffffff;
-} */
+	align-items: center;
 
-/* .filtercards button.active {
-    color: #ffffff;
-    background: var(--primary-color);
-} */
+    	section {
+		    text-align: center;
+		    & > * {
+			margin: 0.1rem;}
+        }
 
-/* Design the grid-view */
-/* .cards-container.grid-view {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
-    align-items: center;
-} */
+        img {
+		    border: 1px solid #fff;
+		    box-shadow: 0 0 1rem #555;}
 
-/* .business-cards {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-left: 5px solid var(--accent-2); 
-        padding: 1rem 10px;
-        border-radius: 1rem;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        font-size: 14px;
-        word-break: break-all;
-    } */
+        h2 {color: var(--primary-bg-color);}
 
-     /* img {
-		border: 1px solid #fff;
-		box-shadow: 0 0 1rem #555;
-        margin-bottom: 1rem;
-	} */
- /*End of grid-view */
+        .tag, .address, .mobilenumber {
+             font-size: .8rem;
+        }
+}
 
 
-/* Design the list-view */
-/* .cards-container.list-view {
+/* List View */
+.list {
     display: flex;
-    flex-direction: column;
-}
-     */
-/* .business-cards {
-    display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	margin: 0;
-	padding: 0.25rem;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-} */
-/* 
-img, p:last-child, p:first-child, .tag {
-	display: none;
+	flex-direction: column;
+
+        section {
+		    display: grid;
+		    grid-template-columns: 1fr 1fr 1fr;
+		    padding: 0.25rem;
+            border-radius: 0;
+            margin-bottom: 1rem;
+
+		    & > * {
+			    margin: 0 1rem;
+		    }
+
+		    img {
+			    display: none;
+		    } 
+          
+        	h2 {
+			    font-size: .85rem;
+                background: none;
+                color: #000000;
+		    }
+
+		    &:nth-child(even) {
+			    background-color: darkgray;
+		    } 
+
+            .mobilenumber {
+            font-size: .85rem;
+        }
+
+            .address {
+            display: none;
+        }
+
+            .tag {
+                display: none;
+            }
+
+            .weburl {
+		    font-size: 0.85rem;
+            word-break: break-all;
+        }
 }
 
-.mobilenumber {
-    text-align: center;} */
+}
 
-/* &:nth-child(even) {
-			background-color: #ccc;
-		} */
+img {
+	width: auto;
+	height: 75px;
+}
+
  /*End of lisrt-view
 /***** End of Directory *****/
-
-
-/* Directory Listings Section */

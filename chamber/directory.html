@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freetown Chamber of Commerce Join Page</title>
-    <meta name="description" content="Join the Freetown Chamber of Commerce today and connect with Sierra Leone's leading business network. Gain exclusive benefits, grow your business, and shape the future of commerce in Freetown.">
+    <title>Freetown Chamber of Commerce Directory Page</title>
+    <meta name="description" content="Find trusted businesses and services in Freetown with the Chamber of Commerce Directory. Connect with local companies, entrepreneurs, and professionals across Sierra Leone.">
     <meta name="author" content="Freetown Chamber of Commerce">
 
      <!-- Facebooh Open Graphs Properties -->
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber-small.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
+
     <!-- Butterfly Favicon -->
     <link rel="icon" href="favicon.ico">
 
@@ -27,23 +28,20 @@
     <!-- JavaScripts -->
     <script src="scripts/chamber-nav.js" defer></script>
     <script src="scripts/dates.js" defer></script>
-    <script src="scripts/join-form.js" type="module" defer></script>
+    <script src="scripts/members.js" defer></script>
+   
 </head>
 
 <body>
     <header>
         <div class="header-nav">
-
             <!-- Chamber Logo -->
             <img src="images/white_tree_logo.svg" alt="Site Logo" width="60" height="60">
-
             <!-- Chamber Name -->
             <span>FREETOWN CHAMBER OF COMMERCE</span>
-
             <!-- Hamburger Buttons -->
             <button id="ham-btn-1" class="hamburger-1" aria-label="Hamburger Button 1"></button>
             <button id="ham-btn-2" class="hamburger-2" aria-label="Hamburger Button 2"></button>
-            
             <!-- Navigation 1 -->
             <nav id="nav-bar-1"  class="navigation-1">
                 <ul>
@@ -78,15 +76,20 @@
             </nav> 
         </div>
     </header>
-    <main>
-      <section class="thank-you">
-      <h1>Thank You</h1>
-      <h2>Member Application Details</h2>
-      <p>Thank you for your interest in joing the Freetown Chamber of Commerce! We will reach out to you in a week's time via the email provided.<br>Below are the information you sent to us:</p>
-      
-      <div id="results"></div>
 
-    </section>    
+    <main>
+        <section class="directory-container">
+            <h1>Directory</h1>
+            <!-- Buttons to filter businesses -->
+             <div class="menu">
+                <button id="grid">⏹️Grid</button>
+                <button id="list">📄List</button>
+            </div>
+        
+            <!-- div to display members -->
+            <div id="members" class="grid"></div>
+    
+        </section>
     </main>
 
     <footer>

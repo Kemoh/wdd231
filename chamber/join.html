@@ -28,8 +28,8 @@
     <script src="scripts/chamber-nav.js" defer></script>
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/levels-data.js" type="module"></script>
-    <script src="scripts/join-form.js" defer></script>
     <script src="scripts/join-levels.js" type="module"></script>
+    <script src="scripts/join-form.js" defer></script>
 </head>
 
 <body>
@@ -89,14 +89,17 @@
              <section class="join-section">
                 <h2>Membership Application Form</h2>
                 
-                <form action="thankyou.html" method="get" id="join-form" class="form-design">
-                    <label>First Name: <input type="text" name="first" title="Your First Name" autocomplete="given-name" required></label>
+                <form action="thankyou.html" method="get" id="join-form" class="form-design" autocomplete="on">
+                    <label>First Name: <input type="text" name="first" title="Your First Name" autocomplete="given-name" ></label>
+
                     <label>Last Name: <input type="text" name="last" title="Your Last Name" autocomplete="family-name" required></label>
-                    <label for="organization-title">Organizational Title: <input type="text" id="organization-title" name="organization-title" title="Your business/organization's title" autocomplete="organization-title" required></label>
+
+                    <label>Organizational Title: <input type="text"  name="Organization Title" title="Your Organizational Title"  required pattern="[A-Za-z\s\-]{7,}"  placeholder="e.g., Executive Director" autocomplete="organization-title">
+                    </label>
                     <label>Email: <input type="email"
                     name="email" title="Your Email"  autocomplete="email"  placeholder="john89@gmail.com" required></label>
                     <label>Cell Phone: <input type="tel" name="phone" title="A phone number with dashed" autocomplete="tel"  placeholder="+232-70-123-456"></label>
-                    <label>Organization: <input type="text" name="organization" title="Your business/organization's name"  autocomplete="organization" required></label>
+                    <label>Organization: <input type="text" name="organization" title="Your organization's name"  autocomplete="organization" required></label>
                     <label>Business Description <textarea name="description" title="Your business/organization's description"></textarea></label>
 
                     <h3>Select Membership Type</h3>
@@ -109,7 +112,6 @@
                     <input type="submit" value="Join Me">
 
                     <!-- Hidden timestamp field -->
-                     
                     <input type="hidden" name="current-date-time"  id="current-date-time">
                 </form>
              </section> <!--End of form Section-->

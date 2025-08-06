@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Freetown Chamber of Commerce Join Page</title>
-    <meta name="description" content="Join the Freetown Chamber of Commerce today and connect with Sierra Leone's leading business network. Gain exclusive benefits, grow your business, and shape the future of commerce in Freetown.">
+
+    <title>Freetown Chamber of Commerce Discover Page</title>
+
+    <meta name="description" content="JDiscover Freetown — Sierra Leone's vibrant capital. Learn about its growing economy, diverse community, rich culture, and business opportunities that make it the perfect place to live, work, and invest.">
+
     <meta name="author" content="Freetown Chamber of Commerce">
 
      <!-- Facebooh Open Graphs Properties -->
@@ -19,15 +22,16 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber-small.css">
+    <link rel="stylesheet" href="styles/chamber-medium.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
+
     <!-- Butterfly Favicon -->
     <link rel="icon" href="favicon.ico">
-
 
     <!-- JavaScripts -->
     <script src="scripts/chamber-nav.js" defer></script>
     <script src="scripts/dates.js" defer></script>
-    <script src="scripts/join-form.js" type="module" defer></script>
+    <script src="scripts/discovery.js" type="module"></script>
 </head>
 
 <body>
@@ -78,15 +82,14 @@
             </nav> 
         </div>
     </header>
-    <main>
-      <section class="thank-you">
-      <h1>Thank You</h1>
-      <h2>Member Application Details</h2>
-      <p>Thank you for your interest in joing the Freetown Chamber of Commerce! We will reach out to you in a week's time via the email provided.<br>Below are the information you sent to us:</p>
-      
-      <div id="results"></div>
 
-    </section>    
+    <main>
+        <section class="discover-container">
+            <h1>Discover</h1>
+            <!-- div for injecting places photos -->
+             <div id="showPlaces"></div>
+ 
+        </section>
     </main>
 
     <footer>
@@ -123,6 +126,11 @@
             <!-- Placeholder for last modified date -->
             <p id="last-modified"></p>
          </div>
+
+          <!-- div for injecting viisitor message -->
+        <div id="sidebar">
+            <div id="visitor-message"></div>
+        </div>
     </footer>
 </body>
 </html>

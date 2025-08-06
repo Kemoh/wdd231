@@ -1,0 +1,21 @@
+@media only screen and  (min-width: 38rem){
+
+    /* Discover Page */
+#showPlaces div {
+    grid-template-areas: 
+    "photograph name"
+    "photograph address"
+    "photograph description"
+    "photograph button";
+}
+
+#showPlaces div .first-p {
+    padding: 0 5px;
+}
+
+#showPlaces div .hover-effect:hover {
+    /* hover effect */
+    box-shadow: 0 0 50px #333;
+}
+
+}

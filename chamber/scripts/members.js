@@ -1,8 +1,8 @@
 // Get JSON url resource
-const url = 'https://raw.githubusercontent.com/Kemoh/wdd231/refs/heads/main/chamber/data/members.json';
+const url = 'https://raw.githubusercontent.com/Kemoh/wdd231/main/chamber/data/members.json';
 
-// Select the DOM element for output
-const cards = document.querySelector('#listings');
+// Select the DOM element for outputing the members card
+const grid = document.querySelector('#members');
 
 // Fetch data using the async/await method
 async function getMembersData() {
@@ -10,7 +10,6 @@ async function getMembersData() {
     const response = await fetch(url);
     // Parse the JSON data
     const data = await response.json();
-    // Check the parse data
     //console.table(data.members);
     //Call a function named displayMembers
     displayMembers(data.members);
@@ -18,12 +17,12 @@ async function getMembersData() {
 // Call the getMembersData function
 getMembersData();
 
+
+
 // Define displayMembers function named "displayMembers" that handles a single parameter named "members"
 const displayMembers = (members) => {
-    // Use forEach loop to process each member
     members.forEach(member => {
-        // Create elements to add to the div.cards element
-        let card = document.createElement('div');
+        let card = document.createElement('section');
         let name = document.createElement('h2');
         let logoImage = document.createElement('img');
         let address = document.createElement('p');
@@ -39,8 +38,8 @@ const displayMembers = (members) => {
         logoImage.setAttribute('src', member.imageURL);
         logoImage.setAttribute('alt', `${member.memberName} Logo`);
         logoImage.setAttribute('loading', 'lazy');
-        logoImage.setAttribute('width', '131');
-        logoImage.setAttribute('height', '131');
+        logoImage.setAttribute('width', '100');
+        logoImage.setAttribute('height', '100');
 
         // Populate the h2 element with the member's name
         name.textContent = `${member.memberName}`;
@@ -63,31 +62,31 @@ const displayMembers = (members) => {
         card.classList.add('business-cards');
 
         // Append the loaded card to the cards div selected in the DOM above
-        cards.appendChild(card);
+        grid.appendChild(card);
     }); // end of arrow function and forEach loop
 }
 
 // Toggle Between Views
-// Select the DOM elements for output
+// Select the DOM elements for outputing the grid view and the list view
 const gridbutton = document.querySelector('#grid');
 const listbutton = document.querySelector('#list');
-const listings = document.querySelector('#listings');
+const display = document.querySelector('.grid');
 
-// Add Event Listeners to the gridbutton by using classList to add and remove views
+// Add Event Listener to the gridbutton by using classList to add and remove views
 gridbutton.addEventListener('click', () => {
-    listings.classList.remove('list-view');
-    listings.classList.add('grid-view');
-    gridbutton.classList.add('active');
-    listbutton.classList.remove('active');
+    display.classList.add('grid');
+    display.classList.remove('list');
+   
+    // gridbutton.classList.add('active');
+    // listbutton.classList.remove('active');
 });
 
-// Add Event Listeners to the gridbutton by using classList to add and remove views
-listbutton.addEventListener('click', () => {
-    listings.classList.remove('grid-view');
-    listings.classList.add('list-view');
-    listbutton.classList.add('active');
-    gridbutton.classList.remove('active');
-});
 
-// Set initial view
-listings.classList.add('grid-view');
+// Add Event Listener to the list button by using a defined function
+listbutton.addEventListener('click', showList);
+
+// Define the showList function
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
+}

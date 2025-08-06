@@ -231,6 +231,37 @@ body {
     width: 50%;
 }
 
+
+/* Discover Page */
+    #showPlaces {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} 
+
+
+#showPlaces div figure img  { 
+	width: 220px;
+}
+
+#showPlaces div .first-p {
+    font-size: 1.1rem;
+    padding: 0 10px;
+}
+
+#showPlaces div .second-p {
+    font-size: 1.2rem;
+    padding: 1rem 8px;
+}
+
+#showPlaces div button {
+    font-size: 1rem;
+}
+
+footer #sidebar {
+    grid-row: 2/3;
+    grid-column: 1/4;
+}
+
 } /**** END OF 1024PX ****/
 
 
