@@ -683,8 +683,6 @@ input:-webkit-autofill{
 
 #showPlaces div figure { 
 	grid-area: photograph;
-    width: 100%;
-    height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -787,9 +785,9 @@ input:-webkit-autofill{
 			margin: 0.1rem;}
         }
 
-        img {
+        /* img {
 		    border: 1px solid #fff;
-		    box-shadow: 0 0 1rem #555;}
+		    box-shadow: 0 0 1rem #555;} */
 
         h2 {color: var(--primary-bg-color);}
 
@@ -815,9 +813,9 @@ input:-webkit-autofill{
 			    margin: 0 1rem;
 		    }
 
-		    img {
+		    /* img {
 			    display: none;
-		    } 
+		    }  */
           
         	h2 {
 			    font-size: .85rem;
@@ -847,12 +845,14 @@ input:-webkit-autofill{
         }
 }
 
-}
-
-img {
+/* img {
 	width: auto;
 	height: 75px;
+} */
+
 }
+
+
 
  /*End of lisrt-view
 /***** End of Directory *****/

@@ -1,5 +1,5 @@
 import {places} from "../data/places.mjs";
-console.log(places);
+//console.log(places);
 
 // Grab the div element in the html to display the places photo
 const showPlaces = document.querySelector("#showPlaces");
