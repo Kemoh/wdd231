@@ -1,0 +1,120 @@
+/* Color Schema */
+:root {
+    --gutterSm: 0.4rem;
+    --gutterMd: 0.8rem;
+    --gutterLg: 1.6rem;
+    --gutterXl: 2.4rem;
+    --gutterXx: 7.2rem;
+    --fontSizeMd: 1.125rem;
+    --fontSizeLg: 1.25rem;
+    --bodyTextLineHeight: 1.8;
+    --bgcolorheader: #880E4F; 
+    --bgcolorfooter: #212121;
+    --accent1: #FFFFFF;
+    --accent2: #34C759; 
+  
+    --colorBorder1: #DDDDDD;
+    --colorSection: #DDDDDD;
+    --colorPrimary700: #333333;
+    --colorPrimary400: #666666;
+    --transitionDuration: 300ms;
+    --transitionTF: cubic-bezier(0.645, 0.045, 0.355, 1);
+    --bodyFontFamily: 'Roboto', sans-serif; 
+    --headingFontfamily: 'Oxygen', sans-serif;
+}
+
+/* CSS Reset for box sizing */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--bodyFontFamily);
+    line-height: var(--bodyTextLineHeight);
+}
+
+
+/* Start Header Section */
+header {
+	display: grid;
+    grid-template-columns: 44px auto 44px;
+    align-items: end;
+    padding: var(--gutterSm);
+	background-color: var(--bgcolorheader);
+}
+
+header span {
+    font-size: var(--fontSizeMd);
+    font-weight: 700;
+    color:var(--accent1);
+}
+
+.ham-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.ham-menu::before {
+    content: "\2630";
+    color: var(--accent1);
+    font-size: 2rem;
+}
+
+.ham-menu.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+    color: var(--accent1);
+}
+
+.navigation {
+	grid-row: 2/3;
+	grid-column: 1/4;
+    display: none;  /* hide nav element by default */
+}
+
+.navigation.show {
+    display: block; /* show nav element when it has a class of 'show' */
+}
+
+.navigation li {
+    list-style-type: none;
+}
+
+.navigation a {
+    display: block;
+    padding: var(--gutterSm);
+    text-decoration: none;
+    color: var(--accent1);
+    border-top: 1px solid var(--colorBorder1);
+}
+
+.navigation a:hover {
+    border: 1px solid var(--accent1);
+    border-radius: 30px;
+}
+
+.first-li a {
+    color: yellow;
+}
+
+/* Navigation Animation */
+#animateme {
+	display: grid;
+	grid-template-rows: 0fr;
+	transition: grid-template-rows 0.5s ease-out;
+}
+
+#animateme .navanimate {
+    overflow: hidden;
+}
+
+#animateme.show {
+	grid-template-rows: 1fr;
+}
+
+/* End Header Section */

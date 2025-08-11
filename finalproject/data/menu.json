@@ -1,0 +1,95 @@
+
+{"menu": [
+  {
+    "name": "Jollof Rice",
+    "type": "Sierra Leone Food",
+    "price": "SLL 120,000",
+    "image_url": "images/jollof_rice.webp"
+  },
+  {
+    "name": "Cassava Leaf",
+    "type": "Sierra Leone Food",
+    "price": "SLL 140,000",
+    "image_url": "images/cassava_leaf.webp"
+  },
+  {
+    "name": "Groundnut Stew",
+    "type": "Sierra Leone Food",
+    "price": "SLL 130,000",
+    "image_url": "images/groundnut_stew.webp"
+  },
+  {
+    "name": "Pepper Soup",
+    "type": "Sierra Leone Food",
+    "price": "SLL 100.000",
+    "image_url": "images/peper_soup.webp"
+  },
+  {
+    "name": "Fufu and Soup",
+    "type": "Sierra Leone Food",
+    "price": "SLL 150,000",
+    "image_url": "images/fofo_n_soup.webp"
+  },
+  {
+    "name": "Bitterleaf Stew",
+    "type": "Sierra Leone Food",
+    "price": "SLL 140,000",
+    "image_url": "images/bitter_leaf_stew.webp"
+  },
+  {
+    "name": "Okra Stew",
+    "type": "Sierra Leone Food",
+    "price": "SLL 130,000",
+    "image_url": "images/okra_stew.webp"
+  },
+  {
+    "name": "Beans Soup",
+    "type": "Sierra Leone Food",
+    "price": "SLL 180,000",
+    "image_url": "images/beans_soup.webp"
+  },
+  {
+    "name": "Krain Krain Soup",
+    "type": "Sierra Leone Food",
+    "price": "SLL 160,000",
+    "image_url": "images/krain_krain_stew.webp"
+  },
+  {
+    "name": "Potato Leaf Soup",
+    "type": "Sierra Leone Food",
+    "price": "SLL 180,000",
+    "image_url": "images/potato_leaf_stew.webp"
+  },
+  {
+    "name": "Paella, Spain",
+    "type": "European Food",
+    "price": "SLL 200,000",
+    "image_url": "images/paella_spain.webp"
+  },
+  {
+    "name": "Pizza, Italy",
+    "type": "European Food",
+    "price": "SLL 300,000",
+    "image_url": "images/pizza_italy.webp"
+  },
+  {
+    "name": "Souvlaki, Greece",
+    "type": "European Food",
+    "price": "SLL 250,000",
+    "image_url": "images/souvlaki_greece.webp"
+  },
+  {
+    "name": "Yorkshire, England",
+    "type": "European Food",
+    "price": "SLL 300,000",
+    "image_url": "images/yorkshire_puddings_england.webp"
+  },
+  {
+    "name": "Arancini, Italy",
+    "type": "European",
+    "price": "SLL 200,000",
+    "image_url": "images/arancini_italy.webp"
+  }
+]
+}
+
