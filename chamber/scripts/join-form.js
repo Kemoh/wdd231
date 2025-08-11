@@ -1,12 +1,12 @@
 // FORM SECTION
 // Select the DOM element to output results
 const getString = window.location.search;
-console.log(getString);
+//console.log(getString);
 
 
 //Use the URLSearchParams object to display the information
 const myInfo = new URLSearchParams(window.location.search);
-console.log(myInfo);
+//console.log(myInfo);
 
 
 // Select the DOM element in the join.html to display info in the thanks.html page instead of the console

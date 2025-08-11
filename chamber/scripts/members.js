@@ -35,20 +35,20 @@ const displayMembers = (members) => {
         tagline.classList.add('tag');
         
         // Set attributes for img element named logoImage
-        logoImage.setAttribute('src', member.imageURL);
-        logoImage.setAttribute('alt', `${member.memberName} Logo`);
+        logoImage.setAttribute('src', member.imageurl);
+        logoImage.setAttribute('alt', `${member.name} Logo`);
         logoImage.setAttribute('loading', 'lazy');
         logoImage.setAttribute('width', '100');
         logoImage.setAttribute('height', '100');
 
         // Populate the h2 element with the member's name
-        name.textContent = `${member.memberName}`;
+        name.textContent = `${member.name}`;
 
         // Populate the p elements with their content
-        address.textContent = `${member.memberAddress}`;
-        websiteurl.textContent = `${member.websiteURL}`;
-        phonenumber.textContent = `${member.phoneNumber}`;
-        tagline.textContent = `${member.memberTagline}`;
+        address.textContent = `${member.address}`;
+        websiteurl.textContent = `${member.websiteurl}`;
+        phonenumber.textContent = `${member.phonenumber}`;
+        tagline.textContent = `${member.tagline}`;
        
         // Append elements to the div.card created above
         card.appendChild(logoImage);

@@ -91,20 +91,20 @@ const displayMembers = (members) => {
         let membersLevel = document.createElement('p');
         
         // Set attributes for img element memberNamed logoImage
-        logoImage.setAttribute('src', member.imageURL);
-        logoImage.setAttribute('alt', `${member.memberName} Logo`);
+        logoImage.setAttribute('src', member.imageurl);
+        logoImage.setAttribute('alt', `${member.name} Logo`);
         logoImage.setAttribute('loading', 'lazy');
         logoImage.setAttribute('width', '131');
         logoImage.setAttribute('height', '131');
 
         // Populate the h4 element with the member's memberName
-        name.textContent = `${member.memberName}`;
+        name.textContent = `${member.name}`;
 
         // Populate the p elements with their content
-        address.innerHTML = `<span class='label'>${member.memberAddress}</span>`;
-        websiteurl.innerHTML = `<span class='labe'>${member.websiteURL}</span>`;
-        phonenumber.innerHTML = `<span class='label'>${member.phoneNumber}</span>`;
-        tagline.innerHTML = `<span class='label'>${member.memberTagline}</span>`;
+        address.innerHTML = `<span class='label'>${member.address}</span>`;
+        websiteurl.innerHTML = `<span class='labe'>${member.websiteurl}</span>`;
+        phonenumber.innerHTML = `<span class='label'>${member.phonenumber}</span>`;
+        tagline.innerHTML = `<span class='label'>${member.tagline}</span>`;
         membersLevel.innerHTML = `<span class='label'>${member.membershipLevel}</span>`;
        
         // Append elements to the div.card created above

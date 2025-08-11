@@ -17,6 +17,7 @@ form {
       color: purple;
       padding-top: .2rem;
     }
+
     h3 {
       font-size: .9rem;
       color: #E07A5F;
@@ -58,6 +59,7 @@ form {
       appearance: none;
     }
   }
+  
   input:-webkit-autofill{
     -webkit-text-fill-color: #3D405B;
   }
