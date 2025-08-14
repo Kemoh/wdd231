@@ -7,7 +7,7 @@
     <meta name="author" content="Express Catering Services">
     <meta name="description"
         content="Express Catering Services offers detailed menus, customizable event packages, and an easy booking system for clients. The website will feature secure payment processing and an inquiry section to streamline the catering ordering process. The website will make it easier for clients to browse catering options, request quotes, and book services. It will also act as a marketing tool, showcasing the service’s offerings and building trust, ultimately driving growth and improving customer engagement.">
- <title>EXPRESS Catering Services Menu Page</title>
+ <title>EXPRESS Catering Services Contact Us Thank You Page</title>
 
     <!-- Open Graphs for Facebook -->
     <meta property="og:title" content="Express Catreing Services">
@@ -46,8 +46,7 @@
     <!-- JavaScripts -->
     <script src="scripts/nav&footer.js" defer></script>
     <script src="scripts/menu.js" defer></script>
-    <script src="scripts/get-visit-and-time.js" defer></script>
-   
+    <script src="scripts/contact-thanks.js" defer></script>
     
 </head>
 
@@ -81,30 +80,20 @@
     </header>
    
     <main>
-        <!-- Start Menu Section -->
-        <section class="menu-container">
-            <h1>Menu</h1>
+        <section class="contact-thanks-container">
+            <h1>Thank You!</h1>
+            <p>Thank You for making us your choice for delicious foods.<br>Below are the information you sent to us:</p>
+
+            <!-- Show user's information -->
+            <div id="contact-request"></div>
             
-            <div id="error-message"></div>   
-
-            <h2>Filter Menu</h2>
-            <!-- Menu Filtered Buttons -->
-            <div class="filters">
-                <button class="filter-btn btn-all" data-category="all">All</button>
-                <button class="filter-btn btn-local" data-category="local">Local</button>
-                <button class="filter-btn btn-international" data-category="international">European</button>
-            </div>
-
-            <!-- Filter cards injected dynamically here -->
-            <div id="filtered-food-grid"></div> 
-
-            <!-- Hidden timestamp field -->
-            <input type="hidden" name="current-date-time"  id="current-date-time">
-
         </section>
-        <!-- End menu Section -->
+        
+        
     </main>
     
+
+
      <footer>
         <div class="chamberInfo">
             <p>EXPRESS Catering Services</p>

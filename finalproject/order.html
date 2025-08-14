@@ -7,7 +7,7 @@
     <meta name="author" content="Express Catering Services">
     <meta name="description"
         content="Express Catering Services offers detailed menus, customizable event packages, and an easy booking system for clients. The website will feature secure payment processing and an inquiry section to streamline the catering ordering process. The website will make it easier for clients to browse catering options, request quotes, and book services. It will also act as a marketing tool, showcasing the service’s offerings and building trust, ultimately driving growth and improving customer engagement.">
- <title>EXPRESS Catering Services Menu Page</title>
+ <title>EXPRESS Catering Services Order Page</title>
 
     <!-- Open Graphs for Facebook -->
     <meta property="og:title" content="Express Catreing Services">
@@ -45,9 +45,7 @@
 
     <!-- JavaScripts -->
     <script src="scripts/nav&footer.js" defer></script>
-    <script src="scripts/menu.js" defer></script>
-    <script src="scripts/get-visit-and-time.js" defer></script>
-   
+    <script src="scripts/order.js" defer></script>
     
 </head>
 
@@ -81,28 +79,63 @@
     </header>
    
     <main>
-        <!-- Start Menu Section -->
-        <section class="menu-container">
-            <h1>Menu</h1>
-            
-            <div id="error-message"></div>   
+        <section class="order-form-container">
+            <h1>Order Your Food</h1>
 
-            <h2>Filter Menu</h2>
-            <!-- Menu Filtered Buttons -->
-            <div class="filters">
-                <button class="filter-btn btn-all" data-category="all">All</button>
-                <button class="filter-btn btn-local" data-category="local">Local</button>
-                <button class="filter-btn btn-international" data-category="international">European</button>
-            </div>
+            <section class="order-info">
+                <h2>Order Form</h2>
+                <p>Please cross-check the information you provided us and ensure every thing is O.K before submitting your order.
+             </p>
 
-            <!-- Filter cards injected dynamically here -->
-            <div id="filtered-food-grid"></div> 
+            <form method="get" action="order-thanks.html" class="order-food-form">
 
-            <!-- Hidden timestamp field -->
-            <input type="hidden" name="current-date-time"  id="current-date-time">
+                <!-- Name Fields -->
+                <label for="food-item">Food Item:
+                <input type="text" id="food-item" name="food-item" readonly>
+                </label>
 
+                <label for="food-price">Price:
+                <input type="text" id="food-price" name="food-price" readonly>
+                </label>
+
+                <label for="first">First Name:
+                <input type="text" id="first" name="first" autocomplete="given-name" title="Your First Name" required>
+                </label>
+
+                <label for="last">Last Name:
+                <input type="text" id="last" name="last" autocomplete="family-name" title="Your Last Name" required>
+                </label>
+
+                <label for="phone">Phone Number:<input type="tel" name="phone" id="phone"  autocomplete="tel" title="Your Mobile Number" placeholder="987-555-1234" required></label>
+
+                <label>Date <input type="date" name="date" required>
+                </label>
+
+                <label for="address">Delivery Address:
+                <input type="text" id="address" name="address" required>
+                </label>
+
+                <label>Select Location
+                <select name="location" required>
+                <option value="">None</option>
+                <option value="Lumley">Lumley</option>
+                <option value="Godrich">Godrich</option>
+                <option value="Wilberforce">Wilberforce</option>
+                <option value="Imatt">Imatt</option>
+                <option value="Jui">Jui</option>
+                <option value="Waterloo">Wilberforce</option>
+                </label>
+
+                <!-- Hidden timestamp field -->
+                    <input type="hidden" name="current-date-time"  id="current-date-time">
+
+                <!-- Place Order Link -->
+                <input type="submit" value="Place Order" class="place-order-btn">
+            </form>
+
+            </section>
+             
         </section>
-        <!-- End menu Section -->
     </main>
     
      <footer>

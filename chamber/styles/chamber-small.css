@@ -616,7 +616,7 @@ input:-webkit-autofill{
     font-family: var(--header-font);
 }
 
- #show-level-card h3 {
+#show-level-card h3 {
     padding: 1rem 0;
     font-size: 1.2rem;
     margin-bottom: 2.5rem;
@@ -626,7 +626,7 @@ input:-webkit-autofill{
     border-radius: 12px 12px 0 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
- }
+}
 
  #show-level-card button {
     border: none;

@@ -1,0 +1,39 @@
+@media only screen and (min-width: 38rem) {
+    :root {--fontSizeMd: 1.125rem;  --gutterMd: 0 1.25rem;}
+
+    /* Start Header section */
+
+    header {display: flex; align-items: center; position: relative; padding: 1rem;}
+
+    header span{font-size: larger; margin-left: 1rem;}
+
+    .ham-menu {display: none;}
+
+    .navigation {display: block;}
+
+    .navigation ul {display: flex; position: absolute; bottom: 26%; right: 0; text-align: center; padding-right: 10px;}
+
+    .navigation a {border-top: none; font-size: 1rem;}
+
+    /* End Header section */
+
+    /* Start of Main Section */
+    
+    /* Main Section Containers */
+    .menu-container, .contact-info-container, .order-form-container, .order-thanks-container, .contact-thanks-container, .home-container {padding: var(--gutterMd);}
+
+    #show-service-cards button {margin-top:5rem;}
+
+    input[type=text],
+    input[type=tel],
+    input[type=date],
+    input[type=email],
+    input[type=tel],
+    select {width: 400px;}
+
+    .btn-subscribe {padding: .75rem 9.5rem;}
+
+
+    /* End of Main Section */
+
+}/*End 38rem*/

@@ -29,9 +29,10 @@
         content="https://www.facebook.com/share/p/16BUgyrZER/">
     <meta name="twitter:url" content="https://kemoh.github.io/wdd231/">
 
-    <!-- Font Style -->
+    <!-- Google Font Style -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- STYLE SHEETS -->
     <link rel="stylesheet" href="styles/normalize.css">
@@ -43,8 +44,11 @@
      <link rel="icon" href="express_favicon.ico" type="image/express-icon">
 
     <!-- JavaScripts -->
-    <script src="scripts/express_navigation.js" defer></script>
-    <script src="scripts/express_footer.js" defer></script>
+    <script src="scripts/nav&footer.js" defer></script>
+    <script src="data/servicedata.mjs" type="module"></script>
+    <script src="scripts/service-modal.mjs" type="module"></script>
+    <script src="scripts/get-visit-and-time.js" defer></script>
+    
 </head>
 
 <body>
@@ -70,7 +74,7 @@
                 </li>
 
                 <li class="first-li">
-                    <a href="menu.html">🍽️ Menu</a>
+                    <a href="menu.html">Menu</a>
                 </li>       
             </ul>
         </nav>
@@ -103,28 +107,134 @@
         </div>
         <!-- End Hero Div -->
 
+        <!-- Start Home Section -->
+        <section class="home-container">
+            <h1>Home</h1>
+
+            <section class="call-to-action">
+                <h2>What's on your mind?</h2>
+                <div class="browse-menu">
+
+                <a href="menu.html" class="browse-btn-1">Order My Food</a>
+    
+                <a href="contact.html" class="browse-btn-2">Book My Event</a>
+                </div>
+            </section>
+
+            <h2>Why Choose Us?</h2>
+            <article class="business-profile">
+                <section class="reason-card">
+                    <h3>About Us</h3>
+                    <p>We are Sierra Catering Services - your trusted partner for memorable dining experiences in Freetown and beyond. From small family gatherings to large corporate events, we create menus that delight every guest. Our passion is simple: delicious food, warm service, and stress-free planning.
+                    </p>
+                </section>
+
+                <section class="reason-card">
+                    <h3>We Can Be Trusted</h3>
+                        <p>We are deeply rooted in Sierra Leone, with a strong reputation for reliability and integrity in the hospitality sector.</p>
+                </section>
+
+                <section class="reason-card">
+                    <h3>Transparent & Secure</h3>
+                    <p>We ensure clear communication, fair pricing, and secure transactions — no hidden fees or surprises.</p>
+                </section>
+
+                <section class="reason-card">
+                     <h3>Our Expertise</h3>
+                    <p>Our team are always on time and prepare — giving you the best of meals.</p>
+                </section>
+
+                <section class="reason-card">
+                    <h3>Testimonials</h3>
+                    <p>“They made my wedding unforgettable! Guests still talk about the food.” <strong>- Mariama Kamara, on the occasinon of her wedding celebration</strong> 
+                    </p><br>
+
+                    <p>“Professional, delicious, and right on time. Highly recommended.”<strong> - Samuel Thomas, on the occasinon of his birthday celebration</strong> 
+                    </p>
+                </section>
+            </article>
+
+           
+            <!-- Start Services Section -->
+            <section class="service-cards">
+                <h2>Services Overview</h2>
+                
+                <!-- Services cards injected here -->
+                <div id="show-service-cards"></div>
+
+                <!-- Single Dialog for levelsCard -->
+                 <dialog id="service-dialog">
+                    <div>
+                        <h3>Sample Title</h3>
+                        <button>X</button>
+                    </div>
+                    <p id="service-description"></p>
+                    <p id="service-packages"></p>
+                    <p id="service-rewards"></p>
+                    <p id="service-discount"></p>
+                    <a href="contact.html" id="service-contact-btn"></a>
+                 </dialog>
+            </section>
+
+
+            <!-- Start Newsletter Section -->
+             <section class="newsletter" aria-labelledby="newsletter-title">
+                 <h2>Sign up to our Newsletter</h2>
+                <div class="newsletter-content">
+               
+                <p>Subscribe to our newsletter and be the first to hear about new listings, property tips, and exclusive offers.</p>
+                
+                <form method="get" action="subscribe-thanks.html" class="newsletter-form">
+                    <div class="form-group">
+                        <label for="first-name">First Name:</label>
+                        <input id="first-name" type="text" name="first" required autocomplete="given-name" title="Your First Name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="last-name">Last Name:</label>
+                        <input id="last-name" type="text" name="last" required autocomplete="family-name" title="Your Last Name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" name="email" required placeholder="john89@gmail.com" title="Your Email" autocomplete="email">
+                    </div>
+
+                    <!-- Hidden timestamp field -->
+                    <input type="hidden" name="current-date-time"  id="current-date-time">
+
+                    <!-- Number of visits -->
+                     <input type="hidden" name="visits" class="num-visits">
+        
+                    <!-- Subscribe me link -->
+                    <button type="submit" class="btn-subscribe">Subscribe Me</button>
+                </form>
+                </div>
+            </section>
+            <!-- End Newsletter Section -->
+        </section>
+        <!-- End Home Section -->
+
     </main>
     
-
-
      <footer>
         <div class="chamberInfo">
-            <p title="Organization Name">EXPRESS Catering Services</p>
+            <p>EXPRESS Catering Services</p>
             <p title="Adresss">No. 25 Siaka Steven Street, Freetown, Sierra Leone.</p>
             <a href="https://sites.google.com/"></a>
             <p title="Website">www.expresscateringservices.com</p>
             <p title="Phone Number">(232) 78-411-575</p>
         </div>
         
-        <div class="socialMediaLinks">
+        <div class="social-links">
             <a href="https://facebook.com">
-                <img src="images/facebook.svg" alt="facebook-image" width="72" height="75" loading="lazy">
+                <img src="images/facebook.svg" alt="facebook" width="16" height="16" loading="lazy">
             </a>
             <a href="https://x.com">
-                <img src="images/x.svg" alt="x-image" width="72" height="75" loading="lazy">
+                <img src="images/twitter-x.svg" alt="twitter-x" width="16" height="16" loading="lazy">
             </a>
             <a href="https://instagram.com">
-                <img src="images/instagram.svg" alt="instagram-image" width="72" height="75" loading="lazy">
+                <img src="images/instagram.svg" alt="instagram" width="16" height="16" loading="lazy">
             </a>
         </div>
     

@@ -29,9 +29,10 @@
         content="https://www.facebook.com/share/p/16BUgyrZER/">
     <meta name="twitter:url" content="https://kemoh.github.io/wdd231/">
 
-    <!-- Font Style -->
+    <!-- Google Font Style -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- STYLE SHEETS -->
     <link rel="stylesheet" href="styles/normalize.css">
@@ -43,8 +44,7 @@
      <link rel="icon" href="express_favicon.ico" type="image/express-icon">
 
     <!-- JavaScripts -->
-    <script src="scripts/express_navigation.js" defer></script>
-    <script src="scripts/express_footer.js" defer></script>
+    <script src="scripts/nav&footer.js" defer></script>
 </head>
 
 <body>
@@ -77,54 +77,104 @@
     </header>
    
     <main>
-        <!-- Start Hero Div -->
-        <div class="express_hero_container">
-             <!-- Hero Image -->
-            <picture>
-                <!-- Large: 1000px and above -->
-                <source 
-                srcset="images/express_hero_large.webp 1500w" 
-                media="(min-width: 62.5rem)" sizes="100vw">
+        <section class="contact-info-container">
+            <h1>Contact Us</h1>
+            <!-- Start Appointment Form -->
+            <section class="contact-info appointment">
+                <h2>Appointment Form</h2>
+        
+                <p>We would love to meet and plan your event together to make it a wonderful and unforgettable event! <br>Please cross-check the information you provided us and ensure every thing is O.K before submitting the appointment form.</p>
 
-                <!-- Medium: 38rem to 62.49rem -->
-                <source 
-                srcset="images/express_hero_medium.webp 1000w" 
-                media="(min-width: 38rem)" 
-                sizes="100vw">
+                <form method="get" action="contact-thanks.html" class="appointment-form">
 
-                <!-- Small: below 38rem -->
-                <img 
-                src="images/express_hero_small.webp" 
-                alt="Express Catering Services Hero" 
-                width="320" 
-                height="320"
-                loading="lazy">
-            </picture>
-        </div>
-        <!-- End Hero Div -->
+                <!-- Name Fields -->
+                <label for="first">First Name:
+                <input type="text" id="first" name="first" autocomplete="given-name" title="Your First Name" required>
+                </label>
 
+                <label for="last">Last Name:
+                <input type="text" id="last" name="last" autocomplete="family-name" title="Your Last Name" required>
+                </label>
+
+                <label for="phone">Phone Number:<input type="tel" name="phone" id="phone"  autocomplete="tel" title="Your Mobile Number" placeholder="987-555-1234" required></label>
+
+                <label>Appointment Date:<input type="date" name="date" required>
+                </label>
+
+                <label for="address">Address:
+                <input type="text" id="address" name="address" required>
+                </label>
+
+                <label for="eventType">Select Event:
+                <select id="eventType" name="eventType" required>
+                <option value="">select Your Event</option>
+                <option value="Wedding">Wedding</option>
+                <option value="Naming Ceremony">Naming Ceremony</option>
+                <option value="Birthday">Birthday</option>
+                <option value="Graduation">Graduation</option>
+                <option value="">Any other</option>
+                </label>
+
+                <!-- Hidden timestamp field -->
+                    <input type="hidden" name="current-date-time"  id="current-date-time">
+
+                <!-- Submit Link -->
+                <input type="submit" value="Schedule My Appointment" class="book-appointment-btn">
+                </form>
+            </section>
+            <!-- End Appointment Form -->
+
+            <!-- Contact Info -->
+            <section class="contact-info">
+                <h2>Contact Information</h2>
+
+                <section class="reach-out">
+                    <h3>Reach Out To Us</h3>
+                
+                    <p><strong>Phone:</strong> +232 76 000 000</p>
+                    <p><strong>WhatsApp:</strong> +232 76 000 000</p>
+                    <p><strong>Email:</strong> info@sierracatering.com</p>
+                </section>
+
+                <section class="business-hours">
+                    <h3>Business Hours</h3>
+
+                    <p><strong>Mon - Fri:</strong> 8:00 AM - 6:00 PM</p>
+                    <p><strong>Sat:</strong> 9:00 AM - 4:00 PM</p>
+                </section>
+
+                <section class="map">
+                    <h2>Our Location</h2>
+                    <div class="map-container">
+                    <iframe
+                    src="https://www.google.com/maps?q=Freetown,+Sierra+Leone&output=embed"
+                    allowfullscreen=""
+                    loading="lazy">
+                    </iframe>
+                    </div>
+                </section>
+            </section>
+        </section>
     </main>
-    
 
-
-     <footer>
+<footer>
         <div class="chamberInfo">
-            <p title="Organization Name">EXPRESS Catering Services</p>
+            <p>EXPRESS Catering Services</p>
             <p title="Adresss">No. 25 Siaka Steven Street, Freetown, Sierra Leone.</p>
             <a href="https://sites.google.com/"></a>
             <p title="Website">www.expresscateringservices.com</p>
             <p title="Phone Number">(232) 78-411-575</p>
         </div>
         
-        <div class="socialMediaLinks">
+        <div class="social-links">
             <a href="https://facebook.com">
-                <img src="images/facebook.svg" alt="facebook-image" width="72" height="75" loading="lazy">
+                <img src="images/facebook.svg" alt="Express Catering Services Facebook Media Link" width="72" height="75" loading="lazy">
             </a>
             <a href="https://x.com">
-                <img src="images/x.svg" alt="x-image" width="72" height="75" loading="lazy">
+                <img src="images/twitter-x.svg" alt="Express Catering Services twitter-x Media Link" width="72" height="75" loading="lazy">
             </a>
             <a href="https://instagram.com">
-                <img src="images/instagram.svg" alt="instagram-image" width="72" height="75" loading="lazy">
+                <img src="images/instagram.svg" alt="Express Catering Services Instagram Media Link" width="72" height="75" loading="lazy">
             </a>
         </div>
     

@@ -1,0 +1,76 @@
+@media only screen and (min-width: 64rem) {
+    :root {--gutterLg: 0 2.5rem;}
+
+    header img {width: 44px; height: auto;}
+
+    header span {font-size: x-large;}
+
+    .navigation a {font-size: large}
+
+    main {font-size: larger;}
+
+    footer {font-size: medium;}
+
+
+    /* Main Section Containers */
+    .menu-container, .contact-info-container, .order-form-container, .order-thanks-container, .contact-thanks-container, .home-container{
+    padding: var(--gutterLg);}
+
+    /* Start Home Main */
+    .browse-menu{flex-direction: row;}
+
+    .browse-btn-1, .browse-btn-2{padding: 10px;}
+
+    .browse-menu a{text-align: center;}
+
+    #show-service-cards {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+    footer{display: flex; justify-content: space-between; gap: 2rem;}
+
+    .social-links{gap: 3rem;}
+
+    /* Start Contact Us main */
+
+    .contact-info-container{display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; justify-content: center;}
+
+    .contact-info-container h2{text-align: center;}
+
+    .contact-info-container h1{grid-row: 1/2; grid-column: 1/3;}
+
+    .contact-info{margin-bottom: 0;}
+
+    /* Start Menu Main */
+    #filtered-food-grid {
+   
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+}/*End 64rem*/
+
+
+@media only screen and (min-width: 90rem) {
+    header img {width: 60px; height: auto;}
+
+    header span {font-size: xx-large;}
+
+    .navigation a {font-size: x-large}
+
+    #filtered-food-grid {grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));}
+
+    #show-service-cards {
+ 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   
+}
+
+    .social-links img {width: 30px; height: 30px;}
+
+    main {font-size: x-large;}
+
+    footer {font-size: larger;}
+
+
+
+}/*90rem*/

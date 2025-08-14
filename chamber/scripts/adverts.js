@@ -40,8 +40,6 @@ async function getMembersData() {
             // Set the interval to show next 3 every 5 seconds
             rotationalInterval = setInterval(showNextThree, 5000);
 
-         
-            
               }  else {
                         // Throw server error
                         throw new Error(`HTTP Error: 
